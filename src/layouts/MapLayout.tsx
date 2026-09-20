@@ -1,9 +1,10 @@
 // MapLayout.tsx
-// Layout da tela de mapa, envolvendo o BrazilMap e o painel
-// de detalhes exibido ao selecionar um ClientPin.
+// Layout da tela de mapa: botão de voltar e marca sobrepostos ao
+// BrazilMap, que ocupa a tela inteira.
 
-import { ArrowLeft } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { ArrowLeft } from 'lucide-react'
+import { BrandMark } from '@/components/BrandMark'
 
 interface MapLayoutProps {
   onBack: () => void
@@ -12,15 +13,18 @@ interface MapLayoutProps {
 
 export function MapLayout({ onBack, children }: MapLayoutProps) {
   return (
-    <div className="relative h-full w-full bg-neutral-950">
-      <button
-        type="button"
-        onClick={onBack}
-        className="absolute left-8 top-8 z-[1100] flex h-14 w-14 items-center justify-center rounded-full bg-neutral-900/90 text-white shadow-lg active:scale-95"
-        aria-label="Voltar"
-      >
-        <ArrowLeft size={28} />
-      </button>
+    <div className="relative h-full w-full bg-canvas">
+      <div className="absolute top-7 left-8 z-[1100] flex items-center gap-3.5">
+        <button
+          type="button"
+          onClick={onBack}
+          className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-white/[0.08] bg-white/5 text-white/50 backdrop-blur-md active:scale-95"
+          aria-label="Voltar"
+        >
+          <ArrowLeft size={16} />
+        </button>
+        <BrandMark />
+      </div>
       {children}
     </div>
   )

@@ -67,7 +67,7 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
   }
 
   return (
-    <div className="relative flex h-full w-full items-center justify-center bg-neutral-950 p-8">
+    <div className="relative flex h-full w-full items-center justify-center bg-canvas p-8">
       <svg
         viewBox={brazilMap.viewBox}
         role="img"
@@ -116,7 +116,7 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
               exit={{ opacity: 0, scale: 0.85 }}
               transition={{ type: 'spring', stiffness: 280, damping: 26 }}
               onClick={(event) => event.stopPropagation()}
-              className="w-full max-w-lg overflow-hidden rounded-3xl bg-neutral-900 shadow-2xl"
+              className="w-full max-w-lg overflow-hidden rounded-[20px] border border-white/[0.08] bg-[rgba(10,7,5,0.95)] shadow-2xl backdrop-blur-xl"
             >
               {selected.photo ? (
                 <img src={selected.photo} alt={selected.name} className="h-48 w-full object-cover" />
@@ -157,7 +157,7 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
                   <button
                     type="button"
                     onClick={() => onViewCase?.(selected)}
-                    className="mt-2 flex items-center justify-center gap-2 rounded-2xl bg-purple-500 px-6 py-3 text-lg font-medium text-white active:scale-95"
+                    className="mt-2 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-brand to-brand-dark px-6 py-3 text-lg font-medium text-white active:scale-95"
                   >
                     Ver Case
                     <ArrowUpRight size={20} />

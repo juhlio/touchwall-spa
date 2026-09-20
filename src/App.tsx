@@ -45,19 +45,15 @@ function App() {
         )
 
       case 'cases':
-        return (
-          <ServiceLayout title="Cases" onBack={goToMenu}>
-            <CaseCarousel cases={cases} />
-          </ServiceLayout>
-        )
+        return <CaseCarousel cases={cases} onBack={goToMenu} />
 
       case 'sobre':
         return (
-          <ServiceLayout title="Sobre a Empresa" onBack={goToMenu}>
-            <div className="max-w-3xl rounded-3xl bg-neutral-900 p-12 text-center shadow-xl">
-              <p className="text-xl leading-relaxed text-neutral-300">
-                A Essencial atua com soluções completas de venda, locação e manutenção,
-                atendendo clientes em todo o Brasil com excelência e proximidade.
+          <ServiceLayout title="Sobre nós" onBack={goToMenu}>
+            <div className="max-w-2xl rounded-[20px] border border-white/[0.07] bg-white/[0.03] p-10 text-center backdrop-blur-xl">
+              <p className="text-lg leading-relaxed text-white/50">
+                A Essencial Energia atua com soluções completas de venda, locação e manutenção de
+                geradores, atendendo clientes em todo o Brasil com excelência e proximidade.
               </p>
             </div>
           </ServiceLayout>
@@ -74,7 +70,7 @@ function App() {
   }
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-neutral-950">
+    <div className="relative h-screen w-screen overflow-hidden bg-canvas">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentPage}

@@ -1,9 +1,12 @@
 // ServiceLayout.tsx
-// Layout da tela de serviços, organizando os ServiceCard
-// e o CaseCarousel associado ao serviço selecionado.
+// Layout genérico de página com cabeçalho (voltar + marca + badge) e
+// atmosfera de fundo, no mesmo estilo visual das demais telas. Usado
+// pela página "Sobre a Empresa".
 
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, Home } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { AtmosphereBackground } from '@/components/AtmosphereBackground'
+import { BrandMark } from '@/components/BrandMark'
 
 interface ServiceLayoutProps {
   title: string
@@ -13,20 +16,30 @@ interface ServiceLayoutProps {
 
 export function ServiceLayout({ title, onBack, children }: ServiceLayoutProps) {
   return (
-    <div className="flex h-full w-full flex-col bg-neutral-950">
-      <header className="flex items-center gap-6 p-8">
-        <button
-          type="button"
-          onClick={onBack}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-neutral-800 text-white active:scale-95"
-          aria-label="Voltar"
-        >
-          <ArrowLeft size={28} />
-        </button>
-        <h1 className="text-3xl font-semibold text-white">{title}</h1>
-      </header>
+    <div className="relative flex h-full w-full flex-col overflow-hidden bg-canvas px-8 py-7">
+      <AtmosphereBackground watermark={title.toUpperCase()} />
 
-      <main className="flex flex-1 items-center justify-center p-8">{children}</main>
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col">
+        <header className="mb-5 flex flex-shrink-0 items-center justify-between">
+          <div className="flex items-center gap-3.5">
+            <button
+              type="button"
+              onClick={onBack}
+              className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-white/[0.08] bg-white/5 text-white/50 active:scale-95"
+              aria-label="Voltar"
+            >
+              <ArrowLeft size={16} />
+            </button>
+            <BrandMark />
+          </div>
+          <div className="flex items-center gap-2 rounded-[10px] border border-brand/20 bg-brand/[0.07] py-1.5 pr-3.5 pl-2.5">
+            <Home size={14} className="text-brand" strokeWidth={2} />
+            <span className="text-xs font-semibold tracking-wide text-brand uppercase">{title}</span>
+          </div>
+        </header>
+
+        <main className="flex flex-1 items-center justify-center">{children}</main>
+      </div>
     </div>
   )
 }

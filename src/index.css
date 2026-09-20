@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Space Grotesk", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /* Identidade visual da Essencial Energia */
+  --color-canvas: #070404;
+  --color-brand: #e05a1c;
+  --color-brand-dark: #b84010;
+  --color-accent-blue: #4a82b4;
+  --color-accent-blue-light: #82aacc;
+  --color-accent-copper: #c07828;
 }
 
 :root {
@@ -24,7 +32,7 @@ body,
 }
 
 body {
-  @apply bg-neutral-950 text-neutral-50 antialiased;
+  @apply bg-canvas text-neutral-50 antialiased;
   font-family: var(--font-sans);
 }
 
