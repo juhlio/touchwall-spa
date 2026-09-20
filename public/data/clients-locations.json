@@ -1,0 +1,68 @@
+[
+  {
+    "id": "client-sp",
+    "name": "Cliente São Paulo",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "city": "São Paulo",
+    "state": "SP",
+    "description": "Atendimento contínuo de locação de equipamentos desde 2021.",
+    "caseId": "case-1"
+  },
+  {
+    "id": "client-rj",
+    "name": "Cliente Rio de Janeiro",
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "description": "Contrato de manutenção preventiva em unidade industrial.",
+    "caseId": "case-2"
+  },
+  {
+    "id": "client-mg",
+    "name": "Cliente Belo Horizonte",
+    "lat": -19.9167,
+    "lng": -43.9345,
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "description": "Venda de gerador de médio porte para centro de distribuição."
+  },
+  {
+    "id": "client-ba",
+    "name": "Cliente Salvador",
+    "lat": -12.9777,
+    "lng": -38.5016,
+    "city": "Salvador",
+    "state": "BA",
+    "description": "Suporte 24h em operação portuária."
+  },
+  {
+    "id": "client-rs",
+    "name": "Cliente Porto Alegre",
+    "lat": -30.0346,
+    "lng": -51.2177,
+    "city": "Porto Alegre",
+    "state": "RS",
+    "description": "Locação de equipamentos para evento corporativo.",
+    "caseId": "case-3"
+  },
+  {
+    "id": "client-pa",
+    "name": "Cliente Belém",
+    "lat": -1.4558,
+    "lng": -48.4902,
+    "city": "Belém",
+    "state": "PA",
+    "description": "Manutenção corretiva em planta de processamento."
+  },
+  {
+    "id": "client-am",
+    "name": "Cliente Manaus",
+    "lat": -3.119,
+    "lng": -60.0217,
+    "city": "Manaus",
+    "state": "AM",
+    "description": "Fornecimento de energia de backup para polo industrial."
+  }
+]
