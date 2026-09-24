@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:globe-dots": "node scripts/generate-land-dots.mjs"
   },
   "dependencies": {
     "@svg-maps/brazil": "^2.0.0",
+    "d3-geo": "^3.1.1",
+    "d3-timer": "^3.0.1",
     "framer-motion": "^13.4.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.47.0",
@@ -20,6 +23,9 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@types/d3-geo": "^3.1.1",
+    "@types/d3-timer": "^3.0.2",
+    "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.22",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
