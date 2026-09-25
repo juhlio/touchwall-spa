@@ -1,9 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { BrazilMap } from '@/components/BrazilMap'
+import { CapacidadeTecnica } from '@/components/CapacidadeTecnica'
 import { CaseCarousel } from '@/components/CaseCarousel'
+import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
-import { ServiceCard } from '@/components/ServiceCard'
+import { NossaOperacao } from '@/components/NossaOperacao'
 import { pageTransition, pageVariants } from '@/config/animations'
 import { cases } from '@/config/cases'
 import { MapLayout } from '@/layouts/MapLayout'
@@ -32,30 +34,34 @@ function App() {
 
   function renderPage() {
     switch (currentPage) {
-      case 'venda':
-      case 'locacao':
-      case 'manutencao':
-        return <ServiceCard service={currentPage} onBack={goToMenu} />
-
-      case 'mapa':
+      case 'onde-estamos':
         return (
           <MapLayout onBack={goToMenu}>
             <BrazilMap clients={clients} onPinClick={handlePinClick} />
           </MapLayout>
         )
 
-      case 'cases':
+      case 'nossa-operacao':
+        return (
+          <ServiceLayout title="Nossa Operação" onBack={goToMenu}>
+            <NossaOperacao />
+          </ServiceLayout>
+        )
+
+      case 'projetos':
         return <CaseCarousel cases={cases} onBack={goToMenu} />
 
-      case 'sobre':
+      case 'capacidade-tecnica':
         return (
-          <ServiceLayout title="Sobre nós" onBack={goToMenu}>
-            <div className="max-w-2xl rounded-[20px] border border-white/[0.07] bg-white/[0.03] p-10 text-center backdrop-blur-xl">
-              <p className="text-lg leading-relaxed text-white/50">
-                A Essencial Energia atua com soluções completas de venda, locação e manutenção de
-                geradores, atendendo clientes em todo o Brasil com excelência e proximidade.
-              </p>
-            </div>
+          <ServiceLayout title="Capacidade Técnica" onBack={goToMenu}>
+            <CapacidadeTecnica />
+          </ServiceLayout>
+        )
+
+      case 'fale-conosco':
+        return (
+          <ServiceLayout title="Fale Conosco" onBack={goToMenu}>
+            <FaleConosco />
           </ServiceLayout>
         )
 

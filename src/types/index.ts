@@ -2,15 +2,13 @@
 // Tipos e interfaces compartilhados do projeto (serviços,
 // clientes, cases, pontos de mapa, etc).
 
-export type Page = 'menu' | 'venda' | 'locacao' | 'manutencao' | 'mapa' | 'cases' | 'sobre'
-
-export type ServiceId = Extract<Page, 'venda' | 'locacao' | 'manutencao'>
-
-export interface Service {
-  id: ServiceId
-  title: string
-  description: string
-}
+export type Page =
+  | 'menu'
+  | 'onde-estamos'
+  | 'nossa-operacao'
+  | 'projetos'
+  | 'capacidade-tecnica'
+  | 'fale-conosco'
 
 export interface Case {
   id: string

@@ -1,10 +1,10 @@
 // MainMenu.tsx
-// Menu principal em bento grid, replicando o mockup: card de marca +
-// Venda em destaque + Locação na primeira linha; Manutenção, Mapa Brasil,
-// Cases e Sobre na segunda linha.
+// Tela Home: marca + bloco institucional (quem é a Essencial Energia +
+// selo de distribuidor CAT) + 5 botões de navegação (Onde Estamos,
+// Nossa Operação, Projetos, Capacidade Técnica, Fale Conosco).
 
 import { motion, type Variants } from 'framer-motion'
-import { ArrowRight, Home, Image, MapPin, Monitor, ShoppingBag, Wrench } from 'lucide-react'
+import { Award, Building2, Image, MapPin, MessageCircle, Zap } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import type { Page } from '@/types'
 
@@ -21,6 +21,14 @@ const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } },
 }
+
+const ABOUT_STATS = [
+  { label: 'Experiência', value: '+20 anos' },
+  { label: 'Solução', value: 'Energia' },
+  { label: 'Foco', value: 'Operação crítica' },
+  { label: 'Ativo', value: 'Estrutura própria' },
+  { label: 'Alcance', value: 'Atuação nacional' },
+]
 
 export function MainMenu({ onNavigate }: MainMenuProps) {
   return (
@@ -39,140 +47,93 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
         </div>
       </motion.div>
 
-      {/* Row 1: brand card + Venda (destaque) + Locação */}
-      <div className="flex min-h-0 flex-[1.75] gap-4">
-        <motion.div
-          variants={itemVariants}
-          className="flex w-72 shrink-0 flex-col justify-between rounded-[20px] border border-white/[0.07] bg-[rgba(12,5,3,0.72)] p-7 backdrop-blur-xl"
-        >
+      {/* Bloco institucional: quem é a empresa + selo de distribuidor CAT */}
+      <motion.div
+        variants={itemVariants}
+        className="flex flex-shrink-0 gap-4 rounded-[20px] border border-white/[0.07] bg-[rgba(10,6,4,0.72)] p-7 backdrop-blur-xl"
+      >
+        <div className="flex-1">
+          <span className="text-[11px] font-semibold tracking-[0.12em] text-brand uppercase">
+            Quem é a Essencial Energia
+          </span>
+          <h1 className="mt-2 mb-4 text-[28px] leading-[1.15] font-bold tracking-tight text-white">
+            +20 anos gerando energia
+            <br />
+            para operações críticas no Brasil.
+          </h1>
+          <p className="mb-5 max-w-xl text-[15px] leading-relaxed font-semibold text-brand/90">
+            "Energia não é apenas um serviço. É parte da infraestrutura da operação."
+          </p>
+
+          <div className="flex flex-wrap gap-3.5">
+            {ABOUT_STATS.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-5 py-3.5"
+              >
+                <div className="text-[12.5px] font-medium tracking-wide text-white/30 uppercase">
+                  {stat.label}
+                </div>
+                <div className="text-[21px] font-bold text-white/80">{stat.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex w-60 shrink-0 flex-col items-center justify-between rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-5 text-center">
+          <div className="flex flex-col items-center gap-1.5">
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-accent-blue/25 bg-accent-blue/10">
+              <Zap size={22} className="text-accent-blue-light" strokeWidth={1.8} />
+            </div>
+            <span className="text-xl font-extrabold tracking-tight text-accent-blue-light">CAT</span>
+          </div>
           <div>
-            <BrandMark size="lg" />
-            <p className="mt-4 text-[13px] leading-relaxed text-white/35">
-              Soluções completas em geração, locação e manutenção de geradores.
+            <div className="mb-1 text-[11px] font-semibold tracking-wide text-white/60 uppercase">
+              Distribuidor desde 2006
+            </div>
+            <p className="text-[11px] leading-relaxed text-white/35">
+              Parceria direta com a fábrica Caterpillar de Piracicaba.
             </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-2">
-              <div className="rounded-lg border border-brand/20 bg-brand/10 px-2.5 py-1.5">
-                <span className="text-base font-bold text-brand">15+</span>
-                <span className="ml-1 text-[11px] text-white/35">anos</span>
-              </div>
-              <div className="rounded-lg border border-accent-blue/15 bg-accent-blue/10 px-2.5 py-1.5">
-                <span className="text-base font-bold text-accent-blue-light">200+</span>
-                <span className="ml-1 text-[11px] text-white/35">projetos</span>
-              </div>
-            </div>
-            <div className="text-[11px] text-white/20">essencialgeradores.com.br</div>
-          </div>
-        </motion.div>
+        </div>
+      </motion.div>
 
-        <motion.button
-          type="button"
-          variants={itemVariants}
-          whileHover={{ scale: 1.015 }}
-          whileTap={{ scale: 0.985 }}
-          onClick={() => onNavigate('venda')}
-          className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-[20px] border border-brand/15 bg-[rgba(20,6,2,0.68)] p-8 text-left shadow-[0_12px_48px_rgba(0,0,0,0.4)] backdrop-blur-xl"
-        >
-          <div className="absolute top-0 right-[5%] left-[5%] h-0.5 bg-gradient-to-r from-transparent via-brand to-transparent" />
-          <div className="pointer-events-none absolute -top-20 -right-16 h-[300px] w-[400px] rounded-full bg-[radial-gradient(ellipse,rgba(224,90,28,0.22)_0%,transparent_65%)] blur-[20px]" />
-          <div className="pointer-events-none absolute -right-3 -bottom-8 text-[140px] leading-none font-bold whitespace-nowrap text-brand/[0.055]">
-            VENDA
-          </div>
-
-          <div className="relative z-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-lg border border-brand/25 bg-brand/10 px-2.5 py-1.5">
-              <ShoppingBag size={14} className="text-brand" />
-              <span className="text-[11px] font-semibold tracking-wide text-brand uppercase">Venda</span>
-            </div>
-            <h2 className="mb-2 text-3xl font-bold tracking-tight text-white">
-              Geradores de alta
-              <br />
-              performance
-            </h2>
-            <p className="max-w-sm text-sm leading-relaxed text-white/40">
-              De 10 kVA a 2.000+ kVA. Residencial, comercial e industrial — entregamos a solução
-              certa.
-            </p>
-          </div>
-
-          <div className="relative z-10 flex items-end justify-between">
-            <div className="flex gap-3">
-              <div className="text-center">
-                <div className="text-xl font-bold text-brand">10</div>
-                <div className="text-[9px] tracking-wide text-white/30 uppercase">min kVA</div>
-              </div>
-              <div className="w-px bg-white/[0.08]" />
-              <div className="text-center">
-                <div className="text-xl font-bold text-brand">2000+</div>
-                <div className="text-[9px] tracking-wide text-white/30 uppercase">max kVA</div>
-              </div>
-            </div>
-            <span className="flex items-center gap-2 rounded-xl border border-brand/30 bg-brand/15 px-4 py-2.5 text-sm font-semibold text-brand">
-              Explorar
-              <ArrowRight size={16} />
-            </span>
-          </div>
-        </motion.button>
-
-        <motion.button
-          type="button"
-          variants={itemVariants}
-          whileHover={{ scale: 1.015 }}
-          whileTap={{ scale: 0.985 }}
-          onClick={() => onNavigate('locacao')}
-          className="relative flex w-80 shrink-0 flex-col justify-between overflow-hidden rounded-[20px] border border-accent-blue/15 bg-[rgba(3,8,16,0.68)] p-7 text-left shadow-[0_12px_48px_rgba(0,0,0,0.4)] backdrop-blur-xl"
-        >
-          <div className="absolute top-0 right-[5%] left-[5%] h-0.5 bg-gradient-to-r from-transparent via-accent-blue to-transparent" />
-          <div className="pointer-events-none absolute -top-16 -right-10 h-[220px] w-[280px] rounded-full bg-[radial-gradient(ellipse,rgba(74,130,180,0.14)_0%,transparent_65%)] blur-[20px]" />
-
-          <div className="relative z-10">
-            <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-accent-blue/20 bg-accent-blue/10">
-              <Monitor size={22} className="text-accent-blue" strokeWidth={1.8} />
-            </div>
-            <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">Locação</h2>
-            <p className="text-[13px] leading-relaxed text-white/35">
-              Geradores para eventos, obras e emergências — com suporte técnico incluso.
-            </p>
-          </div>
-
-          <div className="relative z-10 flex items-center justify-between">
-            <span className="text-[11px] font-medium text-accent-blue/70">Sob demanda</span>
-            <ArrowRight size={16} className="text-accent-blue/50" />
-          </div>
-        </motion.button>
-      </div>
-
-      {/* Row 2: Manutenção, Mapa Brasil, Cases, Sobre */}
+      {/* 5 botões de navegação, todos do mesmo tamanho */}
       <div className="flex min-h-0 flex-1 gap-4">
         <MenuTile
-          onClick={() => onNavigate('manutencao')}
-          icon={Wrench}
-          title="Manutenção"
-          description="Preventiva e corretiva"
-          accent="copper"
-        />
-        <MenuTile
-          onClick={() => onNavigate('mapa')}
+          onClick={() => onNavigate('onde-estamos')}
           icon={MapPin}
-          title="Mapa Brasil"
-          description="18+ estados atendidos"
+          title="Onde Estamos"
+          description="Mapa com clientes em todo o Brasil"
           accent="brand"
-          grow
         />
         <MenuTile
-          onClick={() => onNavigate('cases')}
-          icon={Image}
-          title="Cases"
-          description="Projetos reais no Brasil"
+          onClick={() => onNavigate('nossa-operacao')}
+          icon={Building2}
+          title="Nossa Operação"
+          description="Conheça nosso COE"
           accent="blue"
         />
         <MenuTile
-          onClick={() => onNavigate('sobre')}
-          icon={Home}
-          title="Sobre nós"
-          description="Nossa história e missão"
-          accent="neutral"
+          onClick={() => onNavigate('projetos')}
+          icon={Image}
+          title="Projetos"
+          description="Cases reais de usinas no Brasil"
+          accent="copper"
+        />
+        <MenuTile
+          onClick={() => onNavigate('capacidade-tecnica')}
+          icon={Award}
+          title="Capacidade Técnica"
+          description="Atestados, CAT e reconhecimentos"
+          accent="brand"
+        />
+        <MenuTile
+          onClick={() => onNavigate('fale-conosco')}
+          icon={MessageCircle}
+          title="Fale Conosco"
+          description="Desafio, contato e QR Code"
+          accent="blue"
         />
       </div>
     </motion.div>
@@ -206,14 +167,13 @@ const TILE_ACCENT_CLASSES: Record<TileAccent, { line: string; icon: string; icon
 
 interface MenuTileProps {
   onClick: () => void
-  icon: typeof Wrench
+  icon: typeof Award
   title: string
   description: string
   accent: TileAccent
-  grow?: boolean
 }
 
-function MenuTile({ onClick, icon: Icon, title, description, accent, grow = false }: MenuTileProps) {
+function MenuTile({ onClick, icon: Icon, title, description, accent }: MenuTileProps) {
   const classes = TILE_ACCENT_CLASSES[accent]
 
   return (
@@ -223,16 +183,14 @@ function MenuTile({ onClick, icon: Icon, title, description, accent, grow = fals
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.96 }}
       onClick={onClick}
-      className={`relative flex flex-col gap-2.5 overflow-hidden rounded-[20px] border border-white/[0.06] bg-[rgba(8,7,6,0.68)] p-5 text-left backdrop-blur-xl ${
-        grow ? 'flex-[1.3]' : 'flex-1'
-      }`}
+      className="relative flex flex-1 flex-col items-center justify-center gap-3.5 overflow-hidden rounded-[20px] border border-white/[0.06] bg-[rgba(8,7,6,0.68)] p-5 text-center backdrop-blur-xl"
     >
       <div className={`absolute top-0 right-[5%] left-[5%] h-0.5 bg-gradient-to-r from-transparent to-transparent ${classes.line}`} />
-      <div className={`flex h-9.5 w-9.5 items-center justify-center rounded-[10px] border ${classes.iconBg}`}>
-        <Icon size={19} className={classes.icon} strokeWidth={1.9} />
+      <div className={`flex h-14 w-14 items-center justify-center rounded-2xl border ${classes.iconBg}`}>
+        <Icon size={26} className={classes.icon} strokeWidth={1.8} />
       </div>
       <div>
-        <div className="mb-1 text-lg font-bold tracking-tight text-white">{title}</div>
+        <div className="mb-1.5 text-lg font-bold tracking-tight text-white">{title}</div>
         <div className="text-[11.5px] leading-snug text-white/30">{description}</div>
       </div>
     </motion.button>

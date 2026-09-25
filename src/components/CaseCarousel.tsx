@@ -59,7 +59,7 @@ export function CaseCarousel({ cases, onBack }: CaseCarouselProps) {
 
   return (
     <div className="relative flex h-full w-full flex-col overflow-hidden bg-canvas px-8 py-7">
-      <AtmosphereBackground watermark="CASES" />
+      <AtmosphereBackground watermark="PROJETOS" />
 
       <div className="relative z-10 flex min-h-0 flex-1 flex-col">
         <header className="mb-5 flex flex-shrink-0 items-center justify-between">
@@ -76,7 +76,7 @@ export function CaseCarousel({ cases, onBack }: CaseCarouselProps) {
           </div>
           <div className="flex items-center gap-2 rounded-[10px] border border-brand/20 bg-brand/[0.07] py-1.5 pr-3.5 pl-2.5">
             <ImageIcon size={14} className="text-brand" strokeWidth={2} />
-            <span className="text-xs font-semibold tracking-wide text-brand uppercase">Cases</span>
+            <span className="text-xs font-semibold tracking-wide text-brand uppercase">Projetos</span>
           </div>
         </header>
 
