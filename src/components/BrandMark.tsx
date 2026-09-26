@@ -11,7 +11,7 @@ export function BrandMark({ size = 'sm' }: BrandMarkProps) {
     <img
       src="/assets/images/logo-essencial-energia.png"
       alt="Essencial Energia"
-      className={size === 'lg' ? 'h-16 w-auto' : 'h-9 w-auto'}
+      className={size === 'lg' ? 'h-20 w-auto' : 'h-16 w-auto'}
     />
   )
 }

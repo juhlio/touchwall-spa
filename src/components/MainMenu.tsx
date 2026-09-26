@@ -4,7 +4,7 @@
 // Nossa Operação, Projetos, Capacidade Técnica, Fale Conosco).
 
 import { motion, type Variants } from 'framer-motion'
-import { Award, Building2, Image, MapPin, MessageCircle, Zap } from 'lucide-react'
+import { Award, Building2, Image, MapPin, MessageCircle } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import type { Page } from '@/types'
 
@@ -40,7 +40,14 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
     >
       {/* Header */}
       <motion.div variants={itemVariants} className="flex flex-shrink-0 items-center justify-between">
-        <BrandMark />
+        <div className="flex items-center gap-4">
+          <BrandMark />
+          <img
+            src="/assets/images/logo-iso.png"
+            alt="Certificação ISO"
+            className="h-16 w-16 rounded-lg bg-white p-1.5"
+          />
+        </div>
         <div className="flex items-center gap-2 rounded-full border border-white/[0.07] bg-white/[0.04] py-1.5 pr-4 pl-2.5">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand shadow-[0_0_9px_var(--color-brand)]" />
           <span className="text-[13px] font-medium tracking-wide text-white/45">Toque para explorar</span>
@@ -80,18 +87,15 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
           </div>
         </div>
 
-        <div className="flex w-60 shrink-0 flex-col items-center justify-between rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-5 text-center">
-          <div className="flex flex-col items-center gap-1.5">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-accent-blue/25 bg-accent-blue/10">
-              <Zap size={22} className="text-accent-blue-light" strokeWidth={1.8} />
-            </div>
-            <span className="text-xl font-extrabold tracking-tight text-accent-blue-light">CAT</span>
+        <div className="flex w-80 shrink-0 flex-col items-center justify-between gap-4 rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-7 text-center">
+          <div className="flex h-16 items-center justify-center rounded-lg bg-white px-6 py-3">
+            <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-6 w-auto" />
           </div>
           <div>
-            <div className="mb-1 text-[11px] font-semibold tracking-wide text-white/60 uppercase">
+            <div className="mb-1.5 text-[13px] font-semibold tracking-wide text-white/60 uppercase">
               Distribuidor desde 2006
             </div>
-            <p className="text-[11px] leading-relaxed text-white/35">
+            <p className="text-[13px] leading-relaxed text-white/35">
               Parceria direta com a fábrica Caterpillar de Piracicaba.
             </p>
           </div>
@@ -186,12 +190,12 @@ function MenuTile({ onClick, icon: Icon, title, description, accent }: MenuTileP
       className="relative flex flex-1 flex-col items-center justify-center gap-3.5 overflow-hidden rounded-[20px] border border-white/[0.06] bg-[rgba(8,7,6,0.68)] p-5 text-center backdrop-blur-xl"
     >
       <div className={`absolute top-0 right-[5%] left-[5%] h-0.5 bg-gradient-to-r from-transparent to-transparent ${classes.line}`} />
-      <div className={`flex h-14 w-14 items-center justify-center rounded-2xl border ${classes.iconBg}`}>
-        <Icon size={26} className={classes.icon} strokeWidth={1.8} />
+      <div className={`flex h-20 w-20 items-center justify-center rounded-2xl border ${classes.iconBg}`}>
+        <Icon size={38} className={classes.icon} strokeWidth={1.7} />
       </div>
       <div>
-        <div className="mb-1.5 text-lg font-bold tracking-tight text-white">{title}</div>
-        <div className="text-[11.5px] leading-snug text-white/30">{description}</div>
+        <div className="mb-2 text-2xl font-bold tracking-tight text-white">{title}</div>
+        <div className="text-sm leading-snug text-white/30">{description}</div>
       </div>
     </motion.button>
   )
