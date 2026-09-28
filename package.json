@@ -60,7 +60,10 @@
       "icon": "public/favicon.svg"
     },
     "win": {
-      "target": "nsis"
+      "target": [
+        "nsis",
+        "portable"
+      ]
     }
   }
 }
