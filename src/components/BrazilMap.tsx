@@ -13,7 +13,7 @@
 // mesma referência de coordenadas reais.
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowUpRight, MapPin, RotateCcw, X } from 'lucide-react'
+import { ArrowUpRight, Home, MapPin, Minus, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ClientPin } from '@/components/ClientPin'
 import type { Client } from '@/types'
@@ -393,6 +393,15 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
     setView(IDENTITY_VIEW)
   }
 
+  // Zoom pelos botões +/- (sem ponto de toque pra ancorar): usa o centro
+  // da própria área visível do SVG, igual ao botão de zoom do Google Maps.
+  function zoomByFactor(factor: number) {
+    const svg = svgRef.current
+    if (!svg) return
+    const rect = svg.getBoundingClientRect()
+    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, (currentScale) => currentScale * factor)
+  }
+
   const isZoomed = view.scale > MIN_SCALE + 0.01
   const viewBoxWidth = VIEWBOX_WIDTH / view.scale
   const viewBoxHeight = VIEWBOX_HEIGHT / view.scale
@@ -486,25 +495,50 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
         )}
       </svg>
 
-      <p className="absolute bottom-4 right-6 text-xs text-white/25">
+      <p className="absolute bottom-4 left-4 text-xs text-white/25">
         Mapa: Natural Earth (domínio público) · Satélite: NASA Blue Marble
       </p>
 
-      <AnimatePresence>
-        {isZoomed ? (
-          <motion.button
+      {/* Controles de navegação estilo Google Maps: recentralizar + zoom */}
+      <div className="absolute right-6 bottom-6 flex flex-col items-center gap-3">
+        <AnimatePresence>
+          {isZoomed ? (
+            <motion.button
+              type="button"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              onClick={resetTransform}
+              aria-label="Centralizar mapa"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.1] bg-black/40 text-white/70 backdrop-blur-md active:scale-95"
+            >
+              <Home size={18} />
+            </motion.button>
+          ) : null}
+        </AnimatePresence>
+
+        <div className="flex flex-col overflow-hidden rounded-2xl border border-white/[0.1] bg-black/40 backdrop-blur-md">
+          <button
             type="button"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            onClick={resetTransform}
-            className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full border border-white/[0.1] bg-black/40 px-4 py-2.5 text-sm font-medium text-white/70 backdrop-blur-md active:scale-95"
+            onClick={() => zoomByFactor(1.4)}
+            disabled={view.scale >= MAX_SCALE - 0.01}
+            aria-label="Aumentar zoom"
+            className="flex h-11 w-11 items-center justify-center text-white/70 active:scale-95 disabled:opacity-30"
           >
-            <RotateCcw size={15} />
-            Redefinir zoom
-          </motion.button>
-        ) : null}
-      </AnimatePresence>
+            <Plus size={18} />
+          </button>
+          <div className="h-px w-full bg-white/[0.1]" />
+          <button
+            type="button"
+            onClick={() => zoomByFactor(1 / 1.4)}
+            disabled={!isZoomed}
+            aria-label="Diminuir zoom"
+            className="flex h-11 w-11 items-center justify-center text-white/70 active:scale-95 disabled:opacity-30"
+          >
+            <Minus size={18} />
+          </button>
+        </div>
+      </div>
 
       <AnimatePresence>
         {selected ? (
