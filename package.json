@@ -15,7 +15,6 @@
     "electron:build": "npm run build && electron-builder"
   },
   "dependencies": {
-    "@svg-maps/brazil": "^2.0.0",
     "d3-geo": "^3.1.1",
     "d3-timer": "^3.0.1",
     "framer-motion": "^13.4.0",

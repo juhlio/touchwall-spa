@@ -1,6 +1,7 @@
 // ClientPin.tsx
-// Pin individual de cliente exibido sobre o BrazilMap: círculo vermelho
-// com pulsação, posicionado em coordenadas já projetadas do SVG.
+// Pin individual de cliente exibido sobre o BrazilMap: círculo laranja
+// (cor da marca) com pulsação, posicionado em coordenadas já projetadas
+// do SVG.
 
 import type { Client } from '@/types'
 
@@ -19,17 +20,19 @@ export function ClientPin({ client, x, y, onClick }: ClientPinProps) {
       role="button"
       tabIndex={0}
       aria-label={client.name}
-      className="cursor-pointer"
+      className="cursor-pointer outline-none"
+      style={{ outline: 'none' }}
       onKeyDown={(event) => {
         if (event.key === 'Enter' || event.key === ' ') onClick()
       }}
     >
-      {/* halo pulsante */}
-      <circle r={9} className="fill-red-500/70 animate-ping" />
+      {/* halo pulsante, decorativo — não intercepta toque (evita roubar o
+          clique de pins/clusters vizinhos quando muitos estão próximos) */}
+      <circle r={8} className="pointer-events-none fill-brand/70 animate-ping" />
       {/* pin visível */}
-      <circle r={5.5} className="fill-red-500 stroke-white" strokeWidth={1.5} />
-      {/* área de toque generosa, invisível */}
-      <circle r={16} fill="transparent" />
+      <circle r={5} className="fill-brand stroke-white" strokeWidth={1.5} />
+      {/* área de toque, invisível */}
+      <circle r={5} fill="transparent" />
     </g>
   )
 }
