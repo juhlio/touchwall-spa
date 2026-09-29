@@ -899,7 +899,7 @@
     "id": "dhl-express-unidade-prologis-duque-de-ca-114",
     "name": "DHL EXPRESS - Unidade Prologis (Duque de Caxias)",
     "lat": -22.79187,
-    "lng": -46.28136,
+    "lng": -43.28136,
     "city": "Duque de Caxias",
     "state": "RJ"
   },
@@ -2912,121 +2912,121 @@
   {
     "id": "assai-sao-bernardo-piraporinha-369",
     "name": "ASSAI - SÃO BERNARDO PIRAPORINHA",
-    "lat": -2.36886,
+    "lat": -23.6886,
     "lng": -46.5736
   },
   {
     "id": "assai-jundiai-370",
     "name": "ASSAI - JUNDIAÍ",
-    "lat": -2.32114,
+    "lat": -23.2114,
     "lng": -46.85332
   },
   {
     "id": "assai-santo-andre-371",
     "name": "ASSAI -SANTO ANDRÉ",
-    "lat": -2.36524,
+    "lat": -23.6524,
     "lng": -46.52607
   },
   {
     "id": "assai-limeira-372",
     "name": "ASSAI -LIMEIRA",
-    "lat": -2.26094,
+    "lat": -22.6094,
     "lng": -47.40979
   },
   {
     "id": "assai-rio-claro-373",
     "name": "ASSAI -RIO CLARO",
-    "lat": -2.24151,
+    "lat": -22.4151,
     "lng": -47.57501
   },
   {
     "id": "assai-campinas-amoreiras-374",
     "name": "ASSAI -CAMPINAS AMOREIRAS",
-    "lat": -2.29448,
+    "lat": -22.9448,
     "lng": -47.11121
   },
   {
     "id": "assai-sao-caetano-do-sul-375",
     "name": "ASSAI -SÃO CAETANO DO SUL",
-    "lat": -2.36134,
+    "lat": -23.6134,
     "lng": -46.57789
   },
   {
     "id": "assai-sorocaba-itavuvu-376",
     "name": "ASSAI -SOROCABA (ITAVUVU)",
-    "lat": -2.34689,
+    "lat": -23.4689,
     "lng": -47.47694
   },
   {
     "id": "assai-ribeirao-pires-377",
     "name": "ASSAI -RIBEIRÃO PIRES",
-    "lat": -2.37035,
+    "lat": -23.7035,
     "lng": -46.39767
   },
   {
     "id": "assai-santo-andre-g-pirelli-378",
     "name": "ASSAI -SANTO ANDRÉ G.PIRELLI",
-    "lat": -2.36643,
+    "lat": -23.6643,
     "lng": -46.49671
   },
   {
     "id": "assai-santo-andre-v-luzita-379",
     "name": "ASSAI - SANTO ANDRÉ V.LUZITA",
-    "lat": -2.37039,
+    "lat": -23.7039,
     "lng": -46.5043
   },
   {
     "id": "assai-santo-andre-bala-juquinha-380",
     "name": "ASSAI - SANTO ANDRÉ BALA JUQUINHA",
-    "lat": -2.36176,
+    "lat": -23.6176,
     "lng": -46.54193
   },
   {
     "id": "assai-campinas-centro-381",
     "name": "ASSAI -CAMPINAS CENTRO",
-    "lat": -2.29046,
+    "lat": -22.9046,
     "lng": -47.06558
   },
   {
     "id": "assai-diadema-382",
     "name": "ASSAI -DIADEMA",
-    "lat": -2.36893,
+    "lat": -23.6893,
     "lng": -46.59101
   },
   {
     "id": "assai-maua-383",
     "name": "ASSAI -MAUÁ",
-    "lat": -2.36644,
+    "lat": -23.6644,
     "lng": -46.46129
   },
   {
     "id": "assai-piracicaba-centro-384",
     "name": "ASSAI -PIRACICABA CENTRO",
-    "lat": -2.27208,
+    "lat": -22.7208,
     "lng": -47.64621
   },
   {
     "id": "assai-paulinia-385",
     "name": "ASSAI -PAULINIA",
-    "lat": -2.27746,
+    "lat": -22.7746,
     "lng": -47.14642
   },
   {
     "id": "assai-hortolandia-386",
     "name": "ASSAI -HORTOLÂNDIA",
-    "lat": -2.28644,
+    "lat": -22.8644,
     "lng": -47.21145
   },
   {
     "id": "assai-indaiatuba-387",
     "name": "ASSAI -INDAIATUBA",
-    "lat": -2.31104,
+    "lat": -23.1104,
     "lng": -47.22165
   },
   {
     "id": "assai-jundiai-ferroviarios-388",
     "name": "ASSAI -JUNDIAÍ FERROVIÁRIOS",
-    "lat": -2.31899,
+    "lat": -23.1899,
     "lng": -46.87667
   },
   {
@@ -3038,7 +3038,7 @@
   {
     "id": "assai-santo-andre-pereira-barreto-390",
     "name": "ASSAI -SANTO ANDRÉ PEREIRA BARRETO",
-    "lat": -2.36838,
+    "lat": -23.6838,
     "lng": -46.5474
   },
   {
@@ -3050,55 +3050,55 @@
   {
     "id": "assai-piracicaba-nova-america-392",
     "name": "ASSAI -PIRACICABA NOVA AMÉRICA",
-    "lat": -2.27401,
+    "lat": -22.7401,
     "lng": -47.64509
   },
   {
     "id": "assai-limeira-ii-393",
     "name": "ASSAI -LIMEIRA II",
-    "lat": -2.25874,
+    "lat": -22.5874,
     "lng": -47.39032
   },
   {
     "id": "assai-sorocaba-campolim-projeto-olimpo-394",
     "name": "ASSAI -SOROCABA CAMPOLIM (PROJETO OLIMPO)",
-    "lat": -2.35308,
+    "lat": -23.5308,
     "lng": -47.46365
   },
   {
     "id": "assai-sao-bernardo-anchieta-pauliceia-pr-395",
     "name": "ASSAI -SÃO BERNARDO ANCHIETA PAULICÉIA (PROJETO OLIMPO)",
-    "lat": -2.36686,
+    "lat": -23.6686,
     "lng": -46.57466
   },
   {
     "id": "assai-itatiba-projeto-olimpo-396",
     "name": "ASSAI - ITATIBA  (PROJETO OLIMPO)",
-    "lat": -2.30171,
+    "lat": -23.0171,
     "lng": -46.84063
   },
   {
     "id": "assai-sorocaba-santa-rosalia-projeto-oli-397",
     "name": "ASSAI -SOROCABA SANTA ROSÁLIA (PROJETO OLIMPO)",
-    "lat": -2.34903,
+    "lat": -23.4903,
     "lng": -47.4449
   },
   {
     "id": "assai-sao-bernardo-alvarenga-398",
     "name": "ASSAI -SÃO BERNARDO ALVARENGA",
-    "lat": -2.37398,
+    "lat": -23.7398,
     "lng": -46.59572
   },
   {
     "id": "assai-santo-andre-jardim-utinga-399",
     "name": "ASSAI -SANTO ANDRE JARDIM UTINGA",
-    "lat": -2.36177,
+    "lat": -23.6177,
     "lng": -46.52164
   },
   {
     "id": "assai-sumare-400",
     "name": "ASSAI -SUMARÉ",
-    "lat": -2.2818,
+    "lat": -22.818,
     "lng": -47.2652
   },
   {
@@ -3225,8 +3225,8 @@
     "name": "MELI - SAO LUIS",
     "lat": -2.53894,
     "lng": -44.3006,
-    "city": "Conde",
-    "state": "PB"
+    "city": "São Luís",
+    "state": "MA"
   },
   {
     "id": "meli-cuiaba-i-417",
@@ -3247,9 +3247,9 @@
   {
     "id": "meli-campo-grande-419",
     "name": "MELI - CAMPO GRANDE",
-    "lat": -22.23255,
-    "lng": -54.80379,
-    "city": "Dourados",
+    "lat": -20.4640173,
+    "lng": -54.6162947,
+    "city": "Campo Grande",
     "state": "MS"
   },
   {

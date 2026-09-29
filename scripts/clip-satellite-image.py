@@ -14,6 +14,8 @@ import json
 from pathlib import Path
 from PIL import Image, ImageDraw
 
+Image.MAX_IMAGE_PIXELS = None
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC_IMAGE = ROOT / "public/assets/images/brazil-satellite.jpg"
 STATES_JSON = ROOT / "public/data/brazil-states.json"
@@ -21,8 +23,8 @@ OUT_IMAGE = ROOT / "public/assets/images/brazil-satellite-clipped.png"
 
 # Mesmos valores de src/components/BrazilMap.tsx (GEO_BOUNDS + SATELLITE_PAD_DEG)
 GEO_BOUNDS = {
-    "latMax": 1,
-    "latMin": -28,
+    "latMax": 5.27,
+    "latMin": -33.75,
     "lngMin": -73.99,
     "lngMax": -34.79,
 }

@@ -25,19 +25,16 @@ interface StateFeature {
 }
 
 const VIEWBOX_WIDTH = 800
-const VIEWBOX_HEIGHT = 592
+const VIEWBOX_HEIGHT = 796
 
 // Limites geográficos usados para projetar lat/long em coordenadas do
-// viewBox via uma projeção equiretangular. Recortados um pouco além do
-// Brasil continental (não são os extremos reais do país) pra deixar o
-// formato do mapa mais largo que alto — combina melhor com uma tela
-// widescreen, usando mais espaço horizontal sem distorcer o desenho.
-// Só 2 dos 435 clientes ficam fora dessa faixa (extremo norte de RR e
-// extremo sul do RS); eles são presos na borda mais próxima (ver
-// clusterClients) e continuam visíveis e clicáveis.
+// viewBox via uma projeção equiretangular. Cobre a extensão real do
+// Brasil continental de ponta a ponta — o mapa aparece inteiro, sem
+// recortar nenhum estado; o espaço disponível na tela é usado só pra
+// escalar (zoom out), nunca pra cortar geografia.
 const GEO_BOUNDS = {
-  latMax: 1,
-  latMin: -28,
+  latMax: 5.27, // Monte Caburaí (RR)
+  latMin: -33.75, // Arroio Chuí (RS)
   lngMin: -73.99, // Serra da Contamana (AC)
   lngMax: -34.79, // Ponta do Seixas (PB)
 }
@@ -407,7 +404,7 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
-      className="relative flex h-full w-full touch-none items-center justify-center overflow-hidden p-8"
+      className="relative flex h-full w-full touch-none items-center justify-center overflow-hidden px-8 pt-28 pb-8"
       style={{
         background: 'radial-gradient(ellipse at center, #1c4f73 0%, #123a56 55%, #0a2540 100%)',
       }}
@@ -415,9 +412,10 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
       <svg
         ref={svgRef}
         viewBox={`${view.offsetX} ${view.offsetY} ${viewBoxWidth} ${viewBoxHeight}`}
+        preserveAspectRatio="xMidYMid meet"
         role="img"
         aria-label="Mapa do Brasil"
-        className="h-full max-h-full w-auto max-w-full"
+        className="h-full w-full"
       >
         {/* preenchimento de reserva, caso a imagem não cubra algum canto */}
         {states.map((state) => (
