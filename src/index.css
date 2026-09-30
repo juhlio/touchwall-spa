@@ -29,6 +29,10 @@ body,
   overscroll-behavior: none;
   user-select: none;
   -webkit-user-select: none;
+  /* Bloqueia o zoom nativo do navegador/Electron na página inteira — o
+     mapa e o visualizador de documentos implementam seu próprio zoom via
+     JS e sobrescrevem isso localmente. */
+  touch-action: manipulation;
 }
 
 body {

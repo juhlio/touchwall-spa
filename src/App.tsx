@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { BrazilMap } from '@/components/BrazilMap'
 import { CapacidadeTecnica } from '@/components/CapacidadeTecnica'
 import { FaleConosco } from '@/components/FaleConosco'
@@ -7,6 +7,8 @@ import { MainMenu } from '@/components/MainMenu'
 import { NossaOperacao } from '@/components/NossaOperacao'
 import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
+import { useBlockPageZoom } from '@/hooks/useBlockPageZoom'
+import { useInactivityReset } from '@/hooks/useInactivityReset'
 import { MapLayout } from '@/layouts/MapLayout'
 import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
@@ -23,9 +25,14 @@ function App() {
       .catch(() => setClients([]))
   }, [])
 
-  function goToMenu() {
+  const goToMenu = useCallback(() => {
     setCurrentPage('menu')
-  }
+  }, [])
+
+  useBlockPageZoom()
+  // Troca de página desmonta a página atual (AnimatePresence mode="wait"),
+  // o que já fecha qualquer modal/lightbox aberto nela.
+  useInactivityReset(goToMenu)
 
   function handlePinClick(client: Client) {
     console.log('Cliente selecionado no mapa:', client.name)
