@@ -250,6 +250,7 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
 
   const viewportRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
+  const [svgPxPerUnit, setSvgPxPerUnit] = useState(1)
   const pointersRef = useRef(new Map<number, { x: number; y: number }>())
   const pinchStartRef = useRef<{ distance: number; scale: number } | null>(null)
   const dragDistanceRef = useRef(0)
@@ -404,6 +405,25 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
   const viewBoxWidth = VIEWBOX_WIDTH / view.scale
   const viewBoxHeight = VIEWBOX_HEIGHT / view.scale
 
+  // Quantos px de tela equivalem a 1 unidade do viewBox agora — usado pra
+  // manter a área de toque dos pins em pelo menos 44x44px reais, mesmo
+  // que o círculo visível continue pequeno.
+  useEffect(() => {
+    function updateScale() {
+      const svg = svgRef.current
+      if (!svg) return
+      const rect = svg.getBoundingClientRect()
+      if (rect.width === 0 || rect.height === 0) return
+      setSvgPxPerUnit(Math.min(rect.width / viewBoxWidth, rect.height / viewBoxHeight))
+    }
+    updateScale()
+    window.addEventListener('resize', updateScale)
+    return () => window.removeEventListener('resize', updateScale)
+  }, [viewBoxWidth, viewBoxHeight])
+
+  const TOUCH_TARGET_PX = 44
+  const touchRadius = Math.max(5, TOUCH_TARGET_PX / 2 / svgPxPerUnit)
+
   return (
     <div
       ref={viewportRef}
@@ -438,7 +458,7 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
           pins próximos à costa).
         */}
         <image
-          href="/assets/images/brazil-satellite-clipped.png"
+          href="/assets/images/brazil-satellite-clipped.webp"
           x={satelliteTopLeft.x}
           y={satelliteTopLeft.y}
           width={satelliteBottomRight.x - satelliteTopLeft.x}
@@ -464,6 +484,7 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
               client={cluster.clients[0]}
               x={cluster.x}
               y={cluster.y}
+              touchRadius={touchRadius}
               onClick={() => handlePinClick(cluster.clients[0])}
             />
           ) : (
@@ -558,8 +579,20 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
               {selected.photo ? (
                 <img src={selected.photo} alt={selected.name} className="h-48 w-full object-cover" />
               ) : (
-                <div className="flex h-48 w-full items-center justify-center bg-neutral-800 text-neutral-500">
-                  <MapPin size={48} />
+                <div className="relative flex h-40 w-full flex-col items-center justify-center gap-2 overflow-hidden bg-gradient-to-br from-brand/25 via-[rgba(20,10,4,0.9)] to-[rgba(10,7,5,0.95)]">
+                  <MapPin size={20} className="text-brand" strokeWidth={2} />
+                  {selected.city ? (
+                    <div className="text-center">
+                      <div className="text-3xl font-bold tracking-tight text-white">{selected.city}</div>
+                      {selected.state ? (
+                        <div className="text-sm font-semibold tracking-[0.2em] text-brand uppercase">
+                          {selected.state}
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : (
+                    <div className="text-sm font-medium tracking-wide text-white/50 uppercase">Cliente Essencial Energia</div>
+                  )}
                 </div>
               )}
 

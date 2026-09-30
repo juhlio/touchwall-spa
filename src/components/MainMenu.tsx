@@ -43,14 +43,14 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
         <div className="flex items-center gap-4">
           <BrandMark />
           <img
-            src="/assets/images/logo-iso.png"
+            src="/assets/images/logo-iso.webp"
             alt="Certificação ISO"
             className="h-16 w-16 rounded-lg bg-white p-1.5"
           />
         </div>
         <div className="flex items-center gap-2 rounded-full border border-white/[0.07] bg-white/[0.04] py-1.5 pr-4 pl-2.5">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand shadow-[0_0_9px_var(--color-brand)]" />
-          <span className="text-[13px] font-medium tracking-wide text-white/45">Toque para explorar</span>
+          <span className="text-[13px] font-medium tracking-wide text-white/70">Toque para explorar</span>
         </div>
       </motion.div>
 
@@ -78,7 +78,7 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
                 key={stat.label}
                 className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-5 py-3.5"
               >
-                <div className="text-[12.5px] font-medium tracking-wide text-white/30 uppercase">
+                <div className="text-[12.5px] font-medium tracking-wide text-white/55 uppercase">
                   {stat.label}
                 </div>
                 <div className="text-[21px] font-bold text-white/80">{stat.value}</div>
@@ -95,7 +95,7 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
             <div className="mb-1.5 text-[13px] font-semibold tracking-wide text-white/60 uppercase">
               Distribuidor desde 2006
             </div>
-            <p className="text-[13px] leading-relaxed text-white/35">
+            <p className="text-[13px] leading-relaxed text-white/60">
               Parceria direta com a fábrica Caterpillar de Piracicaba.
             </p>
           </div>
@@ -187,15 +187,16 @@ function MenuTile({ onClick, icon: Icon, title, description, accent }: MenuTileP
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.96 }}
       onClick={onClick}
+      aria-label={`${title} — ${description}`}
       className="relative flex flex-1 flex-col items-center justify-center gap-3.5 overflow-hidden rounded-[20px] border border-white/[0.06] bg-[rgba(8,7,6,0.68)] p-5 text-center backdrop-blur-xl"
     >
       <div className={`absolute top-0 right-[5%] left-[5%] h-0.5 bg-gradient-to-r from-transparent to-transparent ${classes.line}`} />
-      <div className={`flex h-20 w-20 items-center justify-center rounded-2xl border ${classes.iconBg}`}>
+      <div className={`flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border ${classes.iconBg}`}>
         <Icon size={38} className={classes.icon} strokeWidth={1.7} />
       </div>
-      <div>
-        <div className="mb-2 text-2xl font-bold tracking-tight text-white">{title}</div>
-        <div className="text-sm leading-snug text-white/30">{description}</div>
+      <div className="flex h-[70px] flex-col justify-center">
+        <div className="text-2xl leading-tight font-bold tracking-tight text-white">{title}</div>
+        <div className="text-sm leading-snug text-white/65">{description}</div>
       </div>
     </motion.button>
   )

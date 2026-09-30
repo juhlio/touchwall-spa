@@ -7,6 +7,15 @@ import { Award, Globe, Phone } from 'lucide-react'
 
 const NEXT_STEPS = ['Locação', 'Venda', 'Manutenção', 'COE']
 
+// Mesmos dados institucionais já usados no card "Quem é a Essencial
+// Energia" da Home — reaproveitados aqui (não são números novos) pra
+// preencher o espaço vazio que sobrava na coluna esquerda.
+const ABOUT_FACTS = [
+  { label: 'Experiência', value: '+20 anos' },
+  { label: 'Foco', value: 'Operação crítica' },
+  { label: 'Alcance', value: 'Atuação nacional' },
+]
+
 const CONTACT_ROWS = [
   {
     icon: Phone,
@@ -37,17 +46,33 @@ export function FaleConosco() {
           </p>
 
           <div className="mb-4 h-px w-14 bg-white/15" />
-          <span className="mb-4 block text-sm font-medium tracking-wide text-white/30 uppercase">
-            O que entrego na próxima conversa
+          <span className="mb-4 block text-sm font-medium tracking-wide text-white/45 uppercase">
+            O que entregamos
           </span>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2.5">
             {NEXT_STEPS.map((step) => (
               <span
                 key={step}
-                className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-5 py-3 text-lg font-semibold text-white/70"
+                className="text-lg font-semibold text-white/70 after:ml-2.5 after:text-white/20 after:content-['·'] last:after:content-none"
               >
                 {step}
               </span>
+            ))}
+          </div>
+
+          <div className="mt-8 h-px w-14 bg-white/15" />
+          <span className="mt-4 mb-3 block text-sm font-medium tracking-wide text-white/45 uppercase">
+            Nossa estrutura
+          </span>
+          <div className="flex flex-wrap gap-3.5">
+            {ABOUT_FACTS.map((fact) => (
+              <div
+                key={fact.label}
+                className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-5 py-3.5"
+              >
+                <div className="text-[12.5px] font-medium tracking-wide text-white/40 uppercase">{fact.label}</div>
+                <div className="text-lg font-bold text-white/85">{fact.value}</div>
+              </div>
             ))}
           </div>
         </div>
@@ -72,17 +97,19 @@ export function FaleConosco() {
               <ContactRow key={row.label} icon={row.icon} label={row.label} value={row.value} />
             ))}
           </div>
+        </div>
 
-          <div className="mt-5 flex items-center gap-5 rounded-2xl border border-white/[0.07] bg-white/[0.04] p-5">
-            <img
-              src="/assets/images/whatsapp-qr-paula.png"
-              alt="QR Code para falar no WhatsApp"
-              className="h-24 w-24 shrink-0 rounded-lg bg-white p-1.5"
-            />
-            <div>
-              <div className="text-sm text-white/40">Aponte a câmera e fale agora</div>
-              <div className="text-xl font-bold text-white">WhatsApp Comercial</div>
-            </div>
+        {/* QR do WhatsApp em destaque — é o principal canal de contato do
+            estande, então ganha o maior bloco visual da coluna. */}
+        <div className="flex flex-col items-center gap-4 rounded-2xl border border-brand/20 bg-white/[0.04] p-7">
+          <img
+            src="/assets/images/whatsapp-qr-comercial.png"
+            alt="QR Code para falar no WhatsApp Comercial"
+            className="h-56 w-56 shrink-0 rounded-xl bg-white p-2.5"
+          />
+          <div className="text-center">
+            <div className="text-xl font-bold text-white">WhatsApp Comercial</div>
+            <div className="text-sm text-white/40">Aponte a câmera e fale agora</div>
           </div>
         </div>
 
