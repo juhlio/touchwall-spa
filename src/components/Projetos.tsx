@@ -6,20 +6,26 @@
 // Sem nome, local ou qualquer texto sobre as fotos, conforme diretrizes.
 
 import { animate, AnimatePresence, motion, type PanInfo, useMotionValue } from 'framer-motion'
-import { ArrowLeft, ChevronLeft, ChevronRight, Folder, Images, Play, X } from 'lucide-react'
+import { ArrowLeft, ChevronLeft, ChevronRight, Folder, Images, Pause, Play, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { AtmosphereBackground } from '@/components/AtmosphereBackground'
 import { BrandMark } from '@/components/BrandMark'
+import { useInactivitySuppress } from '@/hooks/useInactivityReset'
 
 interface ProjetosProps {
   onBack: () => void
+}
+
+interface Photo {
+  full: string
+  thumb: string
 }
 
 interface PhotoFolder {
   id: string
   title: string
   cover: string
-  photos: string[]
+  photos: Photo[]
 }
 
 interface ViewerState {
@@ -35,13 +41,29 @@ export function Projetos({ onBack }: ProjetosProps) {
   const [openFolder, setOpenFolder] = useState<PhotoFolder | null>(null)
   const [viewer, setViewer] = useState<ViewerState | null>(null)
 
+  useInactivitySuppress(viewer?.autoplay ?? false)
+
   useEffect(() => {
+    type FolderData = { full: string[]; thumb: string[] }
     fetch('/data/projetos-fotos.json')
       .then((res) => res.json())
-      .then((data: { dataCenter: string[]; outros: string[] }) => {
+      .then((data: { dataCenter: FolderData; outros: FolderData }) => {
+        function toPhotos(folder: FolderData): Photo[] {
+          return folder.full.map((full, i) => ({ full, thumb: folder.thumb[i] }))
+        }
         setFolders([
-          { id: 'data-center', title: 'Data Center', cover: data.dataCenter[0], photos: data.dataCenter },
-          { id: 'outros', title: 'Outros Projetos', cover: data.outros[0], photos: data.outros },
+          {
+            id: 'data-center',
+            title: 'Data Center',
+            cover: data.dataCenter.thumb[0],
+            photos: toPhotos(data.dataCenter),
+          },
+          {
+            id: 'outros',
+            title: 'Outros Projetos',
+            cover: data.outros.thumb[0],
+            photos: toPhotos(data.outros),
+          },
         ])
       })
       .catch(() => setFolders([]))
@@ -114,9 +136,10 @@ function FolderTile({ folder, onOpen }: FolderTileProps) {
       onClick={onOpen}
       whileHover={{ scale: 1.015 }}
       whileTap={{ scale: 0.98 }}
+      aria-label={`Abrir pasta ${folder.title} (${folder.photos.length} fotos)`}
       className="relative h-full max-h-[560px] w-full max-w-md flex-1 overflow-hidden rounded-[20px] border border-white/[0.08] bg-black/40"
     >
-      <img src={folder.cover} alt="" className="h-full w-full object-cover" />
+      <img src={folder.cover} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/30" />
 
       <div className="absolute top-5 left-5 flex h-11 w-11 items-center justify-center rounded-2xl border border-brand/25 bg-brand/15 backdrop-blur-md">
@@ -152,16 +175,23 @@ function PhotoGrid({ folder, onSelect }: PhotoGridProps) {
       className="grid min-h-0 flex-1 gap-3"
       style={{ gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)` }}
     >
-      {folder.photos.map((src, index) => (
+      {folder.photos.map((photo, index) => (
         <motion.button
-          key={src}
+          key={photo.full}
           type="button"
           onClick={() => onSelect(index)}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}
+          aria-label={`Ver foto ${index + 1} de ${folder.photos.length} — ${folder.title}`}
           className="min-h-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-black/40"
         >
-          <img src={src} alt="" className="h-full w-full object-cover" />
+          <img
+            src={photo.thumb}
+            alt={`${folder.title} – foto ${index + 1}`}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
         </motion.button>
       ))}
     </div>
@@ -189,6 +219,10 @@ function PhotoViewer({ folder, viewer, onChange, onClose }: PhotoViewerProps) {
     goTo(next, { autoplay: false })
   }
 
+  function togglePlay() {
+    onChange({ index, autoplay: !autoplay })
+  }
+
   // avança sozinho a cada intervalo enquanto autoplay estiver ativo —
   // qualquer navegação manual (seta, arrastar) desativa o autoplay, então
   // esse efeito para de reagendar e o slideshow congela onde o usuário
@@ -203,23 +237,52 @@ function PhotoViewer({ folder, viewer, onChange, onClose }: PhotoViewerProps) {
     return () => clearTimeout(timer)
   }, [autoplay, index, folder.photos.length, onChange])
 
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') onClose()
+      else if (event.key === 'ArrowLeft') handleManualNav(index - 1)
+      else if (event.key === 'ArrowRight') handleManualNav(index + 1)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  })
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.96 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.22, ease: 'easeOut' }}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Visualizador de fotos — ${folder.title}`}
       className="fixed inset-0 z-[1200] flex flex-col bg-black"
     >
-      {autoplay ? (
-        <div className="absolute top-6 left-6 z-10 flex items-center gap-2 rounded-full border border-brand/25 bg-brand/15 py-2 pr-4 pl-3 backdrop-blur-md">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand/70" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
-          </span>
-          <span className="text-xs font-semibold tracking-wide text-brand uppercase">Modo Slider</span>
-        </div>
-      ) : null}
+      <div className="absolute top-6 left-6 z-10 flex items-center gap-2.5">
+        <button
+          type="button"
+          onClick={togglePlay}
+          aria-label={autoplay ? 'Pausar apresentação' : 'Iniciar apresentação automática'}
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-brand/25 bg-brand/15 text-brand backdrop-blur-md active:scale-95"
+        >
+          {autoplay ? <Pause size={18} /> : <Play size={18} />}
+        </button>
+
+        {autoplay ? (
+          <div className="flex h-11 items-center gap-2 overflow-hidden rounded-full border border-brand/25 bg-brand/15 pr-4 pl-3.5 backdrop-blur-md">
+            <span className="text-xs font-semibold tracking-wide text-brand uppercase">Modo Slider</span>
+            <span className="relative h-1 w-14 overflow-hidden rounded-full bg-brand/20">
+              <motion.span
+                key={index}
+                initial={{ width: '0%' }}
+                animate={{ width: '100%' }}
+                transition={{ duration: AUTOPLAY_DELAY_MS / 1000, ease: 'linear' }}
+                className="absolute inset-y-0 left-0 rounded-full bg-brand"
+              />
+            </span>
+          </div>
+        ) : null}
+      </div>
 
       <button
         type="button"
@@ -230,7 +293,7 @@ function PhotoViewer({ folder, viewer, onChange, onClose }: PhotoViewerProps) {
         <X size={20} />
       </button>
 
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden pt-16">
         <button
           type="button"
           onClick={() => handleManualNav(index - 1)}
@@ -244,7 +307,8 @@ function PhotoViewer({ folder, viewer, onChange, onClose }: PhotoViewerProps) {
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <ViewerImage
             key={index}
-            src={folder.photos[index]}
+            src={folder.photos[index].full}
+            alt={`${folder.title} – foto ${index + 1} de ${folder.photos.length}`}
             direction={direction}
             canGoPrev={index > 0}
             canGoNext={index < folder.photos.length - 1}
@@ -274,6 +338,7 @@ function PhotoViewer({ folder, viewer, onChange, onClose }: PhotoViewerProps) {
 
 interface ViewerImageProps {
   src: string
+  alt: string
   direction: number
   canGoPrev: boolean
   canGoNext: boolean
@@ -284,7 +349,7 @@ interface ViewerImageProps {
 // então o motion value nasce zerado a cada troca — arrastar segue o dedo
 // de verdade; soltando antes do limite, a foto volta suavemente pro
 // centro em vez de trocar.
-function ViewerImage({ src, direction, canGoPrev, canGoNext, onNavigate }: ViewerImageProps) {
+function ViewerImage({ src, alt, direction, canGoPrev, canGoNext, onNavigate }: ViewerImageProps) {
   const x = useMotionValue(0)
 
   function handleDragEnd(_event: unknown, info: PanInfo) {
@@ -300,7 +365,7 @@ function ViewerImage({ src, direction, canGoPrev, canGoNext, onNavigate }: Viewe
   return (
     <motion.img
       src={src}
-      alt=""
+      alt={alt}
       style={{ x }}
       custom={direction}
       initial={{ opacity: 0, x: direction > 0 ? 80 : -80 }}

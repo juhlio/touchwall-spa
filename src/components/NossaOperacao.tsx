@@ -9,7 +9,7 @@ export function NossaOperacao() {
   return (
     <div className="relative h-full w-full max-w-5xl overflow-hidden rounded-[20px] border border-white/[0.07]">
       <img
-        src="/assets/images/coe-operacao.jpg"
+        src="/assets/images/coe-operacao.webp"
         alt="Centro de Operações da Essencial Energia"
         className="h-full w-full object-cover"
       />

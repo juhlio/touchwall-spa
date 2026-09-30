@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # clip-satellite-image.py
-# Pré-recorta public/assets/images/brazil-satellite.jpg no contorno real
-# dos estados (public/data/brazil-states.json), gerando um PNG com
-# transparência (brazil-satellite-clipped.png). Isso substitui o
-# clip-path aplicado em tempo de execução no <image> do SVG — usado como
-# mitigação pra um artefato de renderização (corte reto em alguns pins)
-# visto em certas GPUs, que parece estar ligado a clipPath + <image>
-# dentro do mesmo SVG.
+# Pré-recorta scripts/sources/brazil-satellite.jpg (fonte bruta, fora de
+# public/ pra não ir pro build) no contorno real dos estados
+# (public/data/brazil-states.json), gerando um WebP com transparência
+# (brazil-satellite-clipped.webp). Isso substitui o clip-path aplicado em
+# tempo de execução no <image> do SVG — usado como mitigação pra um
+# artefato de renderização (corte reto em alguns pins) visto em certas
+# GPUs, que parece estar ligado a clipPath + <image> dentro do mesmo SVG.
 #
 # Uso: python3 scripts/clip-satellite-image.py
 
@@ -17,9 +17,9 @@ from PIL import Image, ImageDraw
 Image.MAX_IMAGE_PIXELS = None
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC_IMAGE = ROOT / "public/assets/images/brazil-satellite.jpg"
+SRC_IMAGE = ROOT / "scripts/sources/brazil-satellite.jpg"
 STATES_JSON = ROOT / "public/data/brazil-states.json"
-OUT_IMAGE = ROOT / "public/assets/images/brazil-satellite-clipped.png"
+OUT_IMAGE = ROOT / "public/assets/images/brazil-satellite-clipped.webp"
 
 # Mesmos valores de src/components/BrazilMap.tsx (GEO_BOUNDS + SATELLITE_PAD_DEG)
 GEO_BOUNDS = {
@@ -62,5 +62,5 @@ for feature in states["features"]:
 print(f"Desenhados {ring_count} anéis de polígono")
 
 image.putalpha(mask)
-image.save(OUT_IMAGE)
+image.save(OUT_IMAGE, "WEBP", quality=82, method=6)
 print(f"Salvo {OUT_IMAGE} ({width}x{height})")
