@@ -57,13 +57,14 @@
     },
     "linux": {
       "target": "AppImage",
-      "icon": "public/favicon.svg"
+      "icon": "build/icon.png"
     },
     "win": {
       "target": [
         "nsis",
         "portable"
-      ]
+      ],
+      "icon": "build/icon.ico"
     }
   }
 }

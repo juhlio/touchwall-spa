@@ -4,11 +4,18 @@
 // build (dist/) e abre nele — sem nenhuma dependência de rede externa,
 // em tela cheia, do jeito que a TV touch precisa.
 
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, globalShortcut } = require('electron')
 const path = require('node:path')
 const { startStaticServer } = require('./static-server.cjs')
 
 const isDev = process.env.NODE_ENV === 'development'
+
+// Em modo kiosk (produção), o Windows não mostra barra de menu, barra de
+// tarefas nem responde a Alt+F4 — sem isso, quem estiver no estande não
+// tem como fechar o programa. Ctrl+Shift+Q é um atalho "de bastidor" (só
+// quem sabe dele consegue sair), não algo que um visitante tocando a
+// tela vá disparar sem querer.
+const QUIT_SHORTCUT = 'Control+Shift+Q'
 
 let mainWindow
 
@@ -34,7 +41,14 @@ async function createWindow() {
   }
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(async () => {
+  await createWindow()
+  globalShortcut.register(QUIT_SHORTCUT, () => app.quit())
+})
+
+app.on('will-quit', () => {
+  globalShortcut.unregisterAll()
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
