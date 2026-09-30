@@ -2,12 +2,11 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { BrazilMap } from '@/components/BrazilMap'
 import { CapacidadeTecnica } from '@/components/CapacidadeTecnica'
-import { CaseCarousel } from '@/components/CaseCarousel'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
 import { NossaOperacao } from '@/components/NossaOperacao'
+import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
-import { cases } from '@/config/cases'
 import { MapLayout } from '@/layouts/MapLayout'
 import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
@@ -49,7 +48,7 @@ function App() {
         )
 
       case 'projetos':
-        return <CaseCarousel cases={cases} onBack={goToMenu} />
+        return <Projetos onBack={goToMenu} />
 
       case 'capacidade-tecnica':
         return (

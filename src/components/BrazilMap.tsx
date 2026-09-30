@@ -1,8 +1,7 @@
 // BrazilMap.tsx
 // Mapa SVG do Brasil com textura de satélite real (offline, sem tiles
 // externos) e pins de clientes (ClientPin) posicionados via projeção de
-// lat/long. Ao tocar um pin, expande um modal com foto + info do cliente
-// e um botão "Ver Case" quando houver case associado.
+// lat/long. Ao tocar um pin, expande um modal com foto + info do cliente.
 //
 // Contorno dos estados: Natural Earth (Admin 1 – States/Provinces, 50m,
 // domínio público), carregado de public/data/brazil-states.json e
@@ -13,7 +12,7 @@
 // mesma referência de coordenadas reais.
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowUpRight, Home, MapPin, Minus, Plus, X } from 'lucide-react'
+import { Home, MapPin, Minus, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ClientPin } from '@/components/ClientPin'
 import type { Client } from '@/types'
@@ -236,10 +235,9 @@ const MIN_CLUSTER_RADIUS = 9
 interface BrazilMapProps {
   clients: Client[]
   onPinClick: (client: Client) => void
-  onViewCase?: (client: Client) => void
 }
 
-export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
+export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
   const [selected, setSelected] = useState<Client | null>(null)
   const [selectedCluster, setSelectedCluster] = useState<Client[] | null>(null)
   const [states, setStates] = useState<StateFeature[]>([])
@@ -590,17 +588,6 @@ export function BrazilMap({ clients, onPinClick, onViewCase }: BrazilMapProps) {
                   <p className="text-base leading-relaxed text-neutral-300">
                     {selected.description}
                   </p>
-                ) : null}
-
-                {selected.caseId ? (
-                  <button
-                    type="button"
-                    onClick={() => onViewCase?.(selected)}
-                    className="mt-2 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-brand to-brand-dark px-6 py-3 text-lg font-medium text-white active:scale-95"
-                  >
-                    Ver Case
-                    <ArrowUpRight size={20} />
-                  </button>
                 ) : null}
               </div>
             </motion.div>

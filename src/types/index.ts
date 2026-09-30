@@ -10,17 +10,6 @@ export type Page =
   | 'capacidade-tecnica'
   | 'fale-conosco'
 
-export interface Case {
-  id: string
-  title: string
-  description: string
-  image: string
-  /** Potência do projeto, ex.: "350 kVA". */
-  power: string
-  /** Localização do projeto, ex.: "São Paulo, SP". */
-  location: string
-}
-
 export interface Client {
   id: string
   name: string
@@ -30,6 +19,4 @@ export interface Client {
   state?: string
   photo?: string
   description?: string
-  /** Id de um item em config/cases.ts, se houver case associado ao cliente. */
-  caseId?: string
 }
