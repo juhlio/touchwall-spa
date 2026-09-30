@@ -141,7 +141,7 @@
   },
   {
     "id": "autarquia-territorial-distrito-estadual-19",
-    "name": "Autarquia Territorial Distrito Estadual de Fernando de Noranha (Hospital São Lucas)",
+    "name": "Autarquia Territorial Distrito Estadual de Fernando de Noronha (Hospital São Lucas)",
     "lat": -3.84493,
     "lng": -32.41113,
     "city": "Fernando de Noronha",
@@ -556,7 +556,7 @@
     "name": "COMPLEXO HOSPITALAR MADRE DE DEUS",
     "lat": -12.73587,
     "lng": -38.60778,
-    "city": "Me. de Deus",
+    "city": "Madre de Deus",
     "state": "BA"
   },
   {
@@ -793,7 +793,7 @@
   },
   {
     "id": "condondominio-edificio-jacutinga-101",
-    "name": "Condondominio Edificio Jacutinga",
+    "name": "Condomínio Edifício Jacutinga",
     "lat": -23.60286,
     "lng": -46.66596,
     "city": "São Paulo",
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "edifico-sinergy-pinheiros-145",
-    "name": "Edifico Sinergy Pinheiros",
+    "name": "Edifício Sinergy Pinheiros",
     "lat": -23.56193,
     "lng": -46.67644,
     "city": "São Paulo",
@@ -1383,7 +1383,7 @@
   },
   {
     "id": "gve-xxix-sao-jose-do-rio-preto-175",
-    "name": "GVE XXIX São Jose do Rio Preto",
+    "name": "GVE XXIX São José do Rio Preto",
     "lat": -20.82633,
     "lng": -49.3671,
     "city": "São José do Rio Preto",
@@ -1391,7 +1391,7 @@
   },
   {
     "id": "gve-xxvi-sao-joao-da-boa-vista-176",
-    "name": "GVE XXVI São João da Boa vista",
+    "name": "GVE XXVI São João da Boa Vista",
     "lat": -23.69951,
     "lng": -46.55157,
     "city": "São Bernardo do Campo",
@@ -2825,7 +2825,7 @@
   },
   {
     "id": "vivaz-estacao-358",
-    "name": "vivaz Estacao",
+    "name": "Vivaz Estação",
     "lat": -23.58594,
     "lng": -46.58369,
     "city": "São Paulo",
@@ -2844,8 +2844,8 @@
     "name": "WALMIR PAULINO - FARMAERVAS",
     "lat": -23.34225,
     "lng": -47.48293,
-    "city": "s/n",
-    "state": "KM"
+    "city": "Porto Feliz",
+    "state": "SP"
   },
   {
     "id": "santander-tools-piracicaba-361",
@@ -2881,7 +2881,7 @@
   },
   {
     "id": "santander-sede-premiun-365",
-    "name": "SANTANDER - SEDE PREMIUN",
+    "name": "SANTANDER - SEDE PREMIUM",
     "lat": -23.59098,
     "lng": -46.68919,
     "city": "São Paulo",
@@ -3073,7 +3073,7 @@
   },
   {
     "id": "assai-itatiba-projeto-olimpo-396",
-    "name": "ASSAI - ITATIBA  (PROJETO OLIMPO)",
+    "name": "ASSAI - ITATIBA (PROJETO OLIMPO)",
     "lat": -23.0171,
     "lng": -46.84063
   },
