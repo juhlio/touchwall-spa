@@ -72,6 +72,18 @@ export function FaleConosco() {
               <ContactRow key={row.label} icon={row.icon} label={row.label} value={row.value} />
             ))}
           </div>
+
+          <div className="mt-5 flex items-center gap-5 rounded-2xl border border-white/[0.07] bg-white/[0.04] p-5">
+            <img
+              src="/assets/images/whatsapp-qr-paula.png"
+              alt="QR Code para falar no WhatsApp"
+              className="h-24 w-24 shrink-0 rounded-lg bg-white p-1.5"
+            />
+            <div>
+              <div className="text-sm text-white/40">Aponte a câmera e fale agora</div>
+              <div className="text-xl font-bold text-white">WhatsApp Comercial</div>
+            </div>
+          </div>
         </div>
 
         <p className="text-right text-3xl font-bold text-white">
