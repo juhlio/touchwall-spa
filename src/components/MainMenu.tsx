@@ -88,16 +88,16 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
         </div>
 
         <div className="flex w-80 shrink-0 flex-col items-center justify-between gap-4 rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-7 text-center">
-          <div className="flex h-16 items-center justify-center rounded-lg bg-white px-6 py-3">
-            <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-6 w-auto" />
-          </div>
-          <div>
-            <div className="mb-1.5 text-[13px] font-semibold tracking-wide text-white/60 uppercase">
-              Distribuidor desde 2006
+          <div className="flex items-center gap-3">
+            <div className="flex h-16 items-center justify-center rounded-lg bg-white px-5 py-3">
+              <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-6 w-auto" />
             </div>
-            <p className="text-[13px] leading-relaxed text-white/60">
-              Parceria direta com a fábrica Caterpillar de Piracicaba.
-            </p>
+            <div className="flex h-16 items-center justify-center overflow-hidden rounded-lg">
+              <img src="/assets/images/logo-fgwilson.webp" alt="FG Wilson" className="h-full w-auto" />
+            </div>
+          </div>
+          <div className="text-[13px] font-semibold tracking-wide text-white/60 uppercase">
+            Distribuidor oficial das marcas referência do mercado
           </div>
         </div>
       </motion.div>
