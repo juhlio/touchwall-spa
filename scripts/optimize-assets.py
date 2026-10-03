@@ -7,7 +7,7 @@ parte do build.
 import glob
 import os
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 Image.MAX_IMAGE_PIXELS = None
 
@@ -31,7 +31,12 @@ def to_webp(src_path, dest_path, quality, keep_alpha=None):
 
 
 def make_thumb(src_path, dest_path, width=THUMB_WIDTH, quality=78):
-    im = Image.open(src_path).convert("RGB")
+    im = Image.open(src_path)
+    # Respeita o Orientation do EXIF (fotos de celular) antes de
+    # redimensionar — o navegador já faz isso sozinho pra imagem
+    # original, mas a miniatura gerada aqui precisa fazer na mão, senão
+    # ela sai girada em relação à foto em tela cheia.
+    im = ImageOps.exif_transpose(im).convert("RGB")
     ratio = width / im.width
     height = round(im.height * ratio)
     im = im.resize((width, height), Image.LANCZOS)
