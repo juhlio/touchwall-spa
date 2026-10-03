@@ -92,8 +92,8 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
             <div className="flex h-14 w-full items-center justify-center rounded-lg bg-white px-6 py-2">
               <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-5 w-auto" />
             </div>
-            <div className="flex h-14 w-full items-center justify-center rounded-lg bg-white px-6 py-2">
-              <img src="/assets/images/logo-fgwilson.webp" alt="FG Wilson" className="h-9 w-auto" />
+            <div className="flex h-14 w-full items-center justify-center rounded-lg bg-white px-6 py-1">
+              <img src="/assets/images/logo-fgwilson.webp" alt="FG Wilson" className="h-12 w-auto" />
             </div>
           </div>
           <div className="text-[13px] font-semibold tracking-wide text-white/60 uppercase">
