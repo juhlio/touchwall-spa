@@ -6,10 +6,11 @@
 // Sem nome, local ou qualquer texto sobre as fotos, conforme diretrizes.
 
 import { animate, AnimatePresence, motion, type PanInfo, useMotionValue } from 'framer-motion'
-import { ArrowLeft, ChevronLeft, ChevronRight, Folder, Images, Pause, Play, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { ArrowLeft, ChevronLeft, ChevronRight, FileText, Folder, Images, Pause, Play, X } from 'lucide-react'
+import { useEffect, type ReactNode, useState } from 'react'
 import { AtmosphereBackground } from '@/components/AtmosphereBackground'
 import { BrandMark } from '@/components/BrandMark'
+import { DATA_CENTER_CASE, type ProjectCase } from '@/config/project-cases'
 import { useInactivitySuppress } from '@/hooks/useInactivityReset'
 
 interface ProjetosProps {
@@ -26,6 +27,7 @@ interface PhotoFolder {
   title: string
   cover: string
   photos: Photo[]
+  about?: ProjectCase
 }
 
 interface ViewerState {
@@ -40,6 +42,7 @@ export function Projetos({ onBack }: ProjetosProps) {
   const [folders, setFolders] = useState<PhotoFolder[] | null>(null)
   const [openFolder, setOpenFolder] = useState<PhotoFolder | null>(null)
   const [viewer, setViewer] = useState<ViewerState | null>(null)
+  const [showCaseInfo, setShowCaseInfo] = useState(false)
 
   useInactivitySuppress(viewer?.autoplay ?? false)
 
@@ -57,6 +60,7 @@ export function Projetos({ onBack }: ProjetosProps) {
             title: 'Data Center',
             cover: data.dataCenter.thumb[0],
             photos: toPhotos(data.dataCenter),
+            about: DATA_CENTER_CASE,
           },
           {
             id: 'outros',
@@ -88,14 +92,26 @@ export function Projetos({ onBack }: ProjetosProps) {
           </div>
 
           {openFolder ? (
-            <button
-              type="button"
-              onClick={() => setViewer({ index: 0, autoplay: true })}
-              className="flex items-center gap-2 rounded-[10px] border border-brand/20 bg-brand/[0.07] py-1.5 pr-3.5 pl-2.5 active:scale-95"
-            >
-              <Play size={14} className="text-brand" strokeWidth={2} />
-              <span className="text-xs font-semibold tracking-wide text-brand uppercase">Modo Slider</span>
-            </button>
+            <div className="flex items-center gap-2.5">
+              {openFolder.about ? (
+                <button
+                  type="button"
+                  onClick={() => setShowCaseInfo(true)}
+                  className="flex items-center gap-2 rounded-[10px] border border-white/[0.1] bg-white/5 py-1.5 pr-3.5 pl-2.5 text-white/70 active:scale-95"
+                >
+                  <FileText size={14} strokeWidth={2} />
+                  <span className="text-xs font-semibold tracking-wide uppercase">Sobre o projeto</span>
+                </button>
+              ) : null}
+              <button
+                type="button"
+                onClick={() => setViewer({ index: 0, autoplay: true })}
+                className="flex items-center gap-2 rounded-[10px] border border-brand/20 bg-brand/[0.07] py-1.5 pr-3.5 pl-2.5 active:scale-95"
+              >
+                <Play size={14} className="text-brand" strokeWidth={2} />
+                <span className="text-xs font-semibold tracking-wide text-brand uppercase">Modo Slider</span>
+              </button>
+            </div>
           ) : (
             <div className="flex items-center gap-2 rounded-[10px] border border-brand/20 bg-brand/[0.07] py-1.5 pr-3.5 pl-2.5">
               <Images size={14} className="text-brand" strokeWidth={2} />
@@ -118,6 +134,12 @@ export function Projetos({ onBack }: ProjetosProps) {
       <AnimatePresence>
         {openFolder && viewer ? (
           <PhotoViewer folder={openFolder} viewer={viewer} onChange={setViewer} onClose={() => setViewer(null)} />
+        ) : null}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {openFolder?.about && showCaseInfo ? (
+          <CaseInfoModal projectCase={openFolder.about} onClose={() => setShowCaseInfo(false)} />
         ) : null}
       </AnimatePresence>
     </div>
@@ -377,5 +399,128 @@ function ViewerImage({ src, alt, direction, canGoPrev, canGoNext, onNavigate }: 
       onDragEnd={handleDragEnd}
       className="max-h-full max-w-full object-contain"
     />
+  )
+}
+
+interface CaseInfoModalProps {
+  projectCase: ProjectCase
+  onClose: () => void
+}
+
+function CaseInfoModal({ projectCase: c, onClose }: CaseInfoModalProps) {
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [onClose])
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Sobre o projeto — ${c.title}`}
+      className="fixed inset-0 z-[1300] flex items-center justify-center bg-black/85 p-8"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ type: 'spring', stiffness: 280, damping: 28 }}
+        onClick={(event) => event.stopPropagation()}
+        className="flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-[24px] border border-white/[0.08] bg-[rgba(10,7,5,0.97)] shadow-2xl backdrop-blur-xl"
+      >
+        <div className="flex items-start justify-between gap-6 border-b border-white/[0.08] p-8 pb-6">
+          <div>
+            <span className="text-xs font-semibold tracking-[0.14em] text-brand uppercase">Case</span>
+            <h2 className="mt-2 text-[26px] leading-[1.25] font-bold tracking-tight text-white">{c.title}</h2>
+            <p className="mt-3 text-base font-semibold text-brand/90">{c.tagline}</p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 active:scale-95"
+            aria-label="Fechar"
+          >
+            <X size={18} />
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-8 pt-6">
+          <CaseSection>
+            {c.intro.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </CaseSection>
+
+          <CaseSection heading={c.challengeTitle}>
+            {c.challenge.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </CaseSection>
+
+          <CaseSection heading={c.solutionTitle}>
+            <p>{c.solutionIntro}</p>
+            <ul className="flex flex-col gap-2.5">
+              {c.solutionSpecs.map((spec) => (
+                <li key={spec} className="flex gap-3">
+                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+                  <span>{spec}</span>
+                </li>
+              ))}
+            </ul>
+            <p>{c.tieBreakerNote}</p>
+          </CaseSection>
+
+          <CaseSection heading={c.continuityTitle}>
+            {c.continuity.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </CaseSection>
+
+          <CaseSection heading={c.resultsTitle}>
+            <p>{c.resultsIntro}</p>
+            <div className="grid grid-cols-2 gap-3.5">
+              {c.results.map((result) => (
+                <div
+                  key={result.title}
+                  className="rounded-2xl border border-white/[0.07] bg-white/[0.03] p-5"
+                >
+                  <div className="mb-1.5 text-sm font-bold text-white">{result.title}</div>
+                  <p className="text-[13px] leading-relaxed text-white/55">{result.description}</p>
+                </div>
+              ))}
+            </div>
+          </CaseSection>
+
+          <CaseSection heading={c.closingTitle} last>
+            {c.closing.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </CaseSection>
+        </div>
+      </motion.div>
+    </motion.div>
+  )
+}
+
+interface CaseSectionProps {
+  heading?: string
+  last?: boolean
+  children: ReactNode
+}
+
+function CaseSection({ heading, last, children }: CaseSectionProps) {
+  return (
+    <div className={`flex flex-col gap-3 text-[15px] leading-relaxed text-white/70 ${last ? '' : 'mb-7'}`}>
+      {heading ? <h3 className="text-lg font-bold text-white">{heading}</h3> : null}
+      {children}
+    </div>
   )
 }
