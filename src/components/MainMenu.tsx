@@ -87,13 +87,13 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
           </div>
         </div>
 
-        <div className="flex w-80 shrink-0 flex-col items-center justify-between gap-4 rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-7 text-center">
-          <div className="flex w-full flex-col items-center gap-3">
-            <div className="flex h-14 w-full items-center justify-center rounded-lg bg-white px-6 py-2">
-              <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-5 w-auto" />
+        <div className="flex w-80 shrink-0 flex-col items-center justify-center gap-5 rounded-[16px] border border-accent-blue/20 bg-gradient-to-b from-accent-blue/[0.12] to-transparent p-7 text-center">
+          <div className="flex w-full flex-col items-center gap-4">
+            <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white px-6 py-3">
+              <img src="/assets/images/logo-caterpillar.svg" alt="Caterpillar" className="h-9 w-auto" />
             </div>
-            <div className="flex h-14 w-full items-center justify-center rounded-lg bg-white px-6 py-1">
-              <img src="/assets/images/logo-fgwilson.webp" alt="FG Wilson" className="h-12 w-auto" />
+            <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white px-6 py-2">
+              <img src="/assets/images/logo-fgwilson.webp" alt="FG Wilson" className="h-[76px] w-auto" />
             </div>
           </div>
           <div className="text-[13px] font-semibold tracking-wide text-white/60 uppercase">
