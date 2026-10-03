@@ -7,7 +7,6 @@ export type Page =
   | 'onde-estamos'
   | 'nossa-operacao'
   | 'projetos'
-  | 'capacidade-tecnica'
   | 'fale-conosco'
 
 export interface Client {

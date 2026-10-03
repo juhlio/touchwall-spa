@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useCallback, useEffect, useState } from 'react'
 import { BrazilMap } from '@/components/BrazilMap'
-import { CapacidadeTecnica } from '@/components/CapacidadeTecnica'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
 import { NossaOperacao } from '@/components/NossaOperacao'
@@ -56,13 +55,6 @@ function App() {
 
       case 'projetos':
         return <Projetos onBack={goToMenu} />
-
-      case 'capacidade-tecnica':
-        return (
-          <ServiceLayout title="Capacidade Técnica" onBack={goToMenu}>
-            <CapacidadeTecnica />
-          </ServiceLayout>
-        )
 
       case 'fale-conosco':
         return (

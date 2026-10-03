@@ -4,7 +4,7 @@
 // Nossa Operação, Projetos, Capacidade Técnica, Fale Conosco).
 
 import { motion, type Variants } from 'framer-motion'
-import { Award, Building2, Image, MapPin, MessageCircle } from 'lucide-react'
+import { Building2, Image, MapPin, MessageCircle } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import type { Page } from '@/types'
 
@@ -126,13 +126,6 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
           accent="copper"
         />
         <MenuTile
-          onClick={() => onNavigate('capacidade-tecnica')}
-          icon={Award}
-          title="Capacidade Técnica"
-          description="Atestados, CAT e reconhecimentos"
-          accent="brand"
-        />
-        <MenuTile
           onClick={() => onNavigate('fale-conosco')}
           icon={MessageCircle}
           title="Fale Conosco"
@@ -171,7 +164,7 @@ const TILE_ACCENT_CLASSES: Record<TileAccent, { line: string; icon: string; icon
 
 interface MenuTileProps {
   onClick: () => void
-  icon: typeof Award
+  icon: typeof MapPin
   title: string
   description: string
   accent: TileAccent
