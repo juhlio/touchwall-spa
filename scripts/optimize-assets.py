@@ -49,6 +49,7 @@ def main():
     print("(brazil-satellite-clipped.webp é gerado por clip-satellite-image.py)")
     to_webp(os.path.join(SOURCES, "logo-iso.png"), os.path.join(IMAGES, "logo-iso.webp"), quality=85)
     to_webp(os.path.join(SOURCES, "coe-operacao.jpg"), os.path.join(IMAGES, "coe-operacao.webp"), quality=80)
+    to_webp(os.path.join(SOURCES, "coe-entrada.png"), os.path.join(IMAGES, "coe-entrada.webp"), quality=82)
 
     print("== Logo @2x ==")
     logo_src = os.path.join(IMAGES, "logo-essencial-energia.png")
