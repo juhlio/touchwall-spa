@@ -1,3354 +1,3787 @@
 [
   {
-    "id": "agencia-goiana-de-infraestrutura-e-trans-1",
-    "name": "Agência Goiana de Infraestrutura e Transporte (GOINFRA)",
-    "lat": -16.64649,
-    "lng": -49.21025,
-    "city": "Goiânia",
-    "state": "GO"
-  },
-  {
-    "id": "ahbb-taboao-da-serra-2",
-    "name": "AHBB TABOÃO DA SERRA",
-    "lat": -23.62843,
-    "lng": -46.7931,
-    "city": "Taboão da Serra",
-    "state": "SP"
-  },
-  {
-    "id": "alameda-park-residence-3",
-    "name": "ALAMEDA PARK RESIDENCE",
-    "lat": -23.96619,
-    "lng": -46.34612,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "amgesp-sumese-garca-torta-locacao-4",
-    "name": "AMGESP - SUMESE GARÇA TORTA (LOCAÇÃO)",
-    "lat": -9.58347,
-    "lng": -35.66201,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "amgesp-sumese-pilar-locacao-5",
-    "name": "AMGESP - SUMESE PILAR (LOCAÇÃO)",
-    "lat": -9.58693,
-    "lng": -35.75415,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "amgesp-sumese-rio-largo-locacao-6",
-    "name": "AMGESP - SUMESE RIO LARGO (LOCAÇÃO)",
-    "lat": -9.49651,
-    "lng": -35.81404,
-    "city": "Rio Largo",
-    "state": "AL"
-  },
-  {
-    "id": "amgesp-sumese-serraria-locacao-7",
-    "name": "AMGESP - SUMESE SERRARIA (LOCAÇÃO)",
-    "lat": -9.60815,
-    "lng": -35.72606,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "amgesp-sumese-tabuleiro-locacao-8",
-    "name": "AMGESP - SUMESE TABULEIRO (LOCAÇÃO)",
-    "lat": -9.58818,
-    "lng": -35.75444,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "apae-instituto-ijc-9",
-    "name": "APAE (INSTITUTO IJC)",
-    "lat": -23.59947,
-    "lng": -46.64607,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "atakarejo-aracaju-10",
-    "name": "ATAKAREJO - ARACAJÚ",
-    "lat": -10.93925,
-    "lng": -37.06444,
-    "city": "Aracaju",
-    "state": "SE"
-  },
-  {
-    "id": "atakarejo-ilheus-11",
-    "name": "ATAKAREJO - ILHÉUS",
-    "lat": -14.84802,
-    "lng": -39.02606,
-    "city": "Ilhéus",
-    "state": "BA"
-  },
-  {
-    "id": "atakarejo-itabuna-12",
-    "name": "ATAKAREJO - ITABUNA",
-    "lat": -14.81022,
-    "lng": -39.27469,
-    "city": "Itabuna",
-    "state": "BA"
-  },
-  {
-    "id": "atakarejo-itapetinga-13",
-    "name": "ATAKAREJO - ITAPETINGA",
-    "lat": -15.24854,
-    "lng": -40.25511
-  },
-  {
-    "id": "atakarejo-jequie-14",
-    "name": "ATAKAREJO - JEQUIÉ",
-    "lat": -13.86486,
-    "lng": -40.07796,
-    "city": "Jequié",
-    "state": "BA"
-  },
-  {
-    "id": "atakarejo-sao-goncalo-dos-campos-15",
-    "name": "ATAKAREJO - SÃO GONÇALO DOS CAMPOS",
-    "lat": -12.41036,
-    "lng": -38.95261
-  },
-  {
-    "id": "atakarejo-vitoria-da-conquista-16",
-    "name": "ATAKAREJO - VITÓRIA DA CONQUISTA",
-    "lat": -14.85774,
-    "lng": -40.82866,
-    "city": "Vitória da Conquista",
-    "state": "BA"
-  },
-  {
-    "id": "atlas-office-park-17",
-    "name": "ATLAS OFFICE PARK",
-    "lat": -23.54129,
-    "lng": -46.73375,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "atua-taboao-18",
-    "name": "ATUA TABOÃO",
-    "lat": -23.61849,
-    "lng": -46.77199,
-    "city": "Taboão da Serra",
-    "state": "SP"
-  },
-  {
-    "id": "autarquia-territorial-distrito-estadual-19",
-    "name": "Autarquia Territorial Distrito Estadual de Fernando de Noronha (Hospital São Lucas)",
-    "lat": -3.84493,
-    "lng": -32.41113,
-    "city": "Fernando de Noronha",
-    "state": "PE"
-  },
-  {
-    "id": "auto-posto-dacar-20",
-    "name": "AUTO POSTO DACAR",
-    "lat": -23.53808,
-    "lng": -46.47884,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "auto-posto-maria-carlota-21",
-    "name": "AUTO POSTO MARIA CARLOTA",
-    "lat": -23.524,
-    "lng": -46.52871,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "auto-shopping-guarulhos-22",
-    "name": "AUTO SHOPPING GUARULHOS",
-    "lat": -23.49096,
-    "lng": -46.54791,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "b3-praca-antonio-prado-23",
-    "name": "B3 - PRAÇA ANTÔNIO PRADO",
-    "lat": -23.54523,
-    "lng": -46.63437,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "b3-xv-de-novembro-24",
-    "name": "B3 - XV DE NOVEMBRO",
-    "lat": -23.5463,
-    "lng": -46.6348,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "b3-s-a-joao-bricola-25",
-    "name": "B3 S.A. - JOÃO BRÍCOLA",
-    "lat": -23.54513,
-    "lng": -46.63387,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "banco-bmg-sp-26",
-    "name": "BANCO BMG (SP)",
-    "lat": -23.59053,
-    "lng": -46.68659,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "banco-bmg-joao-pinheiro-mg-27",
-    "name": "BANCO BMG JOÃO PINHEIRO (MG)",
-    "lat": -19.9265,
-    "lng": -43.93693,
-    "city": "Belo Horizonte",
-    "state": "MG"
-  },
-  {
-    "id": "banco-bmg-s-a-alameda-locacao-28",
-    "name": "BANCO BMG S/A -ALAMEDA LOCAÇÃO",
-    "lat": -23.5581,
-    "lng": -46.66256,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "banco-mercantil-do-brasil-29",
-    "name": "BANCO MERCANTIL DO BRASIL",
-    "lat": -23.56608,
-    "lng": -46.65173,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "bella-vita-eco-club-30",
-    "name": "BELLA VITA - ECO CLUB",
-    "lat": -23.95601,
-    "lng": -46.32883,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "berrini-1681-31",
-    "name": "BERRINI 1681",
-    "lat": -23.61146,
-    "lng": -46.69411,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "bettanin-32",
-    "name": "BETTANIN",
-    "lat": -23.46035,
-    "lng": -47.04509,
-    "city": "Araçariguama",
-    "state": "SP"
-  },
-  {
-    "id": "billy-carandiru-fiat-sinal-zn-33",
-    "name": "BILLY CARANDIRU - FIAT SINAL ZN",
-    "lat": -23.50052,
-    "lng": -46.84388,
-    "city": "Barueri",
-    "state": "SP"
-  },
-  {
-    "id": "blanco-34",
-    "name": "BLANCO",
-    "lat": -23.55404,
-    "lng": -46.69264,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "bosque-do-rouxinol-35",
-    "name": "BOSQUE DO ROUXINOL",
-    "lat": -23.65781,
-    "lng": -46.67775,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "burdog-36",
-    "name": "BURDOG",
-    "lat": -23.5553,
-    "lng": -46.6671,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "caliope-37",
-    "name": "CALIOPE",
-    "lat": -23.56556,
-    "lng": -46.66205,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "camelo-pizzaria-38",
-    "name": "CAMELO PIZZARIA",
-    "lat": -23.61548,
-    "lng": -46.73411,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "cap-ferrat-39",
-    "name": "CAP FERRAT",
-    "lat": -23.60788,
-    "lng": -46.65755,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "caps-ad-iii-40",
-    "name": "CAPS - AD III",
-    "lat": -10.18086,
-    "lng": -48.34355,
-    "city": "Palmas",
-    "state": "TO"
-  },
-  {
-    "id": "caroel-adm-alexandre-41",
-    "name": "CAROEL ADM - ALEXANDRE",
-    "lat": -23.30025,
-    "lng": -47.29076,
-    "city": "Itu",
-    "state": "SP"
-  },
-  {
-    "id": "caroel-adm-ana-flavia-42",
-    "name": "CAROEL ADM - ANA FLÁVIA",
-    "lat": -23.26448,
-    "lng": -47.28409,
-    "city": "Itu",
-    "state": "SP"
-  },
-  {
-    "id": "caroel-adm-cecilia-43",
-    "name": "CAROEL ADM - CECÍLIA",
-    "lat": -23.29987,
-    "lng": -47.28764,
-    "city": "Itu",
-    "state": "SP"
-  },
-  {
-    "id": "caroel-adm-saida-da-cidade-44",
-    "name": "CAROEL ADM - SAÍDA DA CIDADE",
-    "lat": -23.40538,
-    "lng": -47.30818
-  },
-  {
-    "id": "carrefour-shopping-analia-franco-45",
-    "name": "Carrefour Shopping Analia Franco",
-    "lat": -23.56032,
-    "lng": -46.56013,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "casa-alejandro-casa-cerejeiras-770-46",
-    "name": "Casa Alejandro (Casa Cerejeiras 770)",
-    "lat": -23.47844,
-    "lng": -46.85424,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "casa-delcir-sonda-honolulu-13-47",
-    "name": "Casa Delcir Sonda (Honolulu 13)",
-    "lat": -23.47251,
-    "lng": -46.86443,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "casa-delcir-sonda-taiti-12-48",
-    "name": "Casa Delcir Sonda (Taiti 12)",
-    "lat": -23.47339,
-    "lng": -46.86296,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "casa-igor-sonda-49",
-    "name": "Casa Igor Sonda",
-    "lat": -23.47284,
-    "lng": -46.85364,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "casa-luiz-fernando-guaruja-50",
-    "name": "Casa Luiz Fernando (Guarujá)",
-    "lat": -23.90322,
-    "lng": -46.15762,
-    "city": "Guarujá",
-    "state": "SP"
-  },
-  {
-    "id": "casa-verde-polo-flat-51",
-    "name": "CASA VERDE POLO FLAT",
-    "lat": -23.50761,
-    "lng": -46.66426,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "castell-di-gonzaga-52",
-    "name": "CASTELL DI GONZAGA",
-    "lat": -23.96442,
-    "lng": -46.33731,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "castell-di-sophia-53",
-    "name": "CASTELL DI SOPHIA",
-    "lat": -23.96501,
-    "lng": -46.32491,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "ccd-ial-taubate-locacao-54",
-    "name": "CCD - IAL TAUBATÉ LOCAÇÃO",
-    "lat": -23.01998,
-    "lng": -45.55255,
-    "city": "Taubaté",
-    "state": "SP"
-  },
-  {
-    "id": "ccd-laboratorio-mogi-guacu-55",
-    "name": "CCD - Laboratorio Mogi Guaçu",
-    "lat": -22.36806,
-    "lng": -49.95036,
-    "city": "Mogi Guaçu",
-    "state": "SP"
-  },
-  {
-    "id": "ccd-naor-gve-registro-56",
-    "name": "CCD – NAOR-GVE REGISTRO",
-    "lat": -24.47886,
-    "lng": -47.85806
-  },
-  {
-    "id": "centro-de-atividades-administrativas-vii-57",
-    "name": "Centro de Atividades Administrativas VII - IAC (LOCAÇÃO)",
-    "lat": -22.89341,
-    "lng": -47.06554,
-    "city": "Campinas",
-    "state": "SP"
-  },
-  {
-    "id": "centro-medico-jandaia-58",
-    "name": "CENTRO MÉDICO JANDAIA",
-    "lat": -23.62989,
-    "lng": -46.52221,
-    "city": "Santo André",
-    "state": "SP"
-  },
-  {
-    "id": "chateau-du-gilli-59",
-    "name": "CHATEAU DU GILLI",
-    "lat": -23.60805,
-    "lng": -46.65702,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "citta-di-cozensa-60",
-    "name": "CITTA DI COZENSA",
-    "lat": -23.93865,
-    "lng": -46.32447,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "cliptech-61",
-    "name": "CLIPTECH",
-    "lat": -23.15689,
-    "lng": -47.03597,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-aracatuba-i-62",
-    "name": "CLR IAL de Araçatuba I",
-    "lat": -21.20792,
-    "lng": -50.42886,
-    "city": "Araçatuba",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-marilia-iv-63",
-    "name": "CLR IAL de Marília IV",
-    "lat": -22.21035,
-    "lng": -49.95698,
-    "city": "Marília",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-presidente-prudente-v-64",
-    "name": "CLR IAL de Presidente Prudente V",
-    "lat": -22.13126,
-    "lng": -51.39291,
-    "city": "Pres. Prudente",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-ribeirao-preto-vi-65",
-    "name": "CLR IAL de Ribeirão Preto VI",
-    "lat": -21.16977,
-    "lng": -47.80511,
-    "city": "Ribeirão Preto",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-sao-jose-do-rio-preto-x-66",
-    "name": "CLR IAL de São José do Rio Preto X",
-    "lat": -20.8075,
-    "lng": -49.37543,
-    "city": "São José do Rio Preto",
-    "state": "SP"
-  },
-  {
-    "id": "clr-ial-de-sorocaba-xi-67",
-    "name": "CLR IAL de Sorocaba XI",
-    "lat": -23.50698,
-    "lng": -47.45364,
-    "city": "Sorocaba",
-    "state": "SP"
-  },
-  {
-    "id": "cobal-carapicuiba-68",
-    "name": "COBAL CARAPICUIBA",
-    "lat": -23.51726,
-    "lng": -46.84127,
-    "city": "Carapicuíba",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-vila-galvao-69",
-    "name": "SONDA VILA GALVÃO",
-    "lat": -23.45892,
-    "lng": -46.56354,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "cobal-penha-70",
-    "name": "COBAL PENHA",
-    "lat": -23.52258,
-    "lng": -46.54353,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "complexo-hospitalar-madre-de-deus-71",
-    "name": "COMPLEXO HOSPITALAR MADRE DE DEUS",
-    "lat": -12.73587,
-    "lng": -38.60778,
-    "city": "Madre de Deus",
-    "state": "BA"
-  },
-  {
-    "id": "cond-california-e-florida-72",
-    "name": "COND. CALIFORNIA E FLORIDA",
-    "lat": -23.54623,
-    "lng": -46.74867,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "cond-santo-andre-73",
-    "name": "COND. SANTO ANDRE",
-    "lat": -23.54284,
-    "lng": -46.63187,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "cond-vitoria-regia-74",
-    "name": "COND. VITÓRIA RÉGIA",
-    "lat": -23.59463,
-    "lng": -46.64435,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-atlas-office-park-75",
-    "name": "CONDOMINIO ATLAS OFFICE PARK",
-    "lat": -23.54129,
-    "lng": -46.73375,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edif-begonias-76",
-    "name": "CONDOMINIO EDIF BEGONIAS",
-    "lat": -23.57454,
-    "lng": -46.65861,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-abaete-77",
-    "name": "CONDOMÍNIO EDIFÍCIO ABAETÉ",
-    "lat": -23.65715,
-    "lng": -46.64805,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-casablanca-78",
-    "name": "CONDOMINIO EDIFÍCIO CASABLANCA",
-    "lat": -23.58862,
-    "lng": -46.6037,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-darius-milhaud-79",
-    "name": "CONDOMINIO EDIFICIO DARIUS MILHAUD",
-    "lat": -23.52395,
-    "lng": -46.69183,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-das-magnolias-80",
-    "name": "CONDOMINIO EDIFICIO DAS MAGNOLIAS",
-    "lat": -23.65075,
-    "lng": -46.66805,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-das-violetas-81",
-    "name": "CONDOMINIO EDIFÍCIO DAS VIOLETAS",
-    "lat": -23.55796,
-    "lng": -46.57575,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-diana-82",
-    "name": "CONDOMINIO EDIFICIO DIANA",
-    "lat": -23.59325,
-    "lng": -46.64719,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-embauba-83",
-    "name": "CONDOMINIO EDIFICIO EMBAUBA",
-    "lat": -23.62705,
-    "lng": -46.73678,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-fujitsu-84",
-    "name": "CONDOMINIO EDIFICIO FUJITSU",
-    "lat": -23.56723,
-    "lng": -46.64394,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-lancaster-85",
-    "name": "CONDOMINIO EDIFICIO LANCASTER",
-    "lat": -23.62277,
-    "lng": -46.68342,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-marion-86",
-    "name": "CONDOMINIO EDIFICIO MARION",
-    "lat": -23.56843,
-    "lng": -46.66421,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-montreux-87",
-    "name": "CONDOMINIO EDIFICIO MONTREUX",
-    "lat": -23.57894,
-    "lng": -46.6377,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-piccolo-mondo-88",
-    "name": "CONDOMINIO EDIFICIO PICCOLO MONDO",
-    "lat": -23.63289,
-    "lng": -46.73611,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-plaza-city-america-89",
-    "name": "CONDOMINIO EDIFICIO PLAZA CITY AMERICA",
-    "lat": -23.49625,
-    "lng": -46.72934,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-porto-rotondo-90",
-    "name": "CONDOMINIO EDIFICIO PORTO ROTONDO",
-    "lat": -24.00527,
-    "lng": -46.26835,
-    "city": "Guarujá",
-    "state": "SP"
-  },
-  {
-    "id": "cdata-condominio-edificio-rio-d-ouro-91",
-    "name": "<![CDATA[CONDOMINIO EDIFICIO RIO D'OURO]]>",
-    "lat": -23.59329,
-    "lng": -46.6292,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-space-paraguassu-92",
-    "name": "CONDOMINIO EDIFÍCIO SPACE PARAGUASSU",
-    "lat": -23.95815,
-    "lng": -46.3255,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-the-quality-perdizes-93",
-    "name": "CONDOMÍNIO EDIFÍCIO THE QUALITY PERDIZES",
-    "lat": -23.53319,
-    "lng": -46.68197,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-edificio-vera-cruz-ii-94",
-    "name": "CONDOMINIO EDIFICIO VERA CRUZ II",
-    "lat": -23.59435,
-    "lng": -46.67987,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-le-chateau-frontenac-95",
-    "name": "CONDOMINIO LE CHATEAU FRONTENAC",
-    "lat": -23.08512,
-    "lng": -46.19777,
-    "city": "Indaiatuba",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-medic-life-96",
-    "name": "CONDOMINIO MEDIC LIFE",
-    "lat": -23.48494,
-    "lng": -46.85687,
-    "city": "Barueri",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-p-11-pinheiros-comercial-97",
-    "name": "CONDOMINIO P-11 PINHEIROS COMERCIAL",
-    "lat": -23.56581,
-    "lng": -46.68303,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-parque-balneario-center-98",
-    "name": "CONDOMINIO PARQUE BALNEARIO CENTER",
-    "lat": -23.96886,
-    "lng": -46.3324,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-way-vila-guilherme-99",
-    "name": "CONDOMÍNIO WAY VILA GUILHERME",
-    "lat": -23.51652,
-    "lng": -46.60554,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condominio-you-now-chacara-santo-antonio-100",
-    "name": "CONDOMINIO YOU NOW CHACARA SANTO ANTONIO",
-    "lat": -23.63167,
-    "lng": -46.69789,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "condondominio-edificio-jacutinga-101",
-    "name": "Condomínio Edifício Jacutinga",
-    "lat": -23.60286,
-    "lng": -46.66596,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "consorcio-agcs-elevacao-sabesp-locacao-102",
-    "name": "CONSORCIO AGCS - ELEVACAO (SABESP - LOCAÇÃO)",
-    "lat": -23.51474,
-    "lng": -46.83888,
-    "city": "Carapicuíba",
-    "state": "SP"
-  },
-  {
-    "id": "crl-ial-campinas-103",
-    "name": "CRL IAL CAMPINAS",
-    "lat": -22.91675,
-    "lng": -47.06632,
-    "city": "Campinas",
-    "state": "SP"
-  },
-  {
-    "id": "cross-sp-104",
-    "name": "CROSS SP",
-    "lat": -23.55654,
-    "lng": -46.66895,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "cdata-d-arthy-grafica-locacao-1-105",
-    "name": "<![CDATA[D'ARTHY GRÁFICA - LOCAÇÃO 1]]>",
-    "lat": -23.3839,
-    "lng": -46.83792,
-    "city": "Cajamar",
-    "state": "SP"
-  },
-  {
-    "id": "cdata-d-arthy-grafica-locacao-2-106",
-    "name": "<![CDATA[D'ARTHY GRÁFICA - LOCAÇÃO 2]]>",
-    "lat": -23.37755,
-    "lng": -46.83627,
-    "city": "Cajamar",
-    "state": "SP"
-  },
-  {
-    "id": "delta-plaza-107",
-    "name": "DELTA PLAZA",
-    "lat": -23.56776,
-    "lng": -46.64603,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-global-forwarding-108",
-    "name": "DHL – Global Forwarding",
-    "lat": -23.63307,
-    "lng": -46.71566,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-atlas-vila-leopoldin-109",
-    "name": "DHL EXPRESS - Unidade Atlas (Vila Leopoldina)",
-    "lat": -23.54268,
-    "lng": -46.73533,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-cgh-santo-amaro-110",
-    "name": "DHL EXPRESS - Unidade CGH (Santo Amaro)",
-    "lat": -23.67628,
-    "lng": -46.69477,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-cpq-campinas-111",
-    "name": "DHL EXPRESS - Unidade CPQ (Campinas)",
-    "lat": -23.0059,
-    "lng": -47.11525,
-    "city": "Campinas",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-ec-lapa-112",
-    "name": "DHL EXPRESS - Unidade EC (Lapa)",
-    "lat": -23.51392,
-    "lng": -46.72324,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-gtw-guarulhos-113",
-    "name": "DHL EXPRESS - Unidade GTW (Guarulhos)",
-    "lat": -23.42994,
-    "lng": -46.47159,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-express-unidade-prologis-duque-de-ca-114",
-    "name": "DHL EXPRESS - Unidade Prologis (Duque de Caxias)",
-    "lat": -22.79187,
-    "lng": -43.28136,
-    "city": "Duque de Caxias",
-    "state": "RJ"
-  },
-  {
-    "id": "dhl-express-unidade-vcp-vira-copos-115",
-    "name": "DHL EXPRESS - Unidade VCP (Vira Copos)",
-    "lat": -23.01216,
-    "lng": -47.13786,
-    "city": "Campinas",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-global-santos-116",
-    "name": "DHL GLOBAL - SANTOS",
-    "lat": -23.97851,
-    "lng": -46.30916,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "dhl-santos-unidade-ssz-santos-117",
-    "name": "DHL SANTOS - UNIDADE SSZ (Santos)",
-    "lat": -23.96075,
-    "lng": -46.31168,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "dom-pedro-gastao-118",
-    "name": "DOM PEDRO GASTÃO",
-    "lat": -23.62154,
-    "lng": -46.7331,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "don-carlos-119",
-    "name": "DON CARLOS",
-    "lat": -23.56207,
-    "lng": -46.63631,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "drogaria-sao-paulo-120",
-    "name": "DROGARIA SAO PAULO",
-    "lat": -23.54146,
-    "lng": -46.73412,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "duquesa-alira-de-albuquerque-garcez-121",
-    "name": "DUQUESA ALIRA DE ALBUQUERQUE GARCEZ",
-    "lat": -23.57383,
-    "lng": -46.59231,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edif-jatoba-hersil-122",
-    "name": "Edif. Jatoba (Hersil)",
-    "lat": -23.50606,
-    "lng": -46.83762,
-    "city": "Barueri",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-alamanda-123",
-    "name": "EDIFICIO ALAMANDA",
-    "lat": -23.61308,
-    "lng": -46.68114,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-alessandra-e-christiana-124",
-    "name": "EDIFICIO ALESSANDRA E CHRISTIANA",
-    "lat": -23.53476,
-    "lng": -46.6782,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-andrezza-125",
-    "name": "EDIFICIO ANDREZZA",
-    "lat": -23.54099,
-    "lng": -46.565,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-cbs-126",
-    "name": "EDIFICIO CBS",
-    "lat": -23.58471,
-    "lng": -46.6713,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-classic-127",
-    "name": "EDIFICIO CLASSIC",
-    "lat": -23.62113,
-    "lng": -46.5627,
-    "city": "São Caetano do Sul",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-crystal-palace-128",
-    "name": "EDIFICIO CRYSTAL PALACE",
-    "lat": -23.57212,
-    "lng": -46.63239,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-jacaranda-129",
-    "name": "EDIFICIO JACARANDA",
-    "lat": -23.5057,
-    "lng": -46.83716,
-    "city": "Barueri",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-jardins-di-siena-130",
-    "name": "EDIFICIO JARDINS DI SIENA",
-    "lat": -23.55503,
-    "lng": -46.54103,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-jk-180-131",
-    "name": "EDIFICIO JK 180",
-    "lat": -23.58545,
-    "lng": -46.67265,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "cdata-edificio-l-orizzonte-132",
-    "name": "<![CDATA[EDIFÍCIO L'ORIZZONTE]]>",
-    "lat": -23.96768,
-    "lng": -46.35077,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-maison-verte-133",
-    "name": "EDIFICIO MAISON VERTE",
-    "lat": -23.54513,
-    "lng": -46.66041,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-manaca-134",
-    "name": "EDIFICIO MANACA",
-    "lat": -23.57266,
-    "lng": -46.72655,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-miami-135",
-    "name": "EDIFÍCIO MIAMI",
-    "lat": -23.64101,
-    "lng": -46.50633,
-    "city": "Santo André",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-montana-136",
-    "name": "EDIFICIO MONTANA",
-    "lat": -23.63775,
-    "lng": -46.52929,
-    "city": "Santo André",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-monte-hermon-137",
-    "name": "EDIFICIO MONTE HERMON",
-    "lat": -23.99421,
-    "lng": -46.24982,
-    "city": "Guarujá",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-passarelli-138",
-    "name": "EDIFICIO PASSARELLI",
-    "lat": -23.56783,
-    "lng": -46.70152,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-pinto-ferraz-139",
-    "name": "EDIFICIO PINTO FERRAZ",
-    "lat": -23.59012,
-    "lng": -46.63425,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-praia-de-ponta-verde-140",
-    "name": "EDIFICIO PRAIA DE PONTA VERDE",
-    "lat": -23.99675,
-    "lng": -46.2654,
-    "city": "Guarujá",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-primus-141",
-    "name": "EDIFICIO PRIMUS",
-    "lat": -23.66608,
-    "lng": -46.52892,
-    "city": "Santo André",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-sevilha-142",
-    "name": "EDIFICIO SEVILHA",
-    "lat": -23.61477,
-    "lng": -46.63716,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-summit-loft-143",
-    "name": "EDIFÍCIO SUMMIT LOFT",
-    "lat": -23.61912,
-    "lng": -46.74012,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edificio-trends-brooklin-144",
-    "name": "Edifício Trends Brooklin",
-    "lat": -23.61611,
-    "lng": -46.69032,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "edifico-sinergy-pinheiros-145",
-    "name": "Edifício Sinergy Pinheiros",
-    "lat": -23.56193,
-    "lng": -46.67644,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "emca-oxiteno-146",
-    "name": "EMCA - OXITENO",
-    "lat": -12.66253,
-    "lng": -38.32454
-  },
-  {
-    "id": "esplanada-granja-julieta-147",
-    "name": "ESPLANADA GRANJA JULIETA",
-    "lat": -23.63253,
-    "lng": -46.71337,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "essencial-energia-adm-148",
-    "name": "Essencial energia (ADM)",
-    "lat": -23.69834,
-    "lng": -46.57246,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "falstaff-house-apartments-149",
-    "name": "FALSTAFF HOUSE APARTMENTS",
-    "lat": -23.61727,
-    "lng": -46.7336,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "farmaervas-walmir-paulino-150",
-    "name": "FarmaErvas (Walmir Paulino)",
-    "lat": -23.60408,
-    "lng": -46.70879,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "farme-do-morumbi-151",
-    "name": "FARME DO MORUMBI",
-    "lat": -23.62385,
-    "lng": -46.73361,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "fatto-morumbi-152",
-    "name": "FATTO MORUMBI",
-    "lat": -23.63346,
-    "lng": -46.73793,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "felipe-carneiro-goncalves-gomes-153",
-    "name": "Felipe Carneiro Gonçalves Gomes",
-    "lat": -23.44725,
-    "lng": -46.88415,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "fiat-sinal-vila-mariana-154",
-    "name": "FIAT SINAL - VILA MARIANA",
-    "lat": -23.59235,
-    "lng": -46.62183,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "fiorella-155",
-    "name": "FIORELLA",
-    "lat": -23.6157,
-    "lng": -46.67243,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "fl-corporate-156",
-    "name": "FL CORPORATE",
-    "lat": -23.59415,
-    "lng": -46.68094,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "fl-office-157",
-    "name": "FL OFFICE",
-    "lat": -23.59442,
-    "lng": -46.68163,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "fl-residence-158",
-    "name": "FL RESIDENCE",
-    "lat": -23.59437,
-    "lng": -46.68157,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "giant-cargo-159",
-    "name": "GIANT CARGO",
-    "lat": -23.62859,
-    "lng": -46.64747,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "goncalves-dias-160",
-    "name": "GONÇALVES DIAS",
-    "lat": -23.54232,
-    "lng": -46.66081,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "gravatai-161",
-    "name": "GRAVATAÍ",
-    "lat": -23.57948,
-    "lng": -46.64293,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "green-tambore-162",
-    "name": "GREEN TAMBORE",
-    "lat": -23.4743,
-    "lng": -46.84064,
-    "city": "Santana de Parnaíba",
-    "state": "SP"
-  },
-  {
-    "id": "gve-avare-163",
-    "name": "GVE Avaré",
-    "lat": -23.11753,
-    "lng": -48.93292,
-    "city": "Avaré",
-    "state": "SP"
-  },
-  {
-    "id": "gve-ix-franco-da-rocha-164",
-    "name": "GVE IX Franco da Rocha",
-    "lat": -23.33714,
-    "lng": -46.73242,
-    "city": "Franco da Rocha",
-    "state": "SP"
-  },
-  {
-    "id": "gve-viii-mogi-das-cruzes-165",
-    "name": "GVE VIII Mogi das Cruzes",
-    "lat": -23.49669,
-    "lng": -46.18266,
-    "city": "Mogi das Cruzes",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xii-aracatuba-166",
-    "name": "GVE XII Araçatuba",
-    "lat": -21.20767,
-    "lng": -50.42827,
-    "city": "Araçatuba",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xiv-barretos-167",
-    "name": "GVE XIV Barretos",
-    "lat": -20.56103,
-    "lng": -48.57467,
-    "city": "Barretos",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xv-bauru-168",
-    "name": "GVE XV Bauru",
-    "lat": -22.32985,
-    "lng": -49.07935,
-    "city": "Bauru",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xvi-botucatu-169",
-    "name": "GVE XVI Botucatu",
-    "lat": -22.88053,
-    "lng": -48.44363,
-    "city": "Botucatu",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xx-piracicaba-170",
-    "name": "GVE XX Piracicaba",
-    "lat": -22.71774,
-    "lng": -47.63171,
-    "city": "Piracicaba",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxi-presidente-prudente-171",
-    "name": "GVE XXI Presidente Prudente",
-    "lat": -22.1313,
-    "lng": -51.39294,
-    "city": "Pres. Prudente",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxii-presidente-venceslau-172",
-    "name": "GVE XXII Presidente Venceslau",
-    "lat": -21.87611,
-    "lng": -51.84686,
-    "city": "Pres. Venceslau",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxiv-ribeirao-preto-173",
-    "name": "GVE XXIV Ribeirão Preto",
-    "lat": -21.21215,
-    "lng": -47.82796,
-    "city": "Ribeirão Preto",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxix-marilia-174",
-    "name": "GVE XXIX Marilia",
-    "lat": -22.21387,
-    "lng": -49.95314,
-    "city": "Marília",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxix-sao-jose-do-rio-preto-175",
-    "name": "GVE XXIX São José do Rio Preto",
-    "lat": -20.82633,
-    "lng": -49.3671,
-    "city": "São José do Rio Preto",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxvi-sao-joao-da-boa-vista-176",
-    "name": "GVE XXVI São João da Boa Vista",
-    "lat": -23.69951,
-    "lng": -46.55157,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxvii-sao-jose-dos-campos-177",
-    "name": "GVE XXVII São José dos Campos",
-    "lat": -23.18499,
-    "lng": -45.88755,
-    "city": "São José dos Campos",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxviii-caraguatatuba-178",
-    "name": "GVE XXVIII Caraguatatuba",
-    "lat": -23.63079,
-    "lng": -45.42367,
-    "city": "Caraguatatuba",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxxi-sorocaba-179",
-    "name": "GVE XXXI Sorocaba",
-    "lat": -23.4711,
-    "lng": -47.44476,
-    "city": "Sorocaba",
-    "state": "SP"
-  },
-  {
-    "id": "gve-xxxii-itapeva-180",
-    "name": "GVE XXXII Itapeva",
-    "lat": -23.98701,
-    "lng": -46.88438,
-    "city": "Itapeva",
-    "state": "SP"
-  },
-  {
-    "id": "heinrich-gehling-181",
-    "name": "HEINRICH GEHLING",
-    "lat": -23.61035,
-    "lng": -46.7088,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "heitor-penteado-182",
-    "name": "HEITOR PENTEADO",
-    "lat": -23.54402,
-    "lng": -46.69423,
+    "id": "apae-instituto-jo-clemente",
+    "name": "APAE (instituto Jô Clemente)",
+    "lat": -23.5996376,
+    "lng": -46.6357353,
     "city": "São Paulo",
     "state": "SP"
   },
   {
-    "id": "henrique-filizzola-183",
-    "name": "HENRIQUE FILIZZOLA",
-    "lat": -22.93956,
-    "lng": -46.70084,
+    "id": "assai-itatiba-projeto-olimpo",
+    "name": "ASSAI - ITATIBA (PROJETO OLIMPO)",
+    "lat": -23.0055542,
+    "lng": -46.8397726,
     "city": "Itatiba",
     "state": "SP"
   },
   {
-    "id": "hersil-administracao-184",
-    "name": "HERSIL ADMINISTRACAO",
-    "lat": -23.57562,
-    "lng": -46.70299,
-    "city": "São Paulo",
+    "id": "assai-jundiai",
+    "name": "ASSAI - JUNDIAÍ",
+    "lat": -23.1926385,
+    "lng": -46.876103,
+    "city": "Jundiaí",
     "state": "SP"
   },
   {
-    "id": "hospital-clementino-fraga-185",
-    "name": "HOSPITAL CLEMENTINO FRAGA",
-    "lat": -7.12836,
-    "lng": -34.87064,
-    "city": "João Pessoa",
-    "state": "PB"
-  },
-  {
-    "id": "hospital-da-mulher-maria-jose-dos-santos-186",
-    "name": "Hospital da Mulher Maria Jose dos Santos Stein",
-    "lat": -23.63515,
-    "lng": -46.50008,
+    "id": "assai-santo-andre-bala-juquinha",
+    "name": "ASSAI - SANTO ANDRÉ BALA JUQUINHA",
+    "lat": -23.6174608,
+    "lng": -46.5415579,
     "city": "Santo André",
     "state": "SP"
   },
   {
-    "id": "hospital-de-ensino-alcides-carneiro-187",
-    "name": "HOSPITAL DE ENSINO ALCIDES CARNEIRO",
-    "lat": -22.33178,
-    "lng": -43.13151,
-    "city": "Petrópolis",
-    "state": "RJ"
-  },
-  {
-    "id": "hospital-do-coracao-fmusp-188",
-    "name": "Hospital do Coração FMUSP",
-    "lat": -23.55708,
-    "lng": -46.66823,
-    "city": "São Paulo",
+    "id": "assai-santo-andre-v-luzita",
+    "name": "ASSAI - SANTO ANDRÉ V.LUZITA",
+    "lat": -23.6963332,
+    "lng": -46.5061807,
+    "city": "Santo André",
     "state": "SP"
   },
   {
-    "id": "hospital-maternidade-geraldo-lacerda-bot-189",
-    "name": "HOSPITAL MATERNIDADE GERALDO LACERDA BOTELHO",
-    "lat": -7.04084,
-    "lng": -39.28051,
-    "city": "Caririaçu",
-    "state": "CE"
-  },
-  {
-    "id": "hospital-municipal-carlos-tortelly-190",
-    "name": "Hospital Municipal Carlos Tortelly",
-    "lat": -22.89584,
-    "lng": -43.11018,
-    "city": "Niterói",
-    "state": "RJ"
-  },
-  {
-    "id": "hospital-municipal-dr-munir-rafful-volta-191",
-    "name": "HOSPITAL MUNICIPAL DR. MUNIR RAFFUL (VOLTA REDONDA)",
-    "lat": -22.49956,
-    "lng": -44.12292,
-    "city": "Volta Redonda",
-    "state": "RJ"
-  },
-  {
-    "id": "hospital-padre-liberio-para-de-minas-192",
-    "name": "HOSPITAL PADRE LIBERIO (PARÁ DE MINAS)",
-    "lat": -19.85929,
-    "lng": -44.60767,
-    "city": "Pará de Minas",
-    "state": "MG"
-  },
-  {
-    "id": "hospital-psiquiatrico-jurujuba-193",
-    "name": "HOSPITAL PSIQUIÁTRICO JURUJUBA",
-    "lat": -22.93231,
-    "lng": -43.09798,
-    "city": "Niterói",
-    "state": "RJ"
-  },
-  {
-    "id": "hospital-universitario-da-ufrr-194",
-    "name": "HOSPITAL UNIVERSITARIO DA UFRR",
-    "lat": 2.80748,
-    "lng": -60.74481,
-    "city": "Boa Vista",
-    "state": "RR"
-  },
-  {
-    "id": "hospital-universitario-de-juiz-de-fora-195",
-    "name": "HOSPITAL UNIVERSITARIO DE JUIZ DE FORA",
-    "lat": -21.7501,
-    "lng": -43.35927
-  },
-  {
-    "id": "hotel-de-turismo-parque-balneario-ltda-196",
-    "name": "HOTEL DE TURISMO PARQUE BALNEARIO LTDA",
-    "lat": -23.96929,
-    "lng": -46.33291,
-    "city": "Santos",
+    "id": "assai-sao-bernardo-piraporinha",
+    "name": "ASSAI - SÃO BERNARDO PIRAPORINHA",
+    "lat": -23.7080345,
+    "lng": -46.5506747,
+    "city": "São Bernardo do Campo",
     "state": "SP"
   },
   {
-    "id": "hotel-ilhas-do-caribe-197",
-    "name": "HOTEL ILHAS DO CARIBE",
-    "lat": -23.98496,
-    "lng": -46.22626,
-    "city": "Guarujá",
+    "id": "assai-campinas-amoreiras",
+    "name": "ASSAI -CAMPINAS AMOREIRAS",
+    "lat": -22.9540732,
+    "lng": -47.1162832,
+    "city": "Campinas",
     "state": "SP"
   },
   {
-    "id": "hp-brasil-locacao-198",
-    "name": "HP BRASIL - LOCAÇÂO",
-    "lat": -23.50487,
-    "lng": -46.8493,
-    "city": "Barueri",
+    "id": "assai-campinas-centro",
+    "name": "ASSAI -CAMPINAS CENTRO",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
     "state": "SP"
   },
   {
-    "id": "iate-clube-de-santos-199",
-    "name": "IATE CLUBE DE SANTOS",
-    "lat": -23.98936,
-    "lng": -46.28477,
-    "city": "Guarujá",
+    "id": "assai-diadema",
+    "name": "ASSAI -DIADEMA",
+    "lat": -23.6898813,
+    "lng": -46.5916008,
+    "city": "Diadema",
     "state": "SP"
   },
   {
-    "id": "ibirapuera-tower-200",
-    "name": "IBIRAPUERA TOWER",
-    "lat": -23.58494,
-    "lng": -46.64569,
-    "city": "São Paulo",
+    "id": "assai-hortolandia",
+    "name": "ASSAI -HORTOLÂNDIA",
+    "lat": -22.8620175,
+    "lng": -47.2164219,
+    "city": "Hortolândia",
     "state": "SP"
   },
   {
-    "id": "icon-faria-lima-201",
-    "name": "ICON FARIA LIMA",
-    "lat": -23.58987,
-    "lng": -46.68054,
-    "city": "São Paulo",
+    "id": "assai-indaiatuba",
+    "name": "ASSAI -INDAIATUBA",
+    "lat": -23.093634,
+    "lng": -47.2144666,
+    "city": "Indaiatuba",
     "state": "SP"
   },
   {
-    "id": "irmandade-da-santa-casa-coracao-de-jesus-202",
-    "name": "IRMANDADE DA SANTA CASA CORAÇÃO DE JESUS – HC SÃO SEBASTIÃO",
-    "lat": -23.8042,
-    "lng": -45.40268
-  },
-  {
-    "id": "jf100-joaquim-floriano-100-203",
-    "name": "JF100 - JOAQUIM FLORIANO 100",
-    "lat": -23.58332,
-    "lng": -46.67109,
-    "city": "São Paulo",
+    "id": "assai-jundiai-ferroviarios",
+    "name": "ASSAI -JUNDIAÍ FERROVIÁRIOS",
+    "lat": -23.1887668,
+    "lng": -46.884506,
+    "city": "Jundiaí",
     "state": "SP"
   },
   {
-    "id": "jk-1600-204",
-    "name": "JK 1600",
-    "lat": -23.59099,
-    "lng": -46.68444,
-    "city": "São Paulo",
+    "id": "assai-limeira",
+    "name": "ASSAI -LIMEIRA",
+    "lat": -22.5615068,
+    "lng": -47.401766,
+    "city": "Limeira",
     "state": "SP"
   },
   {
-    "id": "jk-tower-205",
-    "name": "JK TOWER",
-    "lat": -23.58609,
-    "lng": -46.67398,
-    "city": "São Paulo",
+    "id": "assai-limeira-ii",
+    "name": "ASSAI -LIMEIRA II",
+    "lat": -22.5615068,
+    "lng": -47.401766,
+    "city": "Limeira",
     "state": "SP"
   },
   {
-    "id": "la-barre-residencial-206",
-    "name": "LA BARRE RESIDENCIAL",
-    "lat": -24.19438,
-    "lng": -46.80079,
-    "city": "Itanhaém",
-    "state": "SP"
-  },
-  {
-    "id": "la-grande-maison-207",
-    "name": "LA GRANDE MAISON",
-    "lat": -23.97649,
-    "lng": -46.31135,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "laboratorio-de-marilia-208",
-    "name": "Laboratório de Marilia",
-    "lat": -22.21037,
-    "lng": -49.95655,
-    "city": "Marília",
-    "state": "SP"
-  },
-  {
-    "id": "laboratorio-de-sorocaba-209",
-    "name": "Laboratório de Sorocaba",
-    "lat": -23.53434,
-    "lng": -47.49821,
-    "city": "Sorocaba",
-    "state": "SP"
-  },
-  {
-    "id": "lacen-pb-laboratorio-central-de-saude-pu-210",
-    "name": "LACEN / PB - Laboratório Central de Saúde Publica da Paraíba",
-    "lat": -7.12205,
-    "lng": -34.8767,
-    "city": "João Pessoa",
-    "state": "PB"
-  },
-  {
-    "id": "laercio-cosentino-211",
-    "name": "LAERCIO COSENTINO",
-    "lat": -23.34222,
-    "lng": -47.54752,
-    "city": "Porto Feliz",
-    "state": "SP"
-  },
-  {
-    "id": "legrand-souza-aranha-212",
-    "name": "LEGRAND SOUZA ARANHA",
-    "lat": -23.63318,
-    "lng": -46.71327,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "link-system-banco-luso-213",
-    "name": "LINK SYSTEM - BANCO LUSO",
-    "lat": -23.61697,
-    "lng": -46.68704,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "lopez-de-gongora-214",
-    "name": "LOPEZ DE GONGORA",
-    "lat": -23.52201,
-    "lng": -46.54355,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "mackintoshs-215",
-    "name": "MACKINTOSHS",
-    "lat": -23.53521,
-    "lng": -46.67081,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "maison-de-saint-malo-216",
-    "name": "MAISON DE SAINT MALO",
-    "lat": -23.625,
-    "lng": -46.67223,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "maralta-217",
-    "name": "MARALTA",
-    "lat": -23.98568,
-    "lng": -46.30018,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "maranguape-prefeitura-municipal-de-maran-218",
-    "name": "MARANGUAPE - PREFEITURA MUNICIPAL DE MARANGUAPE",
-    "lat": -3.88028,
-    "lng": -38.67616,
-    "city": "Maranguape",
-    "state": "CE"
-  },
-  {
-    "id": "maria-trindade-219",
-    "name": "MARIA TRINDADE",
-    "lat": -23.59939,
-    "lng": -46.66405,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "marrakech-220",
-    "name": "MARRAKECH",
-    "lat": -23.60281,
-    "lng": -46.64242,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "master-ats-supermercados-ltda-221",
-    "name": "MASTER ATS SUPERMERCADOS LTDA",
-    "lat": -23.56178,
-    "lng": -46.64245,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "maternidade-alzira-reis-222",
-    "name": "MATERNIDADE ALZIRA REIS",
-    "lat": -22.93489,
-    "lng": -43.10107,
-    "city": "Niterói",
-    "state": "RJ"
-  },
-  {
-    "id": "mb-martin-brower-223",
-    "name": "MB - MARTIN BROWER",
-    "lat": -23.47869,
-    "lng": -46.77364,
-    "city": "Osasco",
-    "state": "SP"
-  },
-  {
-    "id": "mercado-livre-cravinhos-cad-meli-xsp15-224",
-    "name": "Mercado Livre Cravinhos (CAD MELI XSP15)",
-    "lat": -21.29886,
-    "lng": -47.74255,
-    "city": "Cravinhos",
-    "state": "SP"
-  },
-  {
-    "id": "mercado-livre-recife-cad-meli-pe01-225",
-    "name": "Mercado Livre Recife (CAD MELI PE01)",
-    "lat": -8.26452,
-    "lng": -35.01441,
-    "city": "Cabo de Santo Agostinho",
-    "state": "PE"
-  },
-  {
-    "id": "mercado-livre-rio-de-janeiro-cad-xrj02-226",
-    "name": "Mercado Livre Rio de Janeiro (CAD XRJ02)",
-    "lat": -22.79635,
-    "lng": -43.35824,
-    "city": "São João de Meriti",
-    "state": "RJ"
-  },
-  {
-    "id": "mercado-livre-rio-de-janeiro-cad-xrj02-227",
-    "name": "Mercado Livre Rio de Janeiro (CAD XRJ02)",
-    "lat": -22.79635,
-    "lng": -43.35824,
-    "city": "São João de Meriti",
-    "state": "RJ"
-  },
-  {
-    "id": "mercado-livre-simoes-filho-cad-ba02-228",
-    "name": "Mercado Livre Simões Filho (CAD BA02)",
-    "lat": -12.73389,
-    "lng": -38.38742
-  },
-  {
-    "id": "millennium-office-park-229",
-    "name": "MILLENNIUM OFFICE PARK",
-    "lat": -23.59263,
-    "lng": -46.69019,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "mobi-rio-garagem-margaridas-230",
-    "name": "MOBI-RIO - GARAGEM MARGARIDAS",
-    "lat": -22.8201,
-    "lng": -43.3137,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-margarida-231",
-    "name": "MOBI-RIO - TERMINAL MARGARIDA",
-    "lat": -22.8201,
-    "lng": -43.3137,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-garagem-de-paciencia-232",
-    "name": "MOBI-RIO (GARAGEM DE PACIÊNCIA)",
-    "lat": -22.92028,
-    "lng": -43.64411,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-aroldo-melodia-233",
-    "name": "MOBI-RIO (TERMINAL AROLDO MELODIA)",
-    "lat": -22.83925,
-    "lng": -43.23979,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-centro-olimpico-234",
-    "name": "MOBI-RIO (TERMINAL CENTRO OLÍMPICO)",
-    "lat": -22.97006,
-    "lng": -43.40078,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-curral-falso-235",
-    "name": "MOBI-RIO (TERMINAL CURRAL FALSO)",
-    "lat": -22.93567,
-    "lng": -43.66665,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-deodoro-236",
-    "name": "MOBI-RIO (TERMINAL DEODORO)",
-    "lat": -22.85357,
-    "lng": -43.38442,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-jardim-oceanico-237",
-    "name": "MOBI-RIO (TERMINAL JARDIM OCEÂNICO)",
-    "lat": -23.00326,
-    "lng": -43.33071,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-mato-alto-238",
-    "name": "MOBI-RIO (TERMINAL MATO ALTO)",
-    "lat": -22.9942,
-    "lng": -43.59632,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-paulo-portela-239",
-    "name": "MOBI-RIO (Terminal Paulo Portela)",
-    "lat": -22.87799,
-    "lng": -43.33642,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "cdata-mobi-rio-terminal-pingo-d-agua-loc-240",
-    "name": "<![CDATA[MOBI-RIO (TERMINAL PINGO D'ÁGUA) - LOCAÇÃO]]>",
-    "lat": -22.96571,
-    "lng": -43.64672,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-recreio-241",
-    "name": "MOBI-RIO (TERMINAL RECREIO)",
-    "lat": -23.00739,
-    "lng": -43.44056,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "mobi-rio-terminal-sulacap-242",
-    "name": "MOBI-RIO (TERMINAL SULACAP)",
-    "lat": -22.88508,
-    "lng": -43.39977,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "moncoes-da-gastao-243",
-    "name": "MONÇÕES DA GASTÃO",
-    "lat": -23.52927,
-    "lng": -46.73789,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "mont-blanc-tropical-244",
-    "name": "MONT BLANC TROPICAL",
-    "lat": -23.60076,
-    "lng": -46.62992,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "new-century-245",
-    "name": "NEW CENTURY",
-    "lat": -23.58759,
-    "lng": -46.68048,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "new-life-246",
-    "name": "NEW LIFE",
-    "lat": -23.58759,
-    "lng": -46.68048,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "new-york-e-los-angeles-247",
-    "name": "NEW YORK E LOS ANGELES",
-    "lat": -23.52548,
-    "lng": -46.67679,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "neymar-da-silva-santos-junior-e45-248",
-    "name": "NEYMAR DA SILVA SANTOS JUNIOR (E45)",
-    "lat": -23.96232,
-    "lng": -46.35048
-  },
-  {
-    "id": "neymar-da-silva-santos-junior-guaruja-249",
-    "name": "NEYMAR DA SILVA SANTOS JUNIOR (Guarujá)",
-    "lat": -23.95546,
-    "lng": -46.20124,
-    "city": "Guarujá",
-    "state": "SP"
-  },
-  {
-    "id": "neymar-da-silva-santos-junior-santos-250",
-    "name": "NEYMAR DA SILVA SANTOS JUNIOR (Santos)",
-    "lat": -23.96214,
-    "lng": -46.35025,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "novara-251",
-    "name": "NOVARA",
-    "lat": -23.56908,
-    "lng": -46.65237,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "one-jardim-sul-252",
-    "name": "ONE JARDIM SUL",
-    "lat": -23.62818,
-    "lng": -46.73962,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "outlet-premium-bahia-253",
-    "name": "OUTLET PREMIUM BAHIA",
-    "lat": -12.82503,
-    "lng": -38.26755,
-    "city": "Camaçari",
-    "state": "BA"
-  },
-  {
-    "id": "outlet-premium-brasilia-254",
-    "name": "OUTLET PREMIUM BRASÍLIA",
-    "lat": -16.12097,
-    "lng": -48.39858
-  },
-  {
-    "id": "outlet-premium-grande-sao-paulo-255",
-    "name": "OUTLET PREMIUM GRANDE SAO PAULO",
-    "lat": -23.44496,
-    "lng": -46.28004,
-    "city": "Itaquaquecetuba",
-    "state": "SP"
-  },
-  {
-    "id": "outlet-premium-rio-de-janeiro-256",
-    "name": "OUTLET PREMIUM RIO DE JANEIRO",
-    "lat": -22.6763,
-    "lng": -43.28847,
-    "city": "Duque de Caxias",
-    "state": "RJ"
-  },
-  {
-    "id": "padaria-ilhamar-257",
-    "name": "PADARIA ILHAMAR",
-    "lat": -23.61688,
-    "lng": -46.63255,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "padaria-moinhos-da-lapa-258",
-    "name": "PADARIA MOINHOS DA LAPA",
-    "lat": -23.52575,
-    "lng": -46.69792,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "paddock-1-259",
-    "name": "PADDOCK 1",
-    "lat": -23.5822,
-    "lng": -46.69193,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "paddock-2-260",
-    "name": "PADDOCK 2",
-    "lat": -23.58162,
-    "lng": -46.69232,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "parque-cultural-paulista-261",
-    "name": "PARQUE CULTURAL PAULISTA",
-    "lat": -23.57089,
-    "lng": -46.64514,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "parque-shopping-maia-262",
-    "name": "PARQUE SHOPPING MAIA",
-    "lat": -23.4423,
-    "lng": -46.54146,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "parque-shopping-sulacap-263",
-    "name": "PARQUE SHOPPING SULACAP",
-    "lat": -22.88604,
-    "lng": -43.40194,
-    "city": "Rio de Janeiro",
-    "state": "RJ"
-  },
-  {
-    "id": "pier-26-264",
-    "name": "PIER 26",
-    "lat": -24.00306,
-    "lng": -46.29319
-  },
-  {
-    "id": "pietra-victoria-265",
-    "name": "PIETRA VICTORIA",
-    "lat": -23.5852,
-    "lng": -46.5734,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "place-vendome-266",
-    "name": "PLACE VENDOME",
-    "lat": -23.64594,
-    "lng": -46.67283,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "plasfan-267",
-    "name": "PLASFAN",
-    "lat": -23.69233,
-    "lng": -46.82121,
-    "city": "Itapecerica da Serra",
-    "state": "SP"
-  },
-  {
-    "id": "poli-shopping-268",
-    "name": "POLI SHOPPING",
-    "lat": -23.47027,
-    "lng": -46.52853,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "polimetri-industria-metalurgica-ltda-269",
-    "name": "POLIMETRI INDUSTRIA METALURGICA LTDA",
-    "lat": -23.69368,
-    "lng": -46.47632,
+    "id": "assai-maua",
+    "name": "ASSAI -MAUÁ",
+    "lat": -23.6630564,
+    "lng": -46.4600985,
     "city": "Mauá",
     "state": "SP"
   },
   {
-    "id": "polyplastic-270",
-    "name": "POLYPLASTIC",
-    "lat": -23.38263,
-    "lng": -46.71163,
-    "city": "Caieiras",
+    "id": "assai-paulinia",
+    "name": "ASSAI -PAULINIA",
+    "lat": -22.7781586,
+    "lng": -47.1440221,
+    "city": "Paulínia",
     "state": "SP"
   },
   {
-    "id": "portal-da-santa-ines-auto-posto-ltda-271",
-    "name": "PORTAL DA SANTA INES AUTO POSTO LTDA",
-    "lat": -23.46562,
-    "lng": -46.63627
-  },
-  {
-    "id": "pousada-recanto-do-teixeira-272",
-    "name": "POUSADA RECANTO DO TEIXEIRA",
-    "lat": -23.15978,
-    "lng": -46.39654,
-    "city": "Nazaré Paulista",
-    "state": "SP"
-  },
-  {
-    "id": "praca-faria-lima-273",
-    "name": "PRAÇA FARIA LIMA",
-    "lat": -23.59298,
-    "lng": -46.67997,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "praiamar-corporate-274",
-    "name": "PRAIAMAR CORPORATE",
-    "lat": -23.9784,
-    "lng": -46.30912,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "prefeitura-do-municipio-de-bertioga-275",
-    "name": "PREFEITURA DO MUNICÍPIO DE BERTIOGA",
-    "lat": -23.84664,
-    "lng": -46.14264,
-    "city": "Bertioga",
-    "state": "SP"
-  },
-  {
-    "id": "prefeitura-municipal-de-lagoa-seca-276",
-    "name": "PREFEITURA MUNICIPAL DE LAGOA SECA",
-    "lat": -7.15659,
-    "lng": -35.85577,
-    "city": "Lagoa Seca",
-    "state": "PB"
-  },
-  {
-    "id": "princesa-daniela-277",
-    "name": "PRINCESA DANIELA",
-    "lat": -23.6875,
-    "lng": -46.55355,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "promon-engenharia-278",
-    "name": "PROMON ENGENHARIA",
-    "lat": -23.59059,
-    "lng": -46.68667,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "qlq-oxiteno-279",
-    "name": "QLQ - OXITENO",
-    "lat": -12.65566,
-    "lng": -38.33041,
-    "city": "Camaçari",
-    "state": "BA"
-  },
-  {
-    "id": "qxsa-oxiteno-280",
-    "name": "QXSA - OXITENO",
-    "lat": -12.65437,
-    "lng": -38.32164,
-    "city": "Camaçari",
-    "state": "BA"
-  },
-  {
-    "id": "red-bull-bragantino-futebol-ltda-281",
-    "name": "RED BULL BRAGANTINO FUTEBOL LTDA.",
-    "lat": -23.10146,
-    "lng": -46.52354,
-    "city": "Atibaia",
-    "state": "SP"
-  },
-  {
-    "id": "renata-e-marta-282",
-    "name": "RENATA E MARTA",
-    "lat": -23.54076,
-    "lng": -46.67697,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "residencial-qualita-283",
-    "name": "RESIDENCIAL QUALITA",
-    "lat": -23.95523,
-    "lng": -46.34203,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "residencial-sul-284",
-    "name": "RESIDENCIAL SUL",
-    "lat": -23.57439,
-    "lng": -46.58024,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "resort-itanhaem-1-285",
-    "name": "RESORT ITANHAEM 1",
-    "lat": -24.18134,
-    "lng": -46.77945,
-    "city": "Itanhaém",
-    "state": "SP"
-  },
-  {
-    "id": "resort-itanhaem-2-286",
-    "name": "RESORT ITANHAEM 2",
-    "lat": -24.18085,
-    "lng": -46.77942,
-    "city": "Itanhaém",
-    "state": "SP"
-  },
-  {
-    "id": "rm-square-287",
-    "name": "RM SQUARE",
-    "lat": -23.61705,
-    "lng": -46.68706,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "rute-e-beatriz-288",
-    "name": "RUTE E BEATRIZ",
-    "lat": -23.57864,
-    "lng": -46.67469,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "saab-aeronautica-montagens-s-a-289",
-    "name": "Saab Aeronáutica montagens S.A",
-    "lat": -23.72514,
-    "lng": -46.60001,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "saldanha-da-gama-290",
-    "name": "SALDANHA DA GAMA",
-    "lat": -23.99095,
-    "lng": -46.3036,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "san-bernardino-291",
-    "name": "SAN BERNARDINO",
-    "lat": -23.96593,
-    "lng": -46.33864,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "santa-julia-292",
-    "name": "SANTA JULIA",
-    "lat": -22.58799,
-    "lng": -46.63237,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "santa-rita-293",
-    "name": "SANTA RITA",
-    "lat": -23.57554,
-    "lng": -46.64785,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sao-luiz-294",
-    "name": "SÃO LUIZ",
-    "lat": -23.59039,
-    "lng": -46.6866,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "secretaria-muncipal-de-saude-de-santa-ri-295",
-    "name": "SECRETARIA MUNCIPAL DE SAÚDE DE SANTA RITA",
-    "lat": -7.12283,
-    "lng": -34.98209,
-    "city": "Santa Rita",
-    "state": "PB"
-  },
-  {
-    "id": "secretaria-municipal-de-saude-de-japeri-296",
-    "name": "SECRETARIA MUNICIPAL DE SAÚDE DE JAPERI/FUNDO MUNICIPAL DE SAUDE - SEMUS",
-    "lat": -22.67858,
-    "lng": -43.61186,
-    "city": "Japeri",
-    "state": "RJ"
-  },
-  {
-    "id": "sede-cab-297",
-    "name": "SEDE CAB",
-    "lat": -12.94752,
-    "lng": -38.43488,
-    "city": "Salvador",
-    "state": "BA"
-  },
-  {
-    "id": "sede-nazare-298",
-    "name": "SEDE NAZARÉ",
-    "lat": -12.97674,
-    "lng": -38.50516,
-    "city": "Salvador",
-    "state": "BA"
-  },
-  {
-    "id": "setor-de-epidemiologia-volta-redonda-299",
-    "name": "SETOR DE EPIDEMIOLOGIA (VOLTA REDONDA)",
-    "lat": -22.50016,
-    "lng": -44.08832
-  },
-  {
-    "id": "sheraton-santos-300",
-    "name": "SHERATON SANTOS",
-    "lat": -23.97873,
-    "lng": -46.30897,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "slip-quimica-301",
-    "name": "SLIP QUIMICA",
-    "lat": -23.71273,
-    "lng": -46.59588,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "sociedade-visconde-de-s-leopoldo-encruzi-302",
-    "name": "SOCIEDADE VISCONDE DE S LEOPOLDO - ENCRUZILHADA",
-    "lat": -23.95145,
-    "lng": -46.32853,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "sociedade-visconde-de-s-leopoldo-jose-me-303",
-    "name": "SOCIEDADE VISCONDE DE S LEOPOLDO - JOSÉ MENINO",
-    "lat": -23.96388,
-    "lng": -46.34735,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "sociedade-visconde-de-s-leopoldo-matias-304",
-    "name": "SOCIEDADE VISCONDE DE S LEOPOLDO - MATIAS",
-    "lat": -23.94636,
-    "lng": -46.3227,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-agua-branca-305",
-    "name": "SONDA AGUA BRANCA",
-    "lat": -23.52683,
-    "lng": -46.67159,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-boavista-santo-amaro-306",
-    "name": "SONDA BOAVISTA (SANTO AMARO)",
-    "lat": -23.65472,
-    "lng": -46.70091,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-centro-de-distribuicao-307",
-    "name": "SONDA CENTRO DE DISTRIBUIÇÃO",
-    "lat": -23.7274,
-    "lng": -46.5513,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-cidade-dutra-interlagos-308",
-    "name": "SONDA CIDADE DUTRA (INTERLAGOS)",
-    "lat": -23.71434,
-    "lng": -46.6981,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-edgar-facco-309",
-    "name": "SONDA EDGAR FACCO",
-    "lat": -23.50393,
-    "lng": -46.70686,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-freguesia-do-o-itaberaba-310",
-    "name": "SONDA FREGUESIA DO Ó (ITABERABA)",
-    "lat": -23.48574,
-    "lng": -46.69291,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-indaiatuba-311",
-    "name": "SONDA INDAIATUBA",
-    "lat": -23.09484,
-    "lng": -47.22505,
-    "city": "Indaiatuba",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-itaim-paulista-312",
-    "name": "SONDA ITAIM PAULISTA",
-    "lat": -23.48541,
-    "lng": -46.38052,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-maria-candida-313",
-    "name": "SONDA MARIA CANDIDA",
-    "lat": -23.50666,
-    "lng": -46.60015,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-penha-314",
-    "name": "SONDA PENHA",
-    "lat": -23.52573,
-    "lng": -46.54741,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-pompeia-315",
-    "name": "SONDA POMPEIA",
-    "lat": -23.52488,
-    "lng": -46.68314,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-santo-andre-316",
-    "name": "SONDA SANTO ANDRE",
-    "lat": -23.63902,
-    "lng": -46.52662,
-    "city": "Santo André",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-sao-caetano-sul-1-317",
-    "name": "SONDA SÃO CAETANO SUL 1",
-    "lat": -23.64453,
-    "lng": -46.55665,
-    "city": "São Caetano do Sul",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-sao-jose-dos-campos-318",
-    "name": "SONDA SÃO JOSÉ DOS CAMPOS",
-    "lat": -23.18979,
-    "lng": -45.87396,
-    "city": "São José dos Campos",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-sbc-319",
-    "name": "SONDA SBC",
-    "lat": -23.6856,
-    "lng": -46.5461,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-tatuape-320",
-    "name": "SONDA TATUAPÉ",
-    "lat": -23.54664,
-    "lng": -46.5636,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-tremembe-321",
-    "name": "SONDA TREMEMBÉ",
-    "lat": -23.45785,
-    "lng": -46.61373,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-vila-barros-322",
-    "name": "SONDA VILA BARROS",
-    "lat": -23.45316,
-    "lng": -46.50802,
-    "city": "Guarulhos",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-vila-carrao-323",
-    "name": "SONDA VILA CARRÃO",
-    "lat": -23.54737,
-    "lng": -46.53945,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sonda-vila-rio-324",
-    "name": "SONDA VILA RIO",
-    "lat": -23.42841,
-    "lng": -46.53706
-  },
-  {
-    "id": "sonda-vila-sao-jose-325",
-    "name": "SONDA VILA SÃO JOSE",
-    "lat": -23.74863,
-    "lng": -46.70988,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "soul-326",
-    "name": "SOUL",
-    "lat": -23.70052,
-    "lng": -46.55057,
-    "city": "São Bernardo do Campo",
-    "state": "SP"
-  },
-  {
-    "id": "spa-aterrado-volta-redonda-327",
-    "name": "SPA ATERRADO (VOLTA REDONDA)",
-    "lat": -22.50847,
-    "lng": -44.08992,
-    "city": "Volta Redonda",
-    "state": "RJ"
-  },
-  {
-    "id": "spa-conforto-volta-redonda-328",
-    "name": "SPA CONFORTO (VOLTA REDONDA)",
-    "lat": -22.52316,
-    "lng": -44.12158,
-    "city": "Volta Redonda",
-    "state": "RJ"
-  },
-  {
-    "id": "spdm-upa-vila-baixa-329",
-    "name": "SPDM - UPA VILA BAIXA",
-    "lat": -23.51729,
-    "lng": -46.87733,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "spdm-butanta-330",
-    "name": "SPDM BUTANTÃ",
-    "lat": -23.58669,
-    "lng": -46.73229,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-loizote-331",
-    "name": "SPDM Uberlandia MG (UAI Loizote)",
-    "lat": -18.92082,
-    "lng": -48.33016,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-martins-332",
-    "name": "SPDM Uberlandia MG (UAI Martins)",
-    "lat": -18.91407,
-    "lng": -48.28826,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-morumbi-333",
-    "name": "SPDM Uberlandia MG (UAI Morumbi)",
-    "lat": -18.91253,
-    "lng": -48.19286,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-planalto-334",
-    "name": "SPDM Uberlandia MG (UAI Planalto)",
-    "lat": -18.93818,
-    "lng": -48.30883,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-roosevelt-335",
-    "name": "SPDM Uberlandia MG (UAI Roosevelt)",
-    "lat": -18.89121,
-    "lng": -48.28571,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-uberlandia-mg-uai-tibery-336",
-    "name": "SPDM Uberlandia MG (UAI Tibery)",
-    "lat": -18.90622,
-    "lng": -48.24667,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "spdm-vila-guilherme-337",
-    "name": "SPDM VILA GUILHERME",
-    "lat": -23.51613,
-    "lng": -46.60535,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "subcondominio-urbanity-business-338",
-    "name": "SUBCONDOMINIO URBANITY BUSINESS",
-    "lat": -23.63312,
-    "lng": -46.71562,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "sylvester-michael-feddes-339",
-    "name": "SYLVESTER MICHAEL FEDDES",
-    "lat": -23.64364,
-    "lng": -46.68551,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "symrise-340",
-    "name": "SYMRISE",
-    "lat": -23.48204,
-    "lng": -47.41401,
-    "city": "Sorocaba",
-    "state": "SP"
-  },
-  {
-    "id": "terracom-construcoes-341",
-    "name": "TERRACOM CONSTRUÇÕES",
-    "lat": -23.84834,
-    "lng": -46.40106,
-    "city": "Cubatão",
-    "state": "SP"
-  },
-  {
-    "id": "terrestre-ambiental-ltda-342",
-    "name": "TERRESTRE AMBIENTAL LTDA.",
-    "lat": -23.88279,
-    "lng": -46.32515,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "tribunal-regional-do-trabalho-trt-edific-343",
-    "name": "Tribunal Regional do Trabalho (TRT) - Edificio Aracaju",
-    "lat": -10.91341,
-    "lng": -37.09603,
-    "city": "Aracaju",
-    "state": "SE"
-  },
-  {
-    "id": "tribunal-regional-eleitoral-tre-al-edifi-344",
-    "name": "Tribunal Regional Eleitoral (TRE / AL) - Edifício Fórum",
-    "lat": -9.61842,
-    "lng": -35.73979,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "tribunal-regional-eleitoral-tre-al-edifi-345",
-    "name": "Tribunal Regional Eleitoral (TRE / AL) - Edifício Sede",
-    "lat": -9.66136,
-    "lng": -35.73188,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "ucci-hospital-alto-umuarama-346",
-    "name": "UCCI Hospital Alto Umuarama",
-    "lat": -18.88768,
-    "lng": -48.24341,
-    "city": "Uberlândia",
-    "state": "MG"
-  },
-  {
-    "id": "unidade-walter-pereira-morato-upa-taquar-347",
-    "name": "Unidade Walter Pereira Morato (UPA Taquaruçu)",
-    "lat": -10.31587,
-    "lng": -48.15385,
-    "city": "Palmas",
-    "state": "TO"
-  },
-  {
-    "id": "universidade-do-estado-da-bahia-uneb-348",
-    "name": "UNIVERSIDADE DO ESTADO DA BAHIA – UNEB",
-    "lat": -12.95747,
-    "lng": -38.45434
-  },
-  {
-    "id": "universidade-federal-de-alfenas-unifal-m-349",
-    "name": "Universidade Federal de Alfenas (UNIFAL / MG)",
-    "lat": -21.42067,
-    "lng": -45.94911,
-    "city": "Alfenas",
-    "state": "MG"
-  },
-  {
-    "id": "upa-santa-agostinho-volta-redonda-350",
-    "name": "UPA SANTA AGOSTINHO (VOLTA REDONDA)",
-    "lat": -22.48816,
-    "lng": -44.07151,
-    "city": "Volta Redonda",
-    "state": "RJ"
-  },
-  {
-    "id": "varandas-da-cantareira-351",
-    "name": "VARANDAS DA CANTAREIRA",
-    "lat": -23.48371,
-    "lng": -46.61773,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "villa-das-rosas-352",
-    "name": "VILLA DAS ROSAS",
-    "lat": -23.62886,
-    "lng": -46.69094,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "villa-flor-353",
-    "name": "VILLA FLOR",
-    "lat": -23.56669,
-    "lng": -46.54606,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "ville-de-france-354",
-    "name": "VILLE DE FRANCE",
-    "lat": -23.97935,
-    "lng": -46.30921,
-    "city": "Santos",
-    "state": "SP"
-  },
-  {
-    "id": "visconde-de-porto-seguro-355",
-    "name": "VISCONDE DE PORTO SEGURO",
-    "lat": -23.58179,
-    "lng": -46.6778,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "vista-marina-356",
-    "name": "Vista Marina",
-    "lat": -23.9896,
-    "lng": -46.29916
-  },
-  {
-    "id": "vital-brasil-357",
-    "name": "VITAL BRASIL",
-    "lat": -23.57404,
-    "lng": -46.726,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "vivaz-estacao-358",
-    "name": "Vivaz Estação",
-    "lat": -23.58594,
-    "lng": -46.58369,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "votorantim-359",
-    "name": "VOTORANTIM",
-    "lat": -23.54039,
-    "lng": -46.73336,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "walmir-paulino-farmaervas-360",
-    "name": "WALMIR PAULINO - FARMAERVAS",
-    "lat": -23.34225,
-    "lng": -47.48293,
-    "city": "Porto Feliz",
-    "state": "SP"
-  },
-  {
-    "id": "santander-tools-piracicaba-361",
-    "name": "SANTANDER - TOOLS PIRACICABA",
-    "lat": -22.70415,
-    "lng": -47.65392,
+    "id": "assai-piracicaba-centro",
+    "name": "ASSAI -PIRACICABA CENTRO",
+    "lat": -22.7207727,
+    "lng": -47.6461283,
     "city": "Piracicaba",
     "state": "SP"
   },
   {
-    "id": "santander-radar-362",
-    "name": "SANTANDER - RADAR",
-    "lat": -23.65223,
-    "lng": -46.71381,
-    "city": "São Paulo",
+    "id": "assai-piracicaba-nova-america",
+    "name": "ASSAI -PIRACICABA NOVA AMÉRICA",
+    "lat": -22.7466366,
+    "lng": -47.6281079,
+    "city": "Piracicaba",
     "state": "SP"
   },
   {
-    "id": "santander-gd-i-363",
-    "name": "SANTANDER - GD I",
-    "lat": -23.68216,
-    "lng": -46.68866,
-    "city": "São Paulo",
+    "id": "assai-ribeirao-pires",
+    "name": "ASSAI -RIBEIRÃO PIRES",
+    "lat": -23.7134177,
+    "lng": -46.4160929,
+    "city": "Ribeirão Pires",
     "state": "SP"
   },
   {
-    "id": "santander-farol-sp-364",
-    "name": "SANTANDER - FAROL SP",
-    "lat": -23.5457,
-    "lng": -46.63406,
-    "city": "São Paulo",
+    "id": "assai-rio-claro",
+    "name": "ASSAI -RIO CLARO",
+    "lat": -22.4149727,
+    "lng": -47.5749304,
+    "city": "Rio Claro",
     "state": "SP"
   },
   {
-    "id": "santander-sede-premiun-365",
-    "name": "SANTANDER - SEDE PREMIUM",
-    "lat": -23.59098,
-    "lng": -46.68919,
-    "city": "São Paulo",
+    "id": "assai-santa-barbara-d-oeste",
+    "name": "ASSAI -SANTA BÁRBARA D'OESTE",
+    "lat": -22.7475963,
+    "lng": -47.3696566,
+    "city": "Santa Bárbara D'Oeste",
     "state": "SP"
   },
   {
-    "id": "santander-pulse-sorocaba-366",
-    "name": "SANTANDER - PULSE SOROCABA",
-    "lat": -23.50058,
-    "lng": -47.45475,
+    "id": "assai-santo-andre",
+    "name": "ASSAI -SANTO ANDRÉ",
+    "lat": -23.6533509,
+    "lng": -46.5279039,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "assai-santo-andre-g-pirelli",
+    "name": "ASSAI -SANTO ANDRÉ G.PIRELLI",
+    "lat": -23.6634454,
+    "lng": -46.5031055,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "assai-santo-andre-jardim-utinga",
+    "name": "ASSAI -SANTO ANDRE JARDIM UTINGA",
+    "lat": -23.6153003,
+    "lng": -46.5221843,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "assai-santo-andre-pereira-barreto",
+    "name": "ASSAI -SANTO ANDRÉ PEREIRA BARRETO",
+    "lat": -23.6533509,
+    "lng": -46.5279039,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "assai-sao-bernardo-alvarenga",
+    "name": "ASSAI -SÃO BERNARDO ALVARENGA",
+    "lat": -23.7607652,
+    "lng": -46.5986428,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "assai-sao-bernardo-anchieta-pauliceia-projeto-olimpo",
+    "name": "ASSAI -SÃO BERNARDO ANCHIETA PAULICÉIA (PROJETO OLIMPO)",
+    "lat": -23.673421,
+    "lng": -46.5735564,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "assai-sao-bernardo-av-taboao",
+    "name": "ASSAI -SÃO BERNARDO AV TABÕAO",
+    "lat": -23.6504139,
+    "lng": -46.5894286,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "assai-sao-caetano-do-sul",
+    "name": "ASSAI -SÃO CAETANO DO SUL",
+    "lat": -23.6195923,
+    "lng": -46.5688323,
+    "city": "São Caetano do Sul",
+    "state": "SP"
+  },
+  {
+    "id": "assai-sorocaba-itavuvu",
+    "name": "ASSAI -SOROCABA (ITAVUVU)",
+    "lat": -23.5003451,
+    "lng": -47.4582864,
     "city": "Sorocaba",
     "state": "SP"
   },
   {
-    "id": "santander-estacao-toro-367",
-    "name": "SANTANDER - ESTAÇÃO TORO",
-    "lat": -19.93222,
-    "lng": -43.92632,
-    "city": "Belo Horizonte",
-    "state": "MG"
-  },
-  {
-    "id": "condominio-edificio-le-vert-368",
-    "name": "CONDOMINIO EDIFICIO LE VERT",
-    "lat": -23.60039,
-    "lng": -46.67082
-  },
-  {
-    "id": "assai-sao-bernardo-piraporinha-369",
-    "name": "ASSAI - SÃO BERNARDO PIRAPORINHA",
-    "lat": -23.6886,
-    "lng": -46.5736
-  },
-  {
-    "id": "assai-jundiai-370",
-    "name": "ASSAI - JUNDIAÍ",
-    "lat": -23.2114,
-    "lng": -46.85332
-  },
-  {
-    "id": "assai-santo-andre-371",
-    "name": "ASSAI -SANTO ANDRÉ",
-    "lat": -23.6524,
-    "lng": -46.52607
-  },
-  {
-    "id": "assai-limeira-372",
-    "name": "ASSAI -LIMEIRA",
-    "lat": -22.6094,
-    "lng": -47.40979
-  },
-  {
-    "id": "assai-rio-claro-373",
-    "name": "ASSAI -RIO CLARO",
-    "lat": -22.4151,
-    "lng": -47.57501
-  },
-  {
-    "id": "assai-campinas-amoreiras-374",
-    "name": "ASSAI -CAMPINAS AMOREIRAS",
-    "lat": -22.9448,
-    "lng": -47.11121
-  },
-  {
-    "id": "assai-sao-caetano-do-sul-375",
-    "name": "ASSAI -SÃO CAETANO DO SUL",
-    "lat": -23.6134,
-    "lng": -46.57789
-  },
-  {
-    "id": "assai-sorocaba-itavuvu-376",
-    "name": "ASSAI -SOROCABA (ITAVUVU)",
-    "lat": -23.4689,
-    "lng": -47.47694
-  },
-  {
-    "id": "assai-ribeirao-pires-377",
-    "name": "ASSAI -RIBEIRÃO PIRES",
-    "lat": -23.7035,
-    "lng": -46.39767
-  },
-  {
-    "id": "assai-santo-andre-g-pirelli-378",
-    "name": "ASSAI -SANTO ANDRÉ G.PIRELLI",
-    "lat": -23.6643,
-    "lng": -46.49671
-  },
-  {
-    "id": "assai-santo-andre-v-luzita-379",
-    "name": "ASSAI - SANTO ANDRÉ V.LUZITA",
-    "lat": -23.7039,
-    "lng": -46.5043
-  },
-  {
-    "id": "assai-santo-andre-bala-juquinha-380",
-    "name": "ASSAI - SANTO ANDRÉ BALA JUQUINHA",
-    "lat": -23.6176,
-    "lng": -46.54193
-  },
-  {
-    "id": "assai-campinas-centro-381",
-    "name": "ASSAI -CAMPINAS CENTRO",
-    "lat": -22.9046,
-    "lng": -47.06558
-  },
-  {
-    "id": "assai-diadema-382",
-    "name": "ASSAI -DIADEMA",
-    "lat": -23.6893,
-    "lng": -46.59101
-  },
-  {
-    "id": "assai-maua-383",
-    "name": "ASSAI -MAUÁ",
-    "lat": -23.6644,
-    "lng": -46.46129
-  },
-  {
-    "id": "assai-piracicaba-centro-384",
-    "name": "ASSAI -PIRACICABA CENTRO",
-    "lat": -22.7208,
-    "lng": -47.64621
-  },
-  {
-    "id": "assai-paulinia-385",
-    "name": "ASSAI -PAULINIA",
-    "lat": -22.7746,
-    "lng": -47.14642
-  },
-  {
-    "id": "assai-hortolandia-386",
-    "name": "ASSAI -HORTOLÂNDIA",
-    "lat": -22.8644,
-    "lng": -47.21145
-  },
-  {
-    "id": "assai-indaiatuba-387",
-    "name": "ASSAI -INDAIATUBA",
-    "lat": -23.1104,
-    "lng": -47.22165
-  },
-  {
-    "id": "assai-jundiai-ferroviarios-388",
-    "name": "ASSAI -JUNDIAÍ FERROVIÁRIOS",
-    "lat": -23.1899,
-    "lng": -46.87667
-  },
-  {
-    "id": "assai-sao-bernardo-av-taboao-389",
-    "name": "ASSAI -SÃO BERNARDO AV, TABÕAO",
-    "lat": -23.6481684,
-    "lng": -46.5843935
-  },
-  {
-    "id": "assai-santo-andre-pereira-barreto-390",
-    "name": "ASSAI -SANTO ANDRÉ PEREIRA BARRETO",
-    "lat": -23.6838,
-    "lng": -46.5474
-  },
-  {
-    "id": "cdata-assai-santa-barbara-d-oeste-391",
-    "name": "ASSAI -SANTA BÁRBARA D'OESTE",
-    "lat": -22.7458891,
-    "lng": -47.3664178
-  },
-  {
-    "id": "assai-piracicaba-nova-america-392",
-    "name": "ASSAI -PIRACICABA NOVA AMÉRICA",
-    "lat": -22.7401,
-    "lng": -47.64509
-  },
-  {
-    "id": "assai-limeira-ii-393",
-    "name": "ASSAI -LIMEIRA II",
-    "lat": -22.5874,
-    "lng": -47.39032
-  },
-  {
-    "id": "assai-sorocaba-campolim-projeto-olimpo-394",
+    "id": "assai-sorocaba-campolim-projeto-olimpo",
     "name": "ASSAI -SOROCABA CAMPOLIM (PROJETO OLIMPO)",
-    "lat": -23.5308,
-    "lng": -47.46365
+    "lat": -23.5303395,
+    "lng": -47.4646735,
+    "city": "Sorocaba",
+    "state": "SP"
   },
   {
-    "id": "assai-sao-bernardo-anchieta-pauliceia-pr-395",
-    "name": "ASSAI -SÃO BERNARDO ANCHIETA PAULICÉIA (PROJETO OLIMPO)",
-    "lat": -23.6686,
-    "lng": -46.57466
-  },
-  {
-    "id": "assai-itatiba-projeto-olimpo-396",
-    "name": "ASSAI - ITATIBA (PROJETO OLIMPO)",
-    "lat": -23.0171,
-    "lng": -46.84063
-  },
-  {
-    "id": "assai-sorocaba-santa-rosalia-projeto-oli-397",
+    "id": "assai-sorocaba-santa-rosalia-projeto-olimpo",
     "name": "ASSAI -SOROCABA SANTA ROSÁLIA (PROJETO OLIMPO)",
-    "lat": -23.4903,
-    "lng": -47.4449
+    "lat": -23.5003451,
+    "lng": -47.4582864,
+    "city": "Sorocaba",
+    "state": "SP"
   },
   {
-    "id": "assai-sao-bernardo-alvarenga-398",
-    "name": "ASSAI -SÃO BERNARDO ALVARENGA",
-    "lat": -23.7398,
-    "lng": -46.59572
-  },
-  {
-    "id": "assai-santo-andre-jardim-utinga-399",
-    "name": "ASSAI -SANTO ANDRE JARDIM UTINGA",
-    "lat": -23.6177,
-    "lng": -46.52164
-  },
-  {
-    "id": "assai-sumare-400",
+    "id": "assai-sumare",
     "name": "ASSAI -SUMARÉ",
-    "lat": -22.818,
-    "lng": -47.2652
+    "lat": -22.8217964,
+    "lng": -47.267105,
+    "city": "Sumaré",
+    "state": "SP"
   },
   {
-    "id": "condominio-residencial-dez-sacoma-401",
-    "name": "CONDOMINIO RESIDENCIAL DEZ SACOMÃ",
-    "lat": -23.64574,
-    "lng": -46.59736,
+    "id": "associacao-paulista-para-o-desenvolvimento-da-medicina",
+    "name": "ASSOCIAÇÃO PAULISTA PARA O DESENVOLVIMENTO DA MEDICINA",
+    "lat": -23.5174139,
+    "lng": -46.5776898,
     "city": "São Paulo",
     "state": "SP"
   },
   {
-    "id": "condominio-sierra-leoa-402",
-    "name": "CONDOMINIO SIERRA LEOA",
-    "lat": -23.63029,
-    "lng": -46.66966,
-    "city": "São Paulo",
-    "state": "SP"
-  },
-  {
-    "id": "donaldson-do-brasil-403",
-    "name": "DONALDSON DO BRASIL",
-    "lat": -23.01422,
-    "lng": -46.76225,
-    "city": "Itatiba",
-    "state": "SP"
-  },
-  {
-    "id": "meli-maceio-404",
-    "name": "MELI - MACEIO",
-    "lat": -9.64768,
-    "lng": -35.73393,
-    "city": "Maceió",
-    "state": "AL"
-  },
-  {
-    "id": "meli-manaus-405",
-    "name": "MELI - MANAUS",
-    "lat": -3.07395,
-    "lng": -60.08934,
-    "city": "Manaus"
-  },
-  {
-    "id": "meli-salvador-406",
-    "name": "MELI - SALVADOR",
-    "lat": -12.78678,
-    "lng": -38.40304,
-    "city": "Simões Filho",
+    "id": "atakarejo-distribuidor-de-alimentos-28",
+    "name": "Atakarejo Distribuidor de Alimentos (28)",
+    "lat": -13.8604033,
+    "lng": -40.0719627,
+    "city": "Jequié",
     "state": "BA"
   },
   {
-    "id": "meli-rio-verde-407",
-    "name": "MELI - RIO VERDE",
-    "lat": -18.09079,
-    "lng": -50.20932,
-    "city": "Rio Verde",
-    "state": "GO"
-  },
-  {
-    "id": "meli-salvador-ii-408",
-    "name": "MELI - SALVADOR II",
-    "lat": -12.89921,
-    "lng": -38.45065,
-    "city": "Salvador",
+    "id": "atakarejo-distribuidor-de-alimentos-35",
+    "name": "Atakarejo Distribuidor de Alimentos (35)",
+    "lat": -14.8396276,
+    "lng": -39.0258985,
+    "city": "Ilhéus",
     "state": "BA"
   },
   {
-    "id": "meli-feira-de-santana-409",
-    "name": "MELI - FEIRA DE SANTANA",
-    "lat": -12.25789,
-    "lng": -38.9598,
-    "city": "Feira de Santana",
-    "state": "BA"
-  },
-  {
-    "id": "meli-vitoria-da-conquista-410",
-    "name": "MELI - VITORIA DA CONQUISTA",
-    "lat": -15.07474,
-    "lng": -40.89403,
+    "id": "atakarejo-distribuidor-de-alimentos-36",
+    "name": "Atakarejo Distribuidor de Alimentos (36)",
+    "lat": -14.8880215,
+    "lng": -40.8083339,
     "city": "Vitória da Conquista",
     "state": "BA"
   },
   {
-    "id": "meli-fortaleza-411",
-    "name": "MELI - FORTALEZA",
-    "lat": -3.74778,
-    "lng": -38.46106,
+    "id": "atakarejo-distribuidor-de-alimentos-42",
+    "name": "Atakarejo Distribuidor de Alimentos (42)",
+    "lat": -14.8082523,
+    "lng": -39.2753375,
+    "city": "Itabuna",
+    "state": "BA"
+  },
+  {
+    "id": "atakarejo-distribuidor-de-alimentos-44",
+    "name": "Atakarejo Distribuidor de Alimentos (44)",
+    "lat": -10.9385648,
+    "lng": -37.0650425,
+    "city": "Aracaju",
+    "state": "SE"
+  },
+  {
+    "id": "atakarejo-distribuidor-de-alimentos-46",
+    "name": "Atakarejo Distribuidor de Alimentos (46)",
+    "lat": -15.2454478,
+    "lng": -40.2460053,
+    "state": "BA",
+    "city": "Itapetinga"
+  },
+  {
+    "id": "atakarejo-distribuidor-de-alimentos-47",
+    "name": "Atakarejo Distribuidor de Alimentos (47)",
+    "lat": -12.4171384,
+    "lng": -38.9522534,
+    "state": "BA",
+    "city": "São Gonçalo dos Campos"
+  },
+  {
+    "id": "aurelia-paes-e-doces-e-restaurante-ltda",
+    "name": "Aurelia Pães e Doces e Restaurante LTDA",
+    "lat": -23.5258731,
+    "lng": -46.6978026,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "auto-posto-dacar",
+    "name": "Auto Posto Dacar",
+    "lat": -23.5381988,
+    "lng": -46.4788771,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "auto-posto-maria-carlota",
+    "name": "Auto Posto Maria Carlota",
+    "lat": -23.5302798,
+    "lng": -46.527942,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "auto-shopping-guarulhos",
+    "name": "Auto Shopping Guarulhos",
+    "lat": -23.4675941,
+    "lng": -46.5277704,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "b3-prc-antonio-prado",
+    "name": "B3 PRÇ ANTONIO PRADO",
+    "lat": -23.5456657,
+    "lng": -46.6342657,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "b3-s-a-joao-bricola",
+    "name": "B3 S.A. - JOÃO BRICOLA",
+    "lat": -23.5453734,
+    "lng": -46.6339346,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "b3-xv-de-novembro",
+    "name": "B3 XV DE NOVEMBRO",
+    "lat": -23.5465253,
+    "lng": -46.6343972,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "banco-bmg-sp-locacao",
+    "name": "BANCO BMG (SP) - LOCAÇÃO",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "banco-bmg-joao-pinheiro-mg",
+    "name": "BANCO BMG JOÃO PINHEIRO (MG)",
+    "lat": -19.9279996,
+    "lng": -43.9370071,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "banco-bmg-s-a-alameda",
+    "name": "BANCO BMG S/A - ALAMEDA",
+    "lat": -23.5582098,
+    "lng": -46.6625554,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "banco-luso-link-system",
+    "name": "Banco Luso - (Link System)",
+    "lat": -23.6198999,
+    "lng": -46.6889593,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "berrini-1681",
+    "name": "Berrini 1681",
+    "lat": -23.6115265,
+    "lng": -46.6949193,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "california-e-florida",
+    "name": "California e Flórida",
+    "lat": -23.5472807,
+    "lng": -46.7489771,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "caroel-alexandre",
+    "name": "Caroel (Alexandre)",
+    "lat": -23.3002991,
+    "lng": -47.2895731,
+    "city": "Itu",
+    "state": "SP"
+  },
+  {
+    "id": "caroel-cecilia",
+    "name": "Caroel (cecilia)",
+    "lat": -23.2984191,
+    "lng": -47.2884658,
+    "city": "Itu",
+    "state": "SP"
+  },
+  {
+    "id": "caroel-cecilia-2",
+    "name": "Caroel (cecilia)",
+    "lat": -23.2661032,
+    "lng": -47.2798446,
+    "city": "Itu",
+    "state": "SP"
+  },
+  {
+    "id": "caroel-administracao-saida-da-cidade",
+    "name": "Caroel Administração (Saída da Cidade)",
+    "lat": -22.9373442,
+    "lng": -47.0735627,
+    "city": "Itu",
+    "state": "SP"
+  },
+  {
+    "id": "carrefour-4676-sam-s-aracaju-jardins",
+    "name": "Carrefour - 4676 - Sam's Aracaju (Jardins)",
+    "lat": -10.9462763,
+    "lng": -37.0626154,
+    "city": "Aracaju",
+    "state": "SE"
+  },
+  {
+    "id": "carrefour-4936-sam-s-salvador",
+    "name": "Carrefour - 4936 - Sam's Salvador",
+    "lat": -12.9944656,
+    "lng": -38.4575154,
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "carrefour-4937-sam-s-maceio",
+    "name": "Carrefour - 4937 - Sam's Maceió",
+    "lat": -9.6541231,
+    "lng": -35.7210903,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "carrefour-4941-sam-s-recife",
+    "name": "Carrefour - 4941 - Sam's Recife",
+    "lat": -8.1134741,
+    "lng": -34.9138236,
+    "city": "Recife",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-4943-sam-s-natal",
+    "name": "Carrefour - 4943 - Sam's Natal",
+    "lat": -5.8363746,
+    "lng": -35.2190217,
+    "city": "Natal",
+    "state": "RN"
+  },
+  {
+    "id": "carrefour-4944-sam-s-fortaleza-papicu",
+    "name": "Carrefour - 4944 - Sam's Fortaleza Papicu",
+    "lat": -3.7378452,
+    "lng": -38.4848879,
     "city": "Fortaleza",
     "state": "CE"
   },
   {
-    "id": "meli-brasilia-i-412",
-    "name": "MELI - BRASILIA I",
-    "lat": -15.79399,
+    "id": "carrefour-alcantara",
+    "name": "Carrefour - Alcântara",
+    "lat": -22.821635,
+    "lng": -42.9956797,
+    "city": "São Gonçalo",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-avenida-recife",
+    "name": "Carrefour - AVENIDA RECIFE",
+    "lat": -8.0961662,
+    "lng": -34.928816,
+    "city": "Recife",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-barra",
+    "name": "Carrefour - Barra",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-bh-america",
+    "name": "Carrefour - BH América",
+    "lat": -19.9227318,
+    "lng": -43.9450948,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-bh-shopping",
+    "name": "Carrefour - BH Shopping",
+    "lat": -19.9227318,
+    "lng": -43.9450948,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-brasilia-aguas-claras",
+    "name": "Carrefour - Brasília Águas Claras",
+    "lat": -15.7939869,
     "lng": -47.8828,
     "city": "Brasília",
     "state": "DF"
   },
   {
-    "id": "meli-brasilia-ii-413",
-    "name": "MELI - BRASILIA II",
-    "lat": -15.80326,
-    "lng": -47.88548,
+    "id": "carrefour-brasilia-asa-norte",
+    "name": "Carrefour - Brasília Asa Norte",
+    "lat": -15.7939869,
+    "lng": -47.8828,
     "city": "Brasília",
     "state": "DF"
   },
   {
-    "id": "meli-goiania-i-414",
-    "name": "MELI - GOIANIA I",
-    "lat": -16.72589,
-    "lng": -49.26385,
+    "id": "carrefour-brasilia-sul",
+    "name": "Carrefour - Brasília Sul",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-campina-grande",
+    "name": "Carrefour - Campina Grande",
+    "lat": -7.2246743,
+    "lng": -35.8771292,
+    "city": "Campina Grande",
+    "state": "PB"
+  },
+  {
+    "id": "carrefour-campo-grande-54",
+    "name": "Carrefour - Campo Grande 54",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-campos-goytacazes",
+    "name": "Carrefour - CAMPOS GOYTACAZES",
+    "lat": -21.7546,
+    "lng": -41.3242,
+    "city": "Campos dos Goytacazes",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-cd-brasilia-df",
+    "name": "Carrefour - CD BRASILIA/DF",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-cd-duque-de-caxias-rj",
+    "name": "Carrefour - CD DUQUE DE CAXIAS/RJ",
+    "lat": -22.6429163,
+    "lng": -43.3021266,
+    "city": "Duque de Caxias",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-cd-muribeca",
+    "name": "Carrefour - CD MURIBECA",
+    "lat": -8.1623304,
+    "lng": -34.9580473,
+    "city": "Jaboatão dos Guararapes",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-cd-piraja-ba",
+    "name": "Carrefour - CD PIRAJA/BA",
+    "lat": -12.9118406,
+    "lng": -38.4433475,
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "carrefour-center-recife",
+    "name": "Carrefour - CENTER RECIFE",
+    "lat": -8.1194893,
+    "lng": -34.902198,
+    "city": "Recife",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-contagem",
+    "name": "Carrefour - Contagem",
+    "lat": -19.9132749,
+    "lng": -44.0840953,
+    "city": "Contagem",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-df-asa-norte-512",
+    "name": "Carrefour - DF - Asa Norte 512",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-df-asa-norte-ii",
+    "name": "Carrefour - DF - Asa Norte II",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-df-asa-sul-i",
+    "name": "Carrefour - DF - Asa Sul I",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-df-asa-sul-ii",
+    "name": "Carrefour - DF - Asa Sul II",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-df-bom-motivo",
+    "name": "Carrefour - DF - Bom Motivo",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-df-lago-sul",
+    "name": "Carrefour - DF - Lago Sul",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-domingos-ferreira",
+    "name": "Carrefour - Domingos Ferreira",
+    "lat": -8.1194893,
+    "lng": -34.902198,
+    "city": "Recife",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-duque-de-caxias",
+    "name": "Carrefour - Duque de Caxias",
+    "lat": -22.6429163,
+    "lng": -43.3021266,
+    "city": "Duque de Caxias",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-duque-de-caxias-brigadeiro",
+    "name": "Carrefour - Duque de Caxias Brigadeiro",
+    "lat": -22.6429163,
+    "lng": -43.3021266,
+    "city": "Duque de Caxias",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-goiania-anapolis",
+    "name": "Carrefour - Goiânia Anápolis",
+    "lat": -15.9323662,
+    "lng": -50.1392928,
+    "city": "Goiânia / Anápolis (cidade a confirmar)",
+    "state": "GO"
+  },
+  {
+    "id": "carrefour-goiania-sudoeste",
+    "name": "Carrefour - Goiânia Sudoeste",
+    "lat": -16.680882,
+    "lng": -49.2532691,
     "city": "Goiânia",
     "state": "GO"
   },
   {
-    "id": "meli-joao-pessoa-415",
-    "name": "MELI - JOAO PESSOA",
-    "lat": -7.26004,
-    "lng": -34.90535,
-    "city": "Conde",
-    "state": "PB"
+    "id": "carrefour-goiania-sul",
+    "name": "Carrefour - Goiânia Sul",
+    "lat": -16.680882,
+    "lng": -49.2532691,
+    "city": "Goiânia",
+    "state": "GO"
   },
   {
-    "id": "meli-sao-luis-416",
-    "name": "MELI - SAO LUIS",
-    "lat": -2.53894,
-    "lng": -44.3006,
-    "city": "São Luís",
-    "state": "MA"
+    "id": "carrefour-guararapes",
+    "name": "Carrefour - GUARARAPES",
+    "lat": -8.1675179,
+    "lng": -34.9182994,
+    "city": "Jaboatão dos Guararapes",
+    "state": "PE"
   },
   {
-    "id": "meli-cuiaba-i-417",
-    "name": "MELI - CUIABA I",
-    "lat": -15.62003,
-    "lng": -56.06202,
-    "city": "Cuiabá",
-    "state": "MT"
-  },
-  {
-    "id": "meli-sinop-418",
-    "name": "MELI - SINOP",
-    "lat": -11.8577,
-    "lng": -55.49678,
-    "city": "Sinop",
-    "state": "MT"
-  },
-  {
-    "id": "meli-campo-grande-419",
-    "name": "MELI - CAMPO GRANDE",
+    "id": "carrefour-hiper-campo-grande",
+    "name": "Carrefour - Hiper Campo Grande",
     "lat": -20.4640173,
     "lng": -54.6162947,
     "city": "Campo Grande",
     "state": "MS"
   },
   {
-    "id": "meli-dourados-420",
-    "name": "MELI - DOURADOS",
-    "lat": -22.23255,
-    "lng": -54.80379,
-    "city": "Dourados",
-    "state": "MS"
+    "id": "carrefour-joao-pessoa",
+    "name": "Carrefour - João Pessoa",
+    "lat": -7.0804506,
+    "lng": -34.8442354,
+    "city": "João Pessoa",
+    "state": "PB"
   },
   {
-    "id": "meli-belem-i-421",
-    "name": "MELI - BELEM I",
-    "lat": -1.35556,
-    "lng": -48.25223,
-    "city": "Benevides",
-    "state": "PA"
+    "id": "carrefour-jp-cidade-dos-bancarios",
+    "name": "Carrefour - JP Cidade dos Bancários",
+    "lat": -7.1488614,
+    "lng": -34.8486005,
+    "city": "João Pessoa",
+    "state": "PB"
   },
   {
-    "id": "meli-recife-422",
-    "name": "MELI - RECIFE",
-    "lat": -8.16788,
-    "lng": -34.94421,
-    "city": "Jaboatão dos Guararapes",
+    "id": "carrefour-juiz-de-fora",
+    "name": "Carrefour - Juiz de Fora",
+    "lat": -21.7609533,
+    "lng": -43.3501129,
+    "city": "Juiz de Fora",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-macae",
+    "name": "Carrefour - MACAE",
+    "lat": -22.2828305,
+    "lng": -41.9649091,
+    "city": "Macaé",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-maceio-jatiuca",
+    "name": "Carrefour - MACEIO JATIUCA",
+    "lat": -9.6541231,
+    "lng": -35.7210903,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "carrefour-mossoro",
+    "name": "Carrefour - MOSSORO",
+    "lat": -5.1888717,
+    "lng": -37.3498254,
+    "city": "Mossoró",
+    "state": "RN"
+  },
+  {
+    "id": "carrefour-natal",
+    "name": "Carrefour - Natal",
+    "lat": -5.7915469,
+    "lng": -35.2257095,
+    "city": "Natal",
+    "state": "RN"
+  },
+  {
+    "id": "carrefour-natal-zona-norte",
+    "name": "Carrefour - Natal Zona Norte",
+    "lat": -5.7569113,
+    "lng": -35.2387398,
+    "city": "Natal",
+    "state": "RN"
+  },
+  {
+    "id": "carrefour-norte-shopping",
+    "name": "Carrefour - Norte Shopping",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-pampulha",
+    "name": "Carrefour - Pampulha",
+    "lat": -19.9227318,
+    "lng": -43.9450948,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-petrolina",
+    "name": "Carrefour - PETROLINA",
+    "lat": -9.3942644,
+    "lng": -40.5062505,
+    "city": "Petrolina",
     "state": "PE"
   },
   {
-    "id": "meli-teresina-423",
-    "name": "MELI - TERESINA",
-    "lat": -5.14214,
-    "lng": -42.79548,
-    "city": "Teresina",
-    "state": "PI"
+    "id": "carrefour-recife",
+    "name": "Carrefour - Recife",
+    "lat": -8.0584933,
+    "lng": -34.8848193,
+    "city": "Recife",
+    "state": "PE"
   },
   {
-    "id": "meli-porto-velho-424",
-    "name": "MELI - PORTO VELHO",
-    "lat": -8.79001,
-    "lng": -63.879,
-    "city": "Porto Velho",
-    "state": "RO"
+    "id": "carrefour-sam-s-farol-maceio",
+    "name": "Carrefour - Sam´s Farol Maceió",
+    "lat": -9.6112061,
+    "lng": -35.7376605,
+    "city": "Maceió",
+    "state": "AL"
   },
   {
-    "id": "meli-natal-425",
-    "name": "MELI - NATAL",
-    "lat": -6.07469,
-    "lng": -35.23702,
-    "city": "Natal"
+    "id": "carrefour-sam-s-feira-de-santana",
+    "name": "Carrefour - Sam´s Feira de Santana",
+    "lat": -12.2277276,
+    "lng": -38.939992,
+    "city": "Feira de Santana",
+    "state": "BA"
   },
   {
-    "id": "meli-aracaju-426",
-    "name": "MELI - ARACAJU",
-    "lat": -10.85531,
-    "lng": -37.12649,
-    "city": "Nossa Sra. do Socorro",
-    "state": "SE"
+    "id": "carrefour-sam-s-uberlandia",
+    "name": "Carrefour - Sam´S Uberlândia",
+    "lat": -18.9188041,
+    "lng": -48.2767837,
+    "city": "Uberlândia",
+    "state": "MG"
   },
   {
-    "id": "meli-palmas-427",
-    "name": "MELI - PALMAS",
-    "lat": -10.20653,
-    "lng": -48.33575,
-    "city": "Palmas",
-    "state": "TO"
+    "id": "carrefour-sam-s-washington-soares",
+    "name": "Carrefour - Sam´s Washington Soares",
+    "lat": -3.7679549,
+    "lng": -38.4958975,
+    "city": "Fortaleza",
+    "state": "CE"
   },
   {
-    "id": "meli-belem-ii-428",
-    "name": "MELI - BELEM II",
-    "lat": -1.35556,
-    "lng": -48.25223,
-    "city": "Benevides",
-    "state": "PA"
+    "id": "carrefour-sam-s-aguas-claras",
+    "name": "Carrefour - Sam's Águas Claras",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
   },
   {
-    "id": "meli-goiania-ii-429",
-    "name": "MELI - GOIANIA II",
-    "lat": -16.63432,
-    "lng": -49.23631,
+    "id": "carrefour-sam-s-barra",
+    "name": "Carrefour - Sam's Barra",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-sam-s-bessa-joao-pessoa",
+    "name": "Carrefour - Sam's Bessa João Pessoa",
+    "lat": -7.0804506,
+    "lng": -34.8442354,
+    "city": "João Pessoa",
+    "state": "PB"
+  },
+  {
+    "id": "carrefour-sam-s-brasilia",
+    "name": "Carrefour - Sam's Brasilia",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-sam-s-brasilia-asa-n",
+    "name": "Carrefour - Sam's Brasilia Asa N.",
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "city": "Brasília",
+    "state": "DF"
+  },
+  {
+    "id": "carrefour-sam-s-campo-grande",
+    "name": "Carrefour - Sam's Campo Grande",
+    "lat": -20.4640173,
+    "lng": -54.6162947,
+    "city": "Campo Grande",
+    "state": "MS"
+  },
+  {
+    "id": "carrefour-sam-s-club-pampulha",
+    "name": "Carrefour - Sam's Club Pampulha",
+    "lat": -19.9227318,
+    "lng": -43.9450948,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-sam-s-contagem",
+    "name": "Carrefour - Sam's Contagem",
+    "lat": -19.9132749,
+    "lng": -44.0840953,
+    "city": "Contagem",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-sam-s-goiania",
+    "name": "Carrefour - Sam's Goiânia",
+    "lat": -16.680882,
+    "lng": -49.2532691,
     "city": "Goiânia",
     "state": "GO"
   },
   {
-    "id": "meli-cuiaba-ii-430",
-    "name": "MELI - CUIABA II",
-    "lat": -15.64582,
-    "lng": -56.13222,
-    "city": "Várzea Grande",
-    "state": "MT"
+    "id": "carrefour-sam-s-niteroi",
+    "name": "Carrefour - Sam's Niteroi",
+    "lat": -22.8884,
+    "lng": -43.1147,
+    "city": "Niterói",
+    "state": "RJ"
   },
   {
-    "id": "meli-salvador-ii-431",
-    "name": "MELI - SALVADOR II",
-    "lat": -12.91472,
-    "lng": -38.32924,
+    "id": "carrefour-sam-s-rio-l-amarela",
+    "name": "Carrefour - Sam's Rio L. Amarela",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-sam-s-vitoria",
+    "name": "Carrefour - Sam's Vitória",
+    "lat": -20.3200917,
+    "lng": -40.3376682,
+    "city": "Vitória",
+    "state": "ES"
+  },
+  {
+    "id": "carrefour-sams-bonoco",
+    "name": "Carrefour - Sams Bonoco",
+    "lat": -12.9782299,
+    "lng": -38.4902914,
     "city": "Salvador",
     "state": "BA"
   },
   {
-    "id": "coca-femsa-curitiba-432",
+    "id": "carrefour-sams-lauro-de-freitas",
+    "name": "Carrefour - Sams Lauro de Freitas",
+    "lat": -12.8602189,
+    "lng": -38.3223396,
+    "city": "Lauro de Freitas",
+    "state": "BA"
+  },
+  {
+    "id": "carrefour-sams-teresina",
+    "name": "Carrefour - Sams Teresina",
+    "lat": -5.0803456,
+    "lng": -42.7717306,
+    "city": "Teresina",
+    "state": "PI"
+  },
+  {
+    "id": "carrefour-sulacap",
+    "name": "Carrefour - Sulacap",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "carrefour-tacaruna-shopping",
+    "name": "Carrefour - TACARUNA SHOPPING",
+    "lat": -8.0417288,
+    "lng": -34.8718461,
+    "city": "Recife",
+    "state": "PE"
+  },
+  {
+    "id": "carrefour-uberlandia",
+    "name": "Carrefour - Uberlândia",
+    "lat": -18.9188041,
+    "lng": -48.2767837,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "carrefour-vila-velha-shopping",
+    "name": "Carrefour - Vila Velha Shopping",
+    "lat": -20.4277515,
+    "lng": -40.3773071,
+    "city": "Vila Velha",
+    "state": "ES"
+  },
+  {
+    "id": "carrefour-analia-franco",
+    "name": "CARREFOUR ANÁLIA FRANCO",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "casa-alejandro",
+    "name": "Casa Alejandro",
+    "lat": -23.4787857,
+    "lng": -46.854766,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "casa-delcir-sonda-honolulu-13",
+    "name": "Casa Delcir Sonda (Honolulu 13)",
+    "lat": -23.473208,
+    "lng": -46.8665453,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "casa-delcir-sonda-tait-12",
+    "name": "Casa Delcir Sonda (Tait 12)",
+    "lat": -23.4705468,
+    "lng": -46.8654209,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "casa-igor-sonda-casa-nova",
+    "name": "Casa Igor Sonda (casa nova)",
+    "lat": -23.4730544,
+    "lng": -46.8535754,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "casa-luiz-fernando-hersil",
+    "name": "Casa Luiz Fernando Hersil",
+    "lat": -23.9927768,
+    "lng": -46.2558332,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "casa-neymar",
+    "name": "Casa Neymar",
+    "lat": -23.9579809,
+    "lng": -46.1982793,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "casa-neymar-2",
+    "name": "Casa Neymar",
+    "lat": -23.9617302,
+    "lng": -46.3497408,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "casa-neymar-3",
+    "name": "Casa Neymar",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "state": "SP"
+  },
+  {
+    "id": "ccd-laboratorio-mogi-guacu",
+    "name": "CCD - Laboratorio Mogi Guaçu",
+    "lat": -22.372222,
+    "lng": -46.9425,
+    "city": "Mogi Guaçu",
+    "state": "SP"
+  },
+  {
+    "id": "ccd-ial-taubate",
+    "name": "CCD – IAL TAUBATÉ",
+    "lat": -23.031448,
+    "lng": -45.5612792,
+    "city": "Taubaté",
+    "state": "SP"
+  },
+  {
+    "id": "ccd-naor-gve-registro",
+    "name": "CCD – NAOR-GVE REGISTRO",
+    "lat": -24.4945,
+    "lng": -47.7970571,
+    "city": "Registro",
+    "state": "SP"
+  },
+  {
+    "id": "cd-prologis-bettanin",
+    "name": "CD Prologis - BETTANIN",
+    "lat": -23.4388277,
+    "lng": -47.0613084,
+    "city": "Araçariguama",
+    "state": "SP"
+  },
+  {
+    "id": "ce-vivaz-vila-prudente-2",
+    "name": "CE VIVAZ VILA PRUDENTE 2",
+    "lat": -23.5861178,
+    "lng": -46.5838684,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "centro-de-atividades-administrativas-vii-iac-campinas",
+    "name": "Centro de Atividades Administrativas VII - IAC - Campinas",
+    "lat": -22.9001691,
+    "lng": -47.0706764,
+    "city": "Campinas",
+    "state": "SP"
+  },
+  {
+    "id": "centro-empresarial-santa-julia",
+    "name": "CENTRO EMPRESARIAL SANTA JÚLIA",
+    "lat": -23.5881941,
+    "lng": -46.6323349,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cliptec",
+    "name": "Cliptec",
+    "lat": -23.5881941,
+    "lng": -46.6323349,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "clr-ial-aracatuba",
+    "name": "CLR-IAL ARAÇATUBA",
+    "lat": -21.2075403,
+    "lng": -50.4289986,
+    "city": "Araçatuba",
+    "state": "SP"
+  },
+  {
+    "id": "clr-ial-de-ribeirao-preto-vi",
+    "name": "CLR-IAL de Ribeirão Preto – VI",
+    "lat": -21.1700077,
+    "lng": -47.8050614,
+    "city": "Ribeirão Preto",
+    "state": "SP"
+  },
+  {
+    "id": "clr-ial-de-sorocaba-xi",
+    "name": "CLR-IAL de Sorocaba - XI",
+    "lat": -23.5071173,
+    "lng": -47.4548155,
+    "city": "Sorocaba",
+    "state": "SP"
+  },
+  {
+    "id": "clr-ial-s-j-rio-preto",
+    "name": "CLR-IAL S. J. RIO PRETO",
+    "lat": -20.8056034,
+    "lng": -49.3735876,
+    "city": "São José do Rio Preto",
+    "state": "SP"
+  },
+  {
+    "id": "clube-saldanha-da-gama",
+    "name": "Clube Saldanha da Gama",
+    "lat": -23.9893675,
+    "lng": -46.3076786,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "cobal-carapicuiba-sonda-vila-caldas",
+    "name": "Cobal Carapicuiba (SONDA VILA CALDAS)",
+    "lat": -23.5174459,
+    "lng": -46.8414515,
+    "city": "Carapicuíba",
+    "state": "SP"
+  },
+  {
+    "id": "cobal-guarulhos",
+    "name": "Cobal Guarulhos",
+    "lat": -23.4675941,
+    "lng": -46.5277704,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "cobal-penha-sonda",
+    "name": "Cobal Penha (SONDA)",
+    "lat": -23.522784,
+    "lng": -46.543538,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "companhia-municipal-de-transportes-coletivos-mobi-rio",
+    "name": "COMPANHIA MUNICIPAL DE TRANSPORTES COLETIVOS - MOBI-RIO",
+    "lat": -22.8558233,
+    "lng": -43.2309583,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "companhia-municipal-de-transportes-coletivos-mobi-rio-2",
+    "name": "COMPANHIA MUNICIPAL DE TRANSPORTES COLETIVOS - MOBI-RIO",
+    "lat": -22.9162516,
+    "lng": -43.6324651,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "companhia-municipal-de-transportes-coletivos-mobi-rio-3",
+    "name": "COMPANHIA MUNICIPAL DE TRANSPORTES COLETIVOS - MOBI-RIO",
+    "lat": -22.9357427,
+    "lng": -43.6667429,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "companhia-municipal-de-transportes-coletivos-cmtc-rio",
+    "name": "COMPANHIA MUNICIPAL DE TRANSPORTES COLETIVOS CMTC RIO",
+    "lat": -22.871658,
+    "lng": -43.3371976,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "complexo-hospitalar-de-saude-e-assistencia-social-madre-de-deus",
+    "name": "COMPLEXO HOSPITALAR DE SAUDE E ASSISTENCIA SOCIAL - MADRE DE DEUS",
+    "lat": -12.7361419,
+    "lng": -38.6084768,
+    "city": "Madre de Deus",
+    "state": "BA"
+  },
+  {
+    "id": "complexo-votorantim",
+    "name": "COMPLEXO VOTORANTIM",
+    "lat": -23.5275027,
+    "lng": -46.732947,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-castell-de-sophia",
+    "name": "Cond Castell de Sophia",
+    "lat": -23.9656659,
+    "lng": -46.3246598,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "cond-legrand-souza-aranha",
+    "name": "Cond Legrand ( Souza aranha)",
+    "lat": -23.6319936,
+    "lng": -46.7141284,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ponta-verde",
+    "name": "Cond Ponta Verde",
+    "lat": -23.9964823,
+    "lng": -46.2648029,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "cond-sao-luiz",
+    "name": "Cond São Luiz",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-centro-medico-jandaia",
+    "name": "Cond. Centro Médico Jandaia",
+    "lat": -23.6279233,
+    "lng": -46.5197374,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ed-porto-rotondo",
+    "name": "Cond. ED Porto Rotondo",
+    "lat": -24.0072125,
+    "lng": -46.2688468,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ed-andrezza",
+    "name": "Cond. Ed. Andrezza",
+    "lat": -23.5410352,
+    "lng": -46.5649837,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ed-jacutinga",
+    "name": "Cond. Ed. Jacutinga",
+    "lat": -23.6030698,
+    "lng": -46.6660603,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ed-la-grand-maison",
+    "name": "Cond. Ed. La Grand Maison",
+    "lat": -23.9766799,
+    "lng": -46.3113591,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "cond-ed-santo-andre",
+    "name": "Cond. Ed. Santo André",
+    "lat": -23.5430061,
+    "lng": -46.6318964,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-edificio-duquesa-alira-albuquerque-garcez",
+    "name": "Cond. Edifício Duquesa Alira Albuquerque Garcez",
+    "lat": -23.5740396,
+    "lng": -46.5922552,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "cond-residencial-resort-itanhaem-ii",
+    "name": "Cond. Residencial Resort Itanhaém II",
+    "lat": -24.1833421,
+    "lng": -46.7896229,
+    "city": "Itanhaém",
+    "state": "SP"
+  },
+  {
+    "id": "cond-visconde-de-porto-seguro",
+    "name": "Cond. Visconde de Porto Seguro",
+    "lat": -23.5816962,
+    "lng": -46.6778536,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-com-ed-delta-plaza",
+    "name": "Condominio Com. Ed. Delta Plaza",
+    "lat": -23.5679924,
+    "lng": -46.6461516,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-do-edificio-cbs",
+    "name": "CONDOMÍNIO DO EDIFÍCIO CBS",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-do-edificio-jk-tower",
+    "name": "CONDOMINIO DO EDIFICIO JK TOWER",
+    "lat": -23.5892049,
+    "lng": -46.6839228,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-do-edificio-millennium-office-park",
+    "name": "CONDOMINIO DO EDIFICIO MILLENNIUM OFFICE PARK",
+    "lat": -23.59234,
+    "lng": -46.689069,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-do-edificio-p11",
+    "name": "Condominio do Edificio P11",
+    "lat": -23.5679839,
+    "lng": -46.6917319,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-do-edificio-rm-square",
+    "name": "CONDOMINIO DO EDIFICIO RM SQUARE",
+    "lat": -23.6198999,
+    "lng": -46.6889593,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-farme-do-morumbi",
+    "name": "Condominio Ed Farme do Morumbi",
+    "lat": -23.6236043,
+    "lng": -46.733948,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-alamanda",
+    "name": "Condominio Ed. Alamanda",
+    "lat": -23.6129995,
+    "lng": -46.6815564,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-alameda-park-residence",
+    "name": "Condominio Ed. Alameda Park Residence",
+    "lat": -23.9609448,
+    "lng": -46.3166316,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-atlas-office-park",
+    "name": "Condomínio Ed. Atlas Office Park",
+    "lat": -23.5414352,
+    "lng": -46.7342768,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-atua-do-taboao",
+    "name": "Condomínio Ed. Atua do Taboão",
+    "lat": -23.6162809,
+    "lng": -46.7775617,
+    "city": "Taboão da Serra",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-begonias",
+    "name": "Condominio Ed. Begonias",
+    "lat": -23.5747507,
+    "lng": -46.6586919,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-blanco",
+    "name": "Condomínio Ed. Blanco",
+    "lat": -23.5540146,
+    "lng": -46.6926052,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-cap-ferrat",
+    "name": "Condomínio Ed. Cap Ferrat",
+    "lat": -23.6081064,
+    "lng": -46.6576509,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-chateu-du-gilli",
+    "name": "Condominio Ed. Chateu du Gilli",
+    "lat": -23.6081106,
+    "lng": -46.6570304,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-citta-di-consenza",
+    "name": "Condominio Ed. Citta Di Consenza",
+    "lat": -23.9394033,
+    "lng": -46.3200727,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-conjunto-villa-das-rosas",
+    "name": "Condomínio Ed. Conjunto Villa das Rosas.",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-das-magnolias",
+    "name": "Condomínio Ed. Das Magnólias",
+    "lat": -23.6558909,
+    "lng": -46.6627793,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-dom-pedro-de-orleans",
+    "name": "Condomínio Ed. Dom Pedro de Orleans",
+    "lat": -23.640349,
+    "lng": -46.736812,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-don-carlos",
+    "name": "Condomínio Ed. Don Carlos",
+    "lat": -23.5626895,
+    "lng": -46.6364981,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-embauba",
+    "name": "Condomínio Ed. Embaúba",
+    "lat": -23.6292556,
+    "lng": -46.7375529,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-esplan-granja-julieta",
+    "name": "Condomínio Ed. Esplan. Granja Julieta",
+    "lat": -23.6319936,
+    "lng": -46.7141284,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-falstaff-house-apartments",
+    "name": "Condomínio Ed. Falstaff House Apartments",
+    "lat": -23.6186488,
+    "lng": -46.7356375,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-fatto-morumbi",
+    "name": "Condomínio Ed. Fatto Morumbi",
+    "lat": -23.6360019,
+    "lng": -46.7378043,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-fiorella",
+    "name": "Condomínio Ed. Fiorella",
+    "lat": -23.6157283,
+    "lng": -46.6723706,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-fl-office",
+    "name": "Condominio Ed. FL Office",
+    "lat": -23.5943901,
+    "lng": -46.6822487,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-fl-residence",
+    "name": "Condominio Ed. FL Residence",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-gravatai",
+    "name": "Condomínio Ed. Gravatai",
+    "lat": -23.5798055,
+    "lng": -46.6427118,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-green-tambore",
+    "name": "Condomínio Ed. Green Tamboré",
+    "lat": -23.4673565,
+    "lng": -46.8521878,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-heitor-penteado",
+    "name": "Condomínio Ed. Heitor Penteado",
+    "lat": -23.5461172,
+    "lng": -46.6912463,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-ibirapuera-tower",
+    "name": "Condomínio Ed. Ibirapuera Tower",
+    "lat": -23.5852574,
+    "lng": -46.6455738,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-icon-faria-lima",
+    "name": "Condomínio Ed. Icon Faria Lima",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-jacaranda",
+    "name": "Condomínio Ed. Jacarandá",
+    "lat": -23.5065812,
+    "lng": -46.8345172,
+    "city": "Barueri",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-jardim-siena",
+    "name": "Condominio Ed. Jardim Siena",
+    "lat": -23.5562974,
+    "lng": -46.5411202,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-jk-1600",
+    "name": "Condomínio Ed. JK 1600",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-lancaster",
+    "name": "Condomínio Ed. Lancaster",
+    "lat": -23.6201288,
+    "lng": -46.6808929,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-lopez-gongora",
+    "name": "Condomínio Ed. Lopez Gongora",
+    "lat": -23.5222396,
+    "lng": -46.5435097,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-maison-de-saint-malo",
+    "name": "Condomínio Ed. Maison de Saint Malo",
+    "lat": -23.6232883,
+    "lng": -46.6738372,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-maison-verte",
+    "name": "Condominio Ed. Maison Verte",
+    "lat": -23.5451938,
+    "lng": -46.660464,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-marion",
+    "name": "Condomínio Ed. Marion",
+    "lat": -23.5680314,
+    "lng": -46.6653279,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-new-century",
+    "name": "Condomínio Ed. New Century",
+    "lat": -23.5892049,
+    "lng": -46.6839228,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-new-life",
+    "name": "Condominio Ed. New Life",
+    "lat": -23.5892049,
+    "lng": -46.6839228,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-novara",
+    "name": "Condomínio Ed. Novara",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-one-jardim-sul",
+    "name": "Condomínio Ed. One Jardim Sul",
+    "lat": -23.6282824,
+    "lng": -46.7396458,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-parque-cultural-paulista-cushman",
+    "name": "Condomínio Ed. Parque Cultural Paulista (Cushman)",
+    "lat": -23.5635566,
+    "lng": -46.6538247,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-piccolo-mondo",
+    "name": "Condomínio Ed. Piccolo Mondo",
+    "lat": -23.6332899,
+    "lng": -46.7362385,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-pietra-victoria",
+    "name": "Condomínio Ed. Pietra Victoria",
+    "lat": -23.5861175,
+    "lng": -46.5715712,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-praca-faria-lima",
+    "name": "Condominio Ed. Praça Faria Lima",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-primus",
+    "name": "Condomínio Ed. Primus",
+    "lat": -23.6663958,
+    "lng": -46.5286838,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-renata-marta",
+    "name": "Condomínio Ed. Renata & Marta",
+    "lat": -23.5409605,
+    "lng": -46.6772763,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-residencial-sul",
+    "name": "Condomínio Ed. Residencial Sul",
+    "lat": -23.5742653,
+    "lng": -46.5795484,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-santa-rita",
+    "name": "Condomínio Ed. Santa Rita",
+    "lat": -23.5755049,
+    "lng": -46.6479468,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-the-mackintosh-s-towers",
+    "name": "Condominio Ed. The Mackintosh's Towers",
+    "lat": -23.5354735,
+    "lng": -46.670867,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-varandas-da-cantareira",
+    "name": "Condomínio Ed. Varandas da Cantareira",
+    "lat": -23.4838953,
+    "lng": -46.6175727,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-ville-france-residence",
+    "name": "Condominio Ed. Ville France Residence",
+    "lat": -23.9847084,
+    "lng": -46.3062143,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-vital-brasil",
+    "name": "Condomínio Ed. Vital Brasil",
+    "lat": -23.5741512,
+    "lng": -46.7260102,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-ruth-beatriz-leasing",
+    "name": "Condominio Ed.Ruth & Beatriz - Leasing",
+    "lat": -23.5789008,
+    "lng": -46.674391,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edif-miami",
+    "name": "Condominio Edif. Miami",
+    "lat": -23.6407263,
+    "lng": -46.507275,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-abaete",
+    "name": "CONDOMINIO EDIFICIO ABAETE",
+    "lat": -23.6588981,
+    "lng": -46.6487487,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-alessandra-e-christiana",
+    "name": "CONDOMÍNIO EDIFÍCIO ALESSANDRA E CHRISTIANA",
+    "lat": -23.5349092,
+    "lng": -46.6782405,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-banco-mercantil-do-brasil",
+    "name": "Condominio Edificio Banco Mercantil do Brasil",
+    "lat": -23.5665072,
+    "lng": -46.6521648,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-bosque-do-rouxinol",
+    "name": "Condominio Edificio Bosque do Rouxinol",
+    "lat": -23.657706,
+    "lng": -46.6775082,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-casa-verde-polo-flat",
+    "name": "CONDOMÍNIO EDIFÍCIO CASA VERDE POLO FLAT",
+    "lat": -23.5071778,
+    "lng": -46.6649491,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-castell-di-gonzaga",
+    "name": "Condomínio Edifício Castell di Gonzaga",
+    "lat": -24.01056,
+    "lng": -46.4135219,
+    "city": "Praia Grande",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-diana",
+    "name": "Condominio Edificio Diana",
+    "lat": -23.5933597,
+    "lng": -46.6473688,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-goncalves-dias",
+    "name": "CONDOMINIO EDIFICIO GONCALVES DIAS",
+    "lat": -23.5424184,
+    "lng": -46.6609447,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-heinrich-gehling",
+    "name": "CONDOMÍNIO EDIFÍCIO HEINRICH GEHLING",
+    "lat": -23.6102611,
+    "lng": -46.7096352,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-joaquim-floriano-100",
+    "name": "Condominio Edificio Joaquim Floriano 100",
+    "lat": -23.5836186,
+    "lng": -46.6710607,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-le-vert",
+    "name": "CONDOMINIO EDIFICIO LE VERT",
+    "lat": -23.6003367,
+    "lng": -46.6709135,
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-maralta-by-lindenberg",
+    "name": "Condominio Edifício Maralta by Lindenberg",
+    "lat": -23.9855276,
+    "lng": -46.2984562,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-marrakech",
+    "name": "Condominio Edifício Marrakech",
+    "lat": -23.602722,
+    "lng": -46.6425018,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-monte-hermon",
+    "name": "Condominio Edificio Monte Hermon",
+    "lat": -23.9962335,
+    "lng": -46.250774,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-passarelli",
+    "name": "CONDOMÍNIO EDIFÍCIO PASSARELLI",
+    "lat": -23.5678352,
+    "lng": -46.7014241,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-plaza-city-america",
+    "name": "Condominio Edificio Plaza City América",
+    "lat": -23.5062314,
+    "lng": -46.7171889,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-rio-d-ouro",
+    "name": "CONDOMINIO EDIFICIO RIO D'OURO",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-summit-loft",
+    "name": "Condominio Edificio Summit Loft",
+    "lat": -23.6149114,
+    "lng": -46.7401055,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-vera-cruz-ii",
+    "name": "Condominio Edificio Vera Cruz II",
+    "lat": -23.5943995,
+    "lng": -46.6796899,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-edificio-vitoria-regia",
+    "name": "CONDOMÍNIO EDIFÍCIO VITÓRIA RÉGIA",
+    "lat": -23.5944575,
+    "lng": -46.6442434,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-medic-life-centro-de-apoio-1-alphaville",
+    "name": "Condominio Medic Life (Centro de Apoio 1 Alphaville)",
+    "lat": -23.5112184,
+    "lng": -46.8764612,
+    "city": "Barueri",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-moncoes-da-gastao",
+    "name": "Condominio Monções da Gastão",
+    "lat": -23.5268843,
+    "lng": -46.7404279,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-mont-blanc",
+    "name": "Condomínio Mont Blanc",
+    "lat": -23.600859,
+    "lng": -46.6299766,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-parque-balneario-center",
+    "name": "CONDOMINIO PARQUE BALNEARIO CENTER",
+    "lat": -23.9619834,
+    "lng": -46.3322926,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-residencial-dez-sacoma",
+    "name": "CONDOMINIO RESIDENCIAL DEZ SACOMÃ",
+    "lat": -23.6528919,
+    "lng": -46.6022321,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-residencial-place-vendome",
+    "name": "CONDOMÍNIO RESIDENCIAL PLACE VENDOME",
+    "lat": -23.6472688,
+    "lng": -46.6726968,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-residencial-resort-itanhaem",
+    "name": "Condominio Residencial Resort Itanhaem",
+    "lat": -24.1833421,
+    "lng": -46.7896229,
+    "city": "Itanhaém",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-sierra-leoa",
+    "name": "CONDOMINIO SIERRA LEOA",
+    "lat": -23.6267652,
+    "lng": -46.667566,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-soul",
+    "name": "Condominio Soul",
+    "lat": -23.7013349,
+    "lng": -46.5500981,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-way-vila-guilherme",
+    "name": "Condomínio Way Vila Guilherme",
+    "lat": -23.5164427,
+    "lng": -46.6056271,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-caliope",
+    "name": "Condomínio. Ed. Caliope",
+    "lat": -23.5654239,
+    "lng": -46.6622677,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-das-violetas",
+    "name": "Condomínio. Ed. Das Violetas",
+    "lat": -23.5580635,
+    "lng": -46.5756911,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condominio-ed-nyla",
+    "name": "Condomínio. Ed. NYLA",
+    "lat": -23.5258984,
+    "lng": -46.67659,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condomino-edificio-casablanca",
+    "name": "Condomino Edifício Casablanca",
+    "lat": -23.5886834,
+    "lng": -46.6036845,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condomino-edificio-sevilha",
+    "name": "Condomino Edifício Sevilha",
+    "lat": -23.6147932,
+    "lng": -46.637154,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "condomino-edificio-space-paraguassu",
+    "name": "Condomino Edifício Space Paraguassu",
+    "lat": -23.9609448,
+    "lng": -46.3166316,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "consorcio-agcs-elevacao",
+    "name": "CONSORCIO AGCS ELEVAÇÃO",
+    "lat": -23.5159597,
+    "lng": -46.836502,
+    "city": "Carapicuíba",
+    "state": "SP"
+  },
+  {
+    "id": "crl-campinas",
+    "name": "CRL CAMPINAS",
+    "lat": -22.9167615,
+    "lng": -47.0662227,
+    "city": "Campinas",
+    "state": "SP"
+  },
+  {
+    "id": "cross",
+    "name": "CROSS",
+    "lat": -23.5553884,
+    "lng": -46.6725799,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "d-arthy-editora-e-grafica-1",
+    "name": "D'Arthy Editora e Gráfica (1)",
+    "lat": -23.3561111,
+    "lng": -46.8769444,
+    "city": "Cajamar",
+    "state": "SP"
+  },
+  {
+    "id": "d-arthy-editora-e-grafica-2",
+    "name": "D'Arthy Editora e Gráfica (2)",
+    "lat": -23.3561111,
+    "lng": -46.8769444,
+    "city": "Cajamar",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-brazil-ltda",
+    "name": "DHL EXPRESS (BRAZIL) LTDA",
+    "lat": -23.9624745,
+    "lng": -46.3114432,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-atlas-vila-leopoldina",
+    "name": "DHL EXPRESS - Unidade Atlas (Vila Leopoldina)",
+    "lat": -23.5414352,
+    "lng": -46.7342768,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-cgh-santo-amaro",
+    "name": "DHL EXPRESS - Unidade CGH (Santo Amaro)",
+    "lat": -23.6768103,
+    "lng": -46.6968116,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-cpq-campinas",
+    "name": "DHL EXPRESS - Unidade CPQ (CAMPINAS)",
+    "lat": -23.0024145,
+    "lng": -47.1134034,
+    "city": "Campinas",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-ec-lapa",
+    "name": "DHL EXPRESS - Unidade EC (Lapa)",
+    "lat": -23.5140874,
+    "lng": -46.7236298,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-gtw-guarulhos",
+    "name": "DHL EXPRESS - Unidade GTW (Guarulhos)",
+    "lat": -23.4675941,
+    "lng": -46.5277704,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-express-unidade-prologis-duque-de-caxias",
+    "name": "DHL EXPRESS - Unidade Prologis (Duque de Caxias)",
+    "lat": -22.6429163,
+    "lng": -43.3021266,
+    "city": "Duque de Caxias",
+    "state": "RJ"
+  },
+  {
+    "id": "dhl-express-unidade-vcp-vira-copos",
+    "name": "DHL EXPRESS - Unidade VCP (VIRA COPOS)",
+    "lat": -22.9056391,
+    "lng": -47.059564,
+    "city": "Campinas",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-global-santos",
+    "name": "DHL Global - Santos",
+    "lat": -23.9788382,
+    "lng": -46.3088772,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "dhl-global-forwarding-brazil-logistics-ltda",
+    "name": "DHL GLOBAL FORWARDING (BRAZIL) LOGISTICS LTDA",
+    "lat": -23.6329603,
+    "lng": -46.7158061,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "donaldson-do-brasil",
+    "name": "DONALDSON DO BRASIL",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "state": "SP"
+  },
+  {
+    "id": "drogaria-sao-paulo",
+    "name": "Drogaria São Paulo",
+    "lat": -23.5414352,
+    "lng": -46.7342768,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "ed-residencial-vista-marina",
+    "name": "ED RESIDENCIAL VISTA MARINA",
+    "lat": -23.9609448,
+    "lng": -46.3166316,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "ed-montana",
+    "name": "Ed. Montana",
+    "lat": -23.6353236,
+    "lng": -46.529682,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "ed-residencial-qualita",
+    "name": "Ed. Residencial Qualitá",
+    "lat": -23.9588221,
+    "lng": -46.3426079,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-chateau-le-frontenac",
+    "name": "EDIFICIO CHATEAU LE FRONTENAC",
+    "lat": -23.0805579,
+    "lng": -47.2114663,
+    "city": "Indaiatuba",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-classic",
+    "name": "Edificio Classic",
+    "lat": -23.6195923,
+    "lng": -46.5688323,
+    "city": "São Caetano do Sul",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-crystal-palace",
+    "name": "Edificio Crystal Palace",
+    "lat": -23.5723032,
+    "lng": -46.6323178,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-darius-milhaud",
+    "name": "Edificio Darius Milhaud",
+    "lat": -23.5241497,
+    "lng": -46.6916056,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-fujitsu",
+    "name": "EDIFICIO FUJITSU",
+    "lat": -23.5674301,
+    "lng": -46.6441474,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-jatoba-locacao",
+    "name": "Edificio Jatoba - Locação",
+    "lat": -23.5065812,
+    "lng": -46.8345172,
+    "city": "Barueri",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-jk-180",
+    "name": "Edifício JK 180",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-maria-trindade",
+    "name": "Edifício Maria Trindade",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-montreux",
+    "name": "Edificio Montreux",
+    "lat": -23.5793314,
+    "lng": -46.637562,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-residencial-l-orizzonte-spe-ltda",
+    "name": "EDIFICIO RESIDENCIAL L'ORIZZONTE SPE LTDA",
+    "lat": -23.9609448,
+    "lng": -46.3166316,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-residencial-l-orizzonte-spe-ltda-2",
+    "name": "EDIFICIO RESIDENCIAL L'ORIZZONTE SPE LTDA",
+    "lat": -23.5332101,
+    "lng": -46.6819044,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-sinergy-pinheiros",
+    "name": "EDIFICIO SINERGY PINHEIROS",
+    "lat": -23.5502472,
+    "lng": -46.686376,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "edificio-trends-brooklin",
+    "name": "Edifício Trends Brooklin",
+    "lat": -23.6163515,
+    "lng": -46.6903511,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "emca-oxiteno-s-a-industria-e-comercio",
+    "name": "EMCA (Oxiteno S.A Industria e Comércio)",
+    "lat": -12.6635719,
+    "lng": -38.3314256,
+    "state": "BA"
+  },
+  {
+    "id": "essencial-solucoes-tecnicas-ltda",
+    "name": "Essencial Solucoes Tecnicas Ltda.",
+    "lat": -23.6991461,
+    "lng": -46.5712858,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "farmaervas-walmir-paulino",
+    "name": "FarmaErvas (Walmir Paulino)",
+    "lat": -23.6033682,
+    "lng": -46.7094955,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "fazenda-farmaervas",
+    "name": "Fazenda Farmaervas",
+    "lat": -23.2110713,
+    "lng": -47.5247163,
+    "city": "Porto Feliz",
+    "state": "SP"
+  },
+  {
+    "id": "felipe-carneiro-goncalves-gomes",
+    "name": "Felipe Carneiro Gonçalves Gomes",
+    "lat": -23.4470302,
+    "lng": -46.8839518,
+    "city": "Santana de Parnaíba",
+    "state": "SP"
+  },
+  {
+    "id": "fiat-sinal-vergueiro",
+    "name": "FIAT Sinal Vergueiro",
+    "lat": -23.592931,
+    "lng": -46.6216949,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "fiat-sinal-zn",
+    "name": "FIAT Sinal ZN",
+    "lat": -23.4991779,
+    "lng": -46.8454598,
+    "city": "Barueri",
+    "state": "SP"
+  },
+  {
+    "id": "fl-corporate",
+    "name": "FL Corporate",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "fundo-municipal-de-saude-de-santa-rita",
+    "name": "FUNDO MUNICIPAL DE SAUDE DE SANTA RITA",
+    "lat": -7.128465,
+    "lng": -34.9846186,
+    "city": "Santa Rita",
+    "state": "PB"
+  },
+  {
+    "id": "giant-cargo",
+    "name": "Giant Cargo.",
+    "lat": -23.6290304,
+    "lng": -46.649292,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "goinfra",
+    "name": "GOINFRA",
+    "lat": -16.680882,
+    "lng": -49.2532691,
+    "city": "Goiânia",
+    "state": "GO"
+  },
+  {
+    "id": "governo-do-estado-da-paraiba-secretaria-de-estado-da-saude-ses-pb",
+    "name": "GOVERNO DO ESTADO DA PARAIBA - SECRETARIA DE ESTADO DA SAUDE – SES/PB",
+    "lat": -7.1213658,
+    "lng": -34.8774611,
+    "city": "João Pessoa",
+    "state": "PB"
+  },
+  {
+    "id": "governo-do-estado-de-pernambuco-hospital-sao-lucas",
+    "name": "GOVERNO DO ESTADO DE PERNAMBUCO - Hospital São Lucas",
+    "lat": -3.8453157,
+    "lng": -32.4115083,
+    "city": "Fernando de Noronha",
+    "state": "PE"
+  },
+  {
+    "id": "gve-marilia",
+    "name": "GVE - MARÍLIA",
+    "lat": -22.2172002,
+    "lng": -49.9500061,
+    "city": "Marília",
+    "state": "SP"
+  },
+  {
+    "id": "gve-barretos",
+    "name": "GVE BARRETOS",
+    "lat": -20.5543164,
+    "lng": -48.5628027,
+    "city": "Barretos",
+    "state": "SP"
+  },
+  {
+    "id": "gve-ix-franco-da-rocha",
+    "name": "GVE IX Franco da Rocha",
+    "lat": -23.3328038,
+    "lng": -46.724446,
+    "city": "Franco da Rocha",
+    "state": "SP"
+  },
+  {
+    "id": "gve-presidente-venceslau",
+    "name": "GVE PRESIDENTE VENCESLAU",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "city": "Pres. Venceslau",
+    "state": "SP"
+  },
+  {
+    "id": "gve-viii-mogi-das-cruzes",
+    "name": "GVE VIII Mogi das Cruzes",
+    "lat": -23.5234284,
+    "lng": -46.1926671,
+    "city": "Mogi das Cruzes",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xii-aracatuba",
+    "name": "GVE XII ARAÇATUBA",
+    "lat": -21.2084855,
+    "lng": -50.4405379,
+    "city": "Araçatuba",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xv-bauru",
+    "name": "GVE XV – BAURU",
+    "lat": -22.3299288,
+    "lng": -49.0789757,
+    "city": "Bauru",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xvi-botucatu",
+    "name": "GVE XVI Botucatu",
+    "lat": -22.8812183,
+    "lng": -48.4439075,
+    "city": "Botucatu",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xx-piracicaba",
+    "name": "GVE XX Piracicaba",
+    "lat": -22.7191865,
+    "lng": -47.6318881,
+    "city": "Piracicaba",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxi-presidente-prudente",
+    "name": "GVE XXI Presidente Prudente",
+    "lat": -22.1376774,
+    "lng": -51.3967105,
+    "city": "Presidente Prudente",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxiv-ribeirao-preto",
+    "name": "GVE XXIV Ribeirão Preto",
+    "lat": -21.2090024,
+    "lng": -47.8243711,
+    "city": "Ribeirão Preto",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxix-sao-jose-do-rio-preto",
+    "name": "GVE XXIX SÃO JOSE DO RIO PRETO",
+    "lat": -20.8285068,
+    "lng": -49.3700506,
+    "city": "São José do Rio Preto",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxvi-sao-joao-da-boa-vista",
+    "name": "GVE XXVI São João da Boa vista",
+    "lat": -23.7213467,
+    "lng": -46.5495177,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxvii-caragua",
+    "name": "GVE XXVII CARAGUA",
+    "lat": -23.6320185,
+    "lng": -45.424584,
+    "city": "Caraguatatuba",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxvii-sao-jose-dos-campos",
+    "name": "GVE XXVII São José dos Campos",
+    "lat": -23.1834896,
+    "lng": -45.880432,
+    "city": "São José dos Campos",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxxi-sorocaba",
+    "name": "GVE XXXI Sorocaba",
+    "lat": -23.4736476,
+    "lng": -47.4468415,
+    "city": "Sorocaba",
+    "state": "SP"
+  },
+  {
+    "id": "gve-xxxii-itapeva",
+    "name": "GVE XXXII Itapeva",
+    "lat": -23.9849105,
+    "lng": -48.8803886,
+    "city": "Itapeva",
+    "state": "SP"
+  },
+  {
+    "id": "hersil-administracao-e-empreendimentos",
+    "name": "Hersil Administração e Empreendimentos",
+    "lat": -23.5860702,
+    "lng": -46.6977827,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "hospital-da-mulher",
+    "name": "Hospital da Mulher",
+    "lat": -23.6351484,
+    "lng": -46.4996666,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "hospital-dr-argeu-gurgel-braga-herbster",
+    "name": "HOSPITAL DR. ARGEU GURGEL BRAGA HERBSTER",
+    "lat": -3.8797041,
+    "lng": -38.6768437,
+    "city": "Maranguape",
+    "state": "CE"
+  },
+  {
+    "id": "hospital-universitario-da-universidade-federal-de-roraima",
+    "name": "HOSPITAL UNIVERSITÁRIO DA UNIVERSIDADE FEDERAL DE RORAIMA",
+    "lat": 2.8149121,
+    "lng": -60.7457278,
+    "city": "Boa Vista",
+    "state": "RR"
+  },
+  {
+    "id": "hospital-universitario-federal-de-juiz-de-fora",
+    "name": "Hospital Universitário Federal de Juiz de Fora",
+    "lat": -21.7609533,
+    "lng": -43.3501129,
+    "state": "MG"
+  },
+  {
+    "id": "hotel-ilhas-do-caribe",
+    "name": "Hotel Ilhas do Caribe",
+    "lat": -23.9789532,
+    "lng": -46.2280433,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "hp-brasil-industria-e-comercio-de-equipamentos-eletronicos-ltda",
+    "name": "HP Brasil Industria e Comercio de Equipamentos Eletronicos LTDA",
+    "lat": -23.5047763,
+    "lng": -46.85439,
+    "city": "Barueri",
+    "state": "SP"
+  },
+  {
+    "id": "ial-marilia",
+    "name": "IAL - MARÍLIA",
+    "lat": -22.2102246,
+    "lng": -49.9569161,
+    "city": "Marília",
+    "state": "SP"
+  },
+  {
+    "id": "iate-clube-de-santos",
+    "name": "Iate Clube de Santos",
+    "lat": -23.990517,
+    "lng": -46.2786427,
+    "city": "Guarujá",
+    "state": "SP"
+  },
+  {
+    "id": "incor-instituto-do-coracao-do-hospital-das-clinicas-da-fmusp",
+    "name": "InCor - Instituto do Coração do Hospital das Clínicas da FMUSP",
+    "lat": -23.5553884,
+    "lng": -46.6725799,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "irmandade-da-santa-casa-coracao-de-jesus-hc-sao-sebastiao",
+    "name": "IRMANDADE DA SANTA CASA CORAÇÃO DE JESUS – HC SÃO SEBASTIÃO",
+    "lat": -23.8039919,
+    "lng": -45.402532,
+    "city": "São Sebastião",
+    "state": "SP"
+  },
+  {
+    "id": "laboratorio-de-marilia",
+    "name": "Laboratório de Marilia",
+    "lat": -22.1900251,
+    "lng": -49.9631672,
+    "city": "Marília",
+    "state": "SP"
+  },
+  {
+    "id": "laboratorio-de-sorocaba",
+    "name": "Laboratório de Sorocaba",
+    "lat": -23.5003451,
+    "lng": -47.4582864,
+    "city": "Sorocaba",
+    "state": "SP"
+  },
+  {
+    "id": "laercio-consentino",
+    "name": "Laércio Consentino",
+    "lat": -23.2110713,
+    "lng": -47.5247163,
+    "city": "Porto Feliz",
+    "state": "SP"
+  },
+  {
+    "id": "lanches-burdog",
+    "name": "Lanches Burdog",
+    "lat": -23.5470783,
+    "lng": -46.6812257,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "manaca",
+    "name": "Manacá",
+    "lat": -23.572725,
+    "lng": -46.7265497,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "master-ats-supermercados-ltda",
+    "name": "MASTER ATS SUPERMERCADOS LTDA",
+    "lat": -23.5620227,
+    "lng": -46.6425021,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "mb",
+    "name": "MB",
+    "lat": -23.5324859,
+    "lng": -46.7916801,
+    "city": "Osasco",
+    "state": "SP"
+  },
+  {
+    "id": "mercado-livre-cravinhos-sp",
+    "name": "MERCADO LIVRE CRAVINHOS SP",
+    "lat": -21.340278,
+    "lng": -47.729444,
+    "city": "Cravinhos",
+    "state": "SP"
+  },
+  {
+    "id": "mercado-livre-pernambuco-recife",
+    "name": "MERCADO LIVRE PERNAMBUCO RECIFE",
+    "lat": -8.2698471,
+    "lng": -35.0323963,
+    "city": "Cabo de Santo Agostinho",
+    "state": "PE"
+  },
+  {
+    "id": "mercado-livre-rio-de-janeiro",
+    "name": "MERCADO LIVRE RIO DE JANEIRO",
+    "lat": -22.7853575,
+    "lng": -43.366715,
+    "city": "São João de Meriti",
+    "state": "RJ"
+  },
+  {
+    "id": "mercado-livre-simoes-filho-cad-ba02-locacao",
+    "name": "Mercado Livre Simões Filho (CAD BA02) - LOCAÇÃO",
+    "lat": -12.8119051,
+    "lng": -38.3895784,
+    "city": "Simões Filho",
+    "state": "BA"
+  },
+  {
+    "id": "missao-sal-da-terra",
+    "name": "Missão Sal da Terra",
+    "lat": -18.8862529,
+    "lng": -48.2431086,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "mobi-ria-margarida-garagem",
+    "name": "MOBI RIA (MARGARIDA) - GARAGEM",
+    "lat": -22.819679,
+    "lng": -43.3158104,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-ria-margarida-terminal",
+    "name": "MOBI RIA (MARGARIDA) - TERMINAL",
+    "lat": -22.819679,
+    "lng": -43.3158104,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-centro-olimpico-locacao",
+    "name": "MOBI-RIO (TERMINAL CENTRO OLÍMPICO) - LOCAÇÃO",
+    "lat": -22.9734385,
+    "lng": -43.397237,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-deodoro-locacao",
+    "name": "MOBI-RIO (TERMINAL DEODORO) - LOCAÇÃO",
+    "lat": -22.8485315,
+    "lng": -43.3831088,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-jardim-oceanico-locacao",
+    "name": "MOBI-RIO (TERMINAL JARDIM OCEÂNICO) - LOCAÇÃO",
+    "lat": -23.0046087,
+    "lng": -43.3272278,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-mato-alto-locacao",
+    "name": "MOBI-RIO (TERMINAL MATO ALTO) - LOCAÇÃO",
+    "lat": -23.011085,
+    "lng": -43.5328386,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-pingo-d-agua-locacao",
+    "name": "MOBI-RIO (TERMINAL PINGO D'ÁGUA) - LOCAÇÃO",
+    "lat": -22.9760539,
+    "lng": -43.6119322,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-recreio-locacao",
+    "name": "MOBI-RIO (TERMINAL RECREIO) - LOCAÇÃO",
+    "lat": -23.0007379,
+    "lng": -43.3891767,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "mobi-rio-terminal-sulacap-locacao",
+    "name": "MOBI-RIO (TERMINAL SULACAP) - LOCAÇÃO",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "municipio-de-volta-redonda",
+    "name": "MUNICIPIO DE VOLTA REDONDA",
+    "lat": -22.5255731,
+    "lng": -44.1165268,
+    "city": "Volta Redonda",
+    "state": "RJ"
+  },
+  {
+    "id": "municipio-de-volta-redonda-2",
+    "name": "MUNICIPIO DE VOLTA REDONDA",
+    "lat": -22.5069336,
+    "lng": -44.0877031,
+    "city": "Volta Redonda",
+    "state": "RJ"
+  },
+  {
+    "id": "municipio-de-volta-redonda-3",
+    "name": "MUNICIPIO DE VOLTA REDONDA",
+    "lat": -22.4864453,
+    "lng": -44.0749431,
+    "city": "Volta Redonda",
+    "state": "RJ"
+  },
+  {
+    "id": "municipio-de-volta-redonda-4",
+    "name": "MUNICIPIO DE VOLTA REDONDA",
+    "lat": -22.2752762,
+    "lng": -42.419415,
+    "state": "RJ"
+  },
+  {
+    "id": "olq-oxiteno-s-a-industria-e-comercio",
+    "name": "OLQ (Oxiteno S.A Industria e Comércio)",
+    "lat": -12.6998188,
+    "lng": -38.3260762,
+    "city": "Camaçari",
+    "state": "BA"
+  },
+  {
+    "id": "outlet-premium-de-salvador",
+    "name": "Outlet Premium de Salvador",
+    "lat": -12.6998188,
+    "lng": -38.3260762,
+    "city": "Camaçari",
+    "state": "BA"
+  },
+  {
+    "id": "outlet-premium-grande-sao-paulo",
+    "name": "Outlet Premium Grande São Paulo",
+    "lat": -23.4556577,
+    "lng": -46.3059804,
+    "city": "Itaquaquecetuba",
+    "state": "SP"
+  },
+  {
+    "id": "outlet-premium-rio-de-janeiro",
+    "name": "Outlet Premium Rio de Janeiro",
+    "lat": -22.6429163,
+    "lng": -43.3021266,
+    "city": "Duque de Caxias",
+    "state": "RJ"
+  },
+  {
+    "id": "outlet-premiun-brasilia",
+    "name": "Outlet Premiun Brasilia",
+    "lat": -15.9323662,
+    "lng": -50.1392928,
+    "state": "GO"
+  },
+  {
+    "id": "oxsa-oxiteno-s-a-industria-e-comercio",
+    "name": "OXSA (Oxiteno S.A Industria e Comércio)",
+    "lat": -12.6998188,
+    "lng": -38.3260762,
+    "city": "Camaçari",
+    "state": "BA"
+  },
+  {
+    "id": "paddock-i",
+    "name": "Paddock I",
+    "lat": -23.575344,
+    "lng": -46.6962791,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "paddock-ii",
+    "name": "Paddock II",
+    "lat": -23.580647,
+    "lng": -46.693063,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "panificadora-ilhamar",
+    "name": "Panificadora Ilhamar",
+    "lat": -23.6150783,
+    "lng": -46.6388053,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "parque-balnerio-hotel",
+    "name": "Parque Balnerio Hotel",
+    "lat": -23.9690945,
+    "lng": -46.3327373,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "parque-shopping-sulacap",
+    "name": "Parque Shopping Sulacap",
+    "lat": -22.8820796,
+    "lng": -43.4081403,
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "pier-26",
+    "name": "PIER 26",
+    "lat": -23.9927768,
+    "lng": -46.2558332,
+    "state": "SP"
+  },
+  {
+    "id": "pinto-ferraz",
+    "name": "Pinto Ferraz",
+    "lat": -23.5896507,
+    "lng": -46.6336334,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "pizzaria-camelo",
+    "name": "Pizzaria Camelo",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "plasfan",
+    "name": "Plasfan",
+    "lat": -23.7176303,
+    "lng": -46.8492435,
+    "city": "Itapecerica da Serra",
+    "state": "SP"
+  },
+  {
+    "id": "poli-shopping",
+    "name": "Poli Shopping",
+    "lat": -23.4701246,
+    "lng": -46.5294409,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "polimetri",
+    "name": "Polimetri",
+    "lat": -23.6669527,
+    "lng": -46.4616922,
+    "city": "Mauá",
+    "state": "SP"
+  },
+  {
+    "id": "polyplastic",
+    "name": "Polyplastic",
+    "lat": -23.3973144,
+    "lng": -46.7173898,
+    "city": "Caieiras",
+    "state": "SP"
+  },
+  {
+    "id": "posto-santa-ines",
+    "name": "Posto Santa Ines",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "state": "SP"
+  },
+  {
+    "id": "pousada-recanto-do-teixeira",
+    "name": "POUSADA RECANTO DO TEIXEIRA",
+    "lat": -23.1674762,
+    "lng": -46.3940438,
+    "city": "Nazaré Paulista",
+    "state": "SP"
+  },
+  {
+    "id": "praiamar-corporate",
+    "name": "Praiamar Corporate",
+    "lat": -23.9788382,
+    "lng": -46.3088772,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "pref-mun-de-niteroi-hospital-psiquiatrico-jurujuba",
+    "name": "PREF. MUN. DE NITEROI - HOSPITAL PSIQUIÁTRICO JURUJUBA",
+    "lat": -22.8884,
+    "lng": -43.1147,
+    "city": "Niterói",
+    "state": "RJ"
+  },
+  {
+    "id": "pref-mun-de-niteroi-maternidade-alzira-reis",
+    "name": "PREF. MUN. DE NITEROI - MATERNIDADE ALZIRA REIS",
+    "lat": -22.9352598,
+    "lng": -43.1088213,
+    "city": "Niterói",
+    "state": "RJ"
+  },
+  {
+    "id": "prefeiitura-municipal-de-saude-de-para-de-minas",
+    "name": "PrefeiItura Municipal de Saude de Para de Minas",
+    "lat": -19.8598634,
+    "lng": -44.6074284,
+    "city": "Pará de Minas",
+    "state": "MG"
+  },
+  {
+    "id": "prefeitura-do-municipio-de-bertioga",
+    "name": "PREFEITURA DO MUNICÍPIO DE BERTIOGA",
+    "lat": -23.8414165,
+    "lng": -46.1370917,
+    "city": "Bertioga",
+    "state": "SP"
+  },
+  {
+    "id": "prefeitura-municipal-de-caririacu",
+    "name": "PREFEITURA MUNICIPAL DE CARIRIAÇU",
+    "lat": -7.0417053,
+    "lng": -39.2835527,
+    "city": "Caririaçu",
+    "state": "CE"
+  },
+  {
+    "id": "prefeitura-municipal-de-lagoa-seca",
+    "name": "PREFEITURA MUNICIPAL DE LAGOA SECA",
+    "lat": -7.157099,
+    "lng": -35.8542023,
+    "city": "Lagoa Seca",
+    "state": "PB"
+  },
+  {
+    "id": "prefeitura-municipal-de-niteroi-hospital-municipal-carlos-tortelly-hmct",
+    "name": "PREFEITURA MUNICIPAL DE NITEROI - Hospital Municipal Carlos Tortelly (HMCT)",
+    "lat": -22.8884,
+    "lng": -43.1147,
+    "city": "Niterói",
+    "state": "RJ"
+  },
+  {
+    "id": "princesa-daniela",
+    "name": "Princesa Daniela",
+    "lat": -23.6844346,
+    "lng": -46.5552155,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "promon-engenharia-locacao",
+    "name": "Promon Engenharia (Locação)",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "prudente-v",
+    "name": "Prudente - V",
+    "lat": -22.1376774,
+    "lng": -51.3967105,
+    "city": "Presidente Prudente",
+    "state": "SP"
+  },
+  {
+    "id": "red-bull-bragantino-futebol-ltda",
+    "name": "RED BULL BRAGANTINO FUTEBOL LTDA",
+    "lat": -23.1177393,
+    "lng": -46.5547861,
+    "city": "Atibaia",
+    "state": "SP"
+  },
+  {
+    "id": "residencia-henrique-filizzola",
+    "name": "Residencia Henrique Filizzola",
+    "lat": -23.0055542,
+    "lng": -46.8397726,
+    "city": "Itatiba",
+    "state": "SP"
+  },
+  {
+    "id": "residencial-bella-vita-eco-club",
+    "name": "Residencial Bella Vita Eco Club",
+    "lat": -23.9572471,
+    "lng": -46.328976,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "residencial-la-barre-spe-ltda",
+    "name": "Residencial La Barre SPE LTDA",
+    "lat": -24.1833421,
+    "lng": -46.7896229,
+    "city": "Itanhaém",
+    "state": "SP"
+  },
+  {
+    "id": "restaurante-ed-atlas-office-park",
+    "name": "Restaurante Ed. Atlas Office Park",
+    "lat": -23.5414352,
+    "lng": -46.7342768,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "saab-aeronautica-montagens-sam",
+    "name": "SAAB AERONAÚTICA MONTAGENS (SAM)",
+    "lat": -23.7240817,
+    "lng": -46.600044,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "san-bernardino",
+    "name": "San Bernardino",
+    "lat": -23.9675637,
+    "lng": -46.3389436,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "secretaria-de-estado-da-saude",
+    "name": "SECRETARIA DE ESTADO DA SAÚDE",
+    "lat": -7.1347654,
+    "lng": -34.8597114,
+    "city": "João Pessoa",
+    "state": "PB"
+  },
+  {
+    "id": "secretaria-municipal-de-saude-pmvr",
+    "name": "SECRETARIA MUNICIPAL DE SAUDE - PMVR",
+    "lat": -22.4994878,
+    "lng": -44.12284,
+    "city": "Volta Redonda",
+    "state": "RJ"
+  },
+  {
+    "id": "secretaria-municipal-de-saude-de-japeri-fundo-municipal-de-saude-semus",
+    "name": "SECRETARIA MUNICIPAL DE SAÚDE DE JAPERI/FUNDO MUNICIPAL DE SAUDE - SEMUS",
+    "lat": -22.708628,
+    "lng": -43.6297337,
+    "city": "Japeri",
+    "state": "RJ"
+  },
+  {
+    "id": "sede-cab-do-ministerio-publico-do-estado-da-bahia",
+    "name": "Sede CAB do Ministério Público do Estado da Bahia",
+    "lat": -12.9460065,
+    "lng": -38.4351605,
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "sede-nazare-do-ministerio-publico-do-estado-da-bahia",
+    "name": "Sede Nazaré do Ministério Público do Estado da Bahia",
+    "lat": -12.9768348,
+    "lng": -38.5051435,
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "servico-social-autonomo-hospital-alcides-carneiro-sehac",
+    "name": "SERVIÇO SOCIAL AUTÔNOMO HOSPITAL ALCIDES CARNEIRO-SEHAC",
+    "lat": -22.3390214,
+    "lng": -43.1240358,
+    "city": "Petrópolis",
+    "state": "RJ"
+  },
+  {
+    "id": "sgve-avare",
+    "name": "SGVE Avaré",
+    "lat": -23.1155124,
+    "lng": -48.9320258,
+    "city": "Avaré",
+    "state": "SP"
+  },
+  {
+    "id": "sheraton-hotel",
+    "name": "Sheraton Hotel",
+    "lat": -23.9777784,
+    "lng": -46.3096211,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "shopping-bosque-maia",
+    "name": "SHOPPING BOSQUE MAIA",
+    "lat": -23.4431245,
+    "lng": -46.5394627,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "slip-quimica",
+    "name": "Slip Química",
+    "lat": -23.7119368,
+    "lng": -46.5926882,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-abc",
+    "name": "Sonda ABC",
+    "lat": -23.683881,
+    "lng": -46.5449718,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-agua-branca",
+    "name": "Sonda Agua Branca",
+    "lat": -23.5276246,
+    "lng": -46.6711716,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-centro-de-distribuicao",
+    "name": "Sonda Centro de Distribuição",
+    "lat": -23.7396487,
+    "lng": -46.5538251,
+    "city": "São Bernardo do Campo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-cidade-dutra",
+    "name": "Sonda Cidade Dutra",
+    "lat": -23.7414568,
+    "lng": -46.7060545,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-edgar-faco",
+    "name": "Sonda Edgar Facó",
+    "lat": -23.4900129,
+    "lng": -46.7100076,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-indaiatuba",
+    "name": "Sonda Indaiatuba",
+    "lat": -23.0861847,
+    "lng": -47.2249191,
+    "city": "Indaiatuba",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-itaberaba",
+    "name": "Sonda Itaberaba",
+    "lat": -23.4862101,
+    "lng": -46.6926722,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-itaim-paulista",
+    "name": "Sonda Itaim Paulista",
+    "lat": -23.4854708,
+    "lng": -46.3807555,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-maria-candido",
+    "name": "Sonda Maria Candido",
+    "lat": -23.5067279,
+    "lng": -46.6003473,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-pompeia",
+    "name": "Sonda Pompeia",
+    "lat": -23.5249629,
+    "lng": -46.6832789,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-santo-amaro",
+    "name": "Sonda Santo Amaro",
+    "lat": -23.6526488,
+    "lng": -46.6968337,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-santo-andre",
+    "name": "Sonda Santo André",
+    "lat": -23.6385547,
+    "lng": -46.5265926,
+    "city": "Santo André",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-sao-caetano-do-sul",
+    "name": "Sonda São Caetano do Sul",
+    "lat": -23.6470381,
+    "lng": -46.5569512,
+    "city": "São Caetano do Sul",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-sao-jose-dos-campos",
+    "name": "Sonda São José dos Campos",
+    "lat": -23.1898704,
+    "lng": -45.8737572,
+    "city": "São José dos Campos",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-shopping-penha",
+    "name": "Sonda Shopping Penha",
+    "lat": -23.5251778,
+    "lng": -46.5467519,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-tatuape",
+    "name": "Sonda Tatuapé",
+    "lat": -23.5467226,
+    "lng": -46.5636694,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-tremembe",
+    "name": "Sonda Tremembé",
+    "lat": -23.4581498,
+    "lng": -46.6155858,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-vila-barros",
+    "name": "Sonda Vila Barros",
+    "lat": -23.4524977,
+    "lng": -46.5086484,
+    "city": "Guarulhos",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-vila-carrao",
+    "name": "Sonda Vila Carrão",
+    "lat": -23.5468781,
+    "lng": -46.5412597,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "sonda-vila-rio",
+    "name": "Sonda Vila Rio",
+    "lat": -22.0702705,
+    "lng": -48.4333875,
+    "state": "SP"
+  },
+  {
+    "id": "sonda-vila-sao-jose",
+    "name": "Sonda Vila São José",
+    "lat": -23.7414568,
+    "lng": -46.7060545,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "spdm-butanta",
+    "name": "SPDM - Butantã",
+    "lat": -23.5857363,
+    "lng": -46.7321691,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "spdm-rede-hora-certa-vila-guilherme",
+    "name": "SPDM - Rede Hora Certa Vila Guilherme",
+    "lat": -23.5162299,
+    "lng": -46.6053872,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "spdm-taboao-da-serra",
+    "name": "SPDM - Taboão da Serra",
+    "lat": -23.6269272,
+    "lng": -46.789919,
+    "city": "Taboão da Serra",
+    "state": "SP"
+  },
+  {
+    "id": "sumese-garca-torta-presidio",
+    "name": "Sumese Garça Torta - Presídio",
+    "lat": -9.5864556,
+    "lng": -35.6670849,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "sumese-pilar-presidio",
+    "name": "Sumese Pilar - Presídio",
+    "lat": -9.5813609,
+    "lng": -35.7535285,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "sumese-rio-largo-presidio",
+    "name": "Sumese Rio Largo - Presídio",
+    "lat": -9.4925705,
+    "lng": -35.8156113,
+    "city": "Rio Largo",
+    "state": "AL"
+  },
+  {
+    "id": "sumese-tabuleiro-presidio",
+    "name": "Sumese Tabuleiro - Presídio",
+    "lat": -9.6476843,
+    "lng": -35.7339264,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "sumese-un-feminina-serraria-presidio",
+    "name": "Sumese Un. Feminina; Serraria - Presídio",
+    "lat": -9.6476843,
+    "lng": -35.7339264,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "sylvestre-michael-feddes",
+    "name": "Sylvestre Michael Feddes",
+    "lat": -23.6447837,
+    "lng": -46.686451,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "symrise-aromas-e-fragrancias-ltda",
+    "name": "SYMRISE AROMAS E FRAGRANCIAS LTDA",
+    "lat": -23.5003451,
+    "lng": -47.4582864,
+    "city": "Sorocaba",
+    "state": "SP"
+  },
+  {
+    "id": "terracom-construcoes-ltda",
+    "name": "TERRACOM CONSTRUÇÕES LTDA",
+    "lat": -23.8842077,
+    "lng": -46.4213061,
+    "city": "Cubatão",
+    "state": "SP"
+  },
+  {
+    "id": "terrestre-ambiental-ltda",
+    "name": "Terrestre Ambiental LTDA",
+    "lat": -23.9609448,
+    "lng": -46.3166316,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -19.9321123,
+    "lng": -43.9283322,
+    "city": "Belo Horizonte",
+    "state": "MG"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-2",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -23.6837938,
+    "lng": -46.6874252,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-3",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -22.7043641,
+    "lng": -47.653845,
+    "city": "Piracicaba",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-4",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -23.5506507,
+    "lng": -46.6333824,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-5",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -23.652201,
+    "lng": -46.7082899,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-6",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -23.5457763,
+    "lng": -46.6340991,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "tools-solucoes-e-servicos-compartilhados-ltda-7",
+    "name": "TOOLS SOLUCOES E SERVICOS COMPARTILHADOS LTDA",
+    "lat": -23.5012005,
+    "lng": -47.4529283,
+    "city": "Sorocaba",
+    "state": "SP"
+  },
+  {
+    "id": "tre-edificio-sede",
+    "name": "TRE Edificio Sede",
+    "lat": -9.6608962,
+    "lng": -35.7306532,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "tre-forum-eleitoral-de-maceio",
+    "name": "TRE Forum Eleitoral de Maceio",
+    "lat": -9.6127406,
+    "lng": -35.7400095,
+    "city": "Maceió",
+    "state": "AL"
+  },
+  {
+    "id": "tribunal-regional-do-trabalho-da-20a-regiao",
+    "name": "TRIBUNAL REGIONAL DO TRABALHO DA 20ª REGIÃO",
+    "lat": -10.9121996,
+    "lng": -37.0975096,
+    "city": "Aracaju",
+    "state": "SE"
+  },
+  {
+    "id": "unidade-jose-hermes-damaso-anexo-upa-sul",
+    "name": "UNIDADE JOSE HERMES DAMASO - ANEXO UPA SUL",
+    "lat": -10.1837852,
+    "lng": -48.3336423,
+    "city": "Palmas",
+    "state": "TO"
+  },
+  {
+    "id": "unidade-walter-pereira-morato-taquarucu",
+    "name": "UNIDADE WALTER PEREIRA MORATO (TAQUARUÇU)",
+    "lat": -10.1837852,
+    "lng": -48.3336423,
+    "city": "Palmas",
+    "state": "TO"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.91484,
+    "lng": -48.2898654,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia-2",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.8961993,
+    "lng": -48.2550415,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia-3",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.8924802,
+    "lng": -48.2909644,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia-4",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.914831,
+    "lng": -48.1894429,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia-5",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.9329569,
+    "lng": -48.3133028,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "unidades-de-atend-integrado-uai-do-municipio-de-uberlandia-6",
+    "name": "UNIDADES DE ATEND INTEGRADO UAI DO MUNICIPIO DE UBERLANDIA",
+    "lat": -18.9188041,
+    "lng": -48.2767837,
+    "city": "Uberlândia",
+    "state": "MG"
+  },
+  {
+    "id": "universidade-de-alfenas-unifal",
+    "name": "Universidade de Alfenas - Unifal",
+    "lat": -21.4297405,
+    "lng": -45.9479419,
+    "city": "Alfenas",
+    "state": "MG"
+  },
+  {
+    "id": "universidade-do-estado-da-bahia-uneb",
+    "name": "UNIVERSIDADE DO ESTADO DA BAHIA – UNEB",
+    "lat": -12.8767614,
+    "lng": -38.4860518,
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "urbanity-business",
+    "name": "Urbanity Business",
+    "lat": -23.6329603,
+    "lng": -46.7158061,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "vila-flor",
+    "name": "Vila Flor",
+    "lat": -23.5666937,
+    "lng": -46.5458712,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "visconde-de-sao-leopoldo",
+    "name": "VISCONDE DE SÃO LEOPOLDO",
+    "lat": -23.9463963,
+    "lng": -46.3226056,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "visconde-de-sao-leopoldo-2",
+    "name": "VISCONDE DE SÃO LEOPOLDO",
+    "lat": -23.9636982,
+    "lng": -46.3442744,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "visconde-de-sao-leopoldo-3",
+    "name": "VISCONDE DE SÃO LEOPOLDO",
+    "lat": -23.9454737,
+    "lng": -46.3277617,
+    "city": "Santos",
+    "state": "SP"
+  },
+  {
+    "id": "you-now-chacara-santo-antonio",
+    "name": "You Now Chácara Santo Antônio",
+    "lat": -23.6315509,
+    "lng": -46.6975757,
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "coca-femsa-curitiba",
     "name": "COCA - FEMSA - CURITIBA",
     "lat": -25.48493,
     "lng": -49.21531,
@@ -3356,7 +3789,7 @@
     "state": "PR"
   },
   {
-    "id": "coca-femsa-porto-alegre-433",
+    "id": "coca-femsa-porto-alegre",
     "name": "COCA - FEMSA- PORTO ALEGRE",
     "lat": -29.98209,
     "lng": -51.11535,
@@ -3364,7 +3797,7 @@
     "state": "RS"
   },
   {
-    "id": "coca-femsa-balneario-434",
+    "id": "coca-femsa-balneario",
     "name": "COCA - FEMSA - BALNEARIO",
     "lat": -27.0178,
     "lng": -48.61053,
@@ -3372,7 +3805,95 @@
     "state": "SC"
   },
   {
-    "id": "usina-de-geradores-macapa-ap-435",
+    "id": "meli-manaus",
+    "name": "MELI - MANAUS",
+    "lat": -3.07395,
+    "lng": -60.08934,
+    "city": "Manaus",
+    "state": "AM"
+  },
+  {
+    "id": "meli-rio-verde",
+    "name": "MELI - RIO VERDE",
+    "lat": -18.09079,
+    "lng": -50.20932,
+    "city": "Rio Verde",
+    "state": "GO"
+  },
+  {
+    "id": "meli-vitoria-da-conquista",
+    "name": "MELI - VITORIA DA CONQUISTA",
+    "lat": -15.07474,
+    "lng": -40.89403,
+    "city": "Vitória da Conquista",
+    "state": "BA"
+  },
+  {
+    "id": "meli-cuiaba-i",
+    "name": "MELI - CUIABA I",
+    "lat": -15.62003,
+    "lng": -56.06202,
+    "city": "Cuiabá",
+    "state": "MT"
+  },
+  {
+    "id": "meli-sinop",
+    "name": "MELI - SINOP",
+    "lat": -11.8577,
+    "lng": -55.49678,
+    "city": "Sinop",
+    "state": "MT"
+  },
+  {
+    "id": "meli-dourados",
+    "name": "MELI - DOURADOS",
+    "lat": -22.23255,
+    "lng": -54.80379,
+    "city": "Dourados",
+    "state": "MS"
+  },
+  {
+    "id": "meli-belem-i",
+    "name": "MELI - BELEM I",
+    "lat": -1.35556,
+    "lng": -48.25223,
+    "city": "Benevides",
+    "state": "PA"
+  },
+  {
+    "id": "meli-porto-velho",
+    "name": "MELI - PORTO VELHO",
+    "lat": -8.79001,
+    "lng": -63.879,
+    "city": "Porto Velho",
+    "state": "RO"
+  },
+  {
+    "id": "meli-natal",
+    "name": "MELI - NATAL",
+    "lat": -6.07469,
+    "lng": -35.23702,
+    "city": "Natal",
+    "state": "RN"
+  },
+  {
+    "id": "meli-belem-ii",
+    "name": "MELI - BELEM II",
+    "lat": -1.35556,
+    "lng": -48.25223,
+    "city": "Benevides",
+    "state": "PA"
+  },
+  {
+    "id": "meli-cuiaba-ii",
+    "name": "MELI - CUIABA II",
+    "lat": -15.64582,
+    "lng": -56.13222,
+    "city": "Várzea Grande",
+    "state": "MT"
+  },
+  {
+    "id": "usina-de-geradores-macapa-ap",
     "name": "Usina de geradores Macapá-AP",
     "lat": 0.08716,
     "lng": -51.08299,
