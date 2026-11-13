@@ -17,6 +17,10 @@ export default defineConfig({
       injectRegister: 'auto',
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,svg,png,jpg,jpeg,webp,json,woff,woff2}'],
+        // O iframe da tela "Conhecendo um gerador" abre /genset.html?only3d. Sem
+        // ignorar esse parâmetro, o service worker não acha genset.html no cache
+        // e devolve o index.html (a Home aparece dentro do iframe).
+        ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^only3d$/],
         // Alguns assets (satélite, galerias) passam do limite padrão de
         // 2MB do Workbox mesmo já otimizados — sobe o teto do precache.
         maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
