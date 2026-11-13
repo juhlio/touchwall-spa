@@ -25,14 +25,14 @@ export function NossaOperacao() {
   const [index, setIndex] = useState<number | null>(null)
 
   return (
-    <div className="flex w-full gap-5">
+    <div className="flex w-full flex-col gap-4 md:flex-row md:gap-5">
       <motion.button
         type="button"
         onClick={() => setIndex(0)}
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         aria-label={`Ver em tela cheia: ${PHOTOS[0].alt}`}
-        className="relative aspect-[4/3] flex-1 overflow-hidden rounded-[20px] border border-white/[0.07]"
+        className="relative aspect-[4/3] md:flex-1 overflow-hidden rounded-[20px] border border-white/[0.07]"
       >
         <img src={PHOTOS[0].src} alt={PHOTOS[0].alt} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-black/35" />
@@ -66,7 +66,7 @@ export function NossaOperacao() {
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         aria-label={`Ver em tela cheia: ${PHOTOS[1].alt}`}
-        className="relative aspect-[4/3] flex-1 overflow-hidden rounded-[20px] border border-white/[0.07]"
+        className="relative aspect-[4/3] md:flex-1 overflow-hidden rounded-[20px] border border-white/[0.07]"
       >
         <img src={PHOTOS[1].src} alt={PHOTOS[1].alt} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/5 to-black/35" />

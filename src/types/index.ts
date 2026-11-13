@@ -6,6 +6,7 @@ export type Page =
   | 'menu'
   | 'onde-estamos'
   | 'nossa-operacao'
+  | 'conhecendo-gerador'
   | 'projetos'
   | 'fale-conosco'
 

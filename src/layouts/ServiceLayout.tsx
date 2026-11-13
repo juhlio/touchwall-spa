@@ -16,11 +16,11 @@ interface ServiceLayoutProps {
 
 export function ServiceLayout({ title, onBack, children }: ServiceLayoutProps) {
   return (
-    <div className="relative flex h-full w-full flex-col overflow-hidden bg-canvas px-8 py-7">
+    <div className="relative flex h-full w-full flex-col overflow-y-auto bg-canvas px-4 py-5 sm:px-6 lg:px-8 lg:py-7">
       <AtmosphereBackground watermark={title.toUpperCase()} />
 
-      <div className="relative z-10 flex min-h-0 flex-1 flex-col">
-        <header className="mb-5 flex flex-shrink-0 items-center justify-between">
+      <div className="relative z-10 flex flex-1 flex-col">
+        <header className="mb-5 flex flex-shrink-0 flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3.5">
             <button
               type="button"

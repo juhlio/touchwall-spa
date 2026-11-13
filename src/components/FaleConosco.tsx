@@ -31,13 +31,13 @@ const CONTACT_ROWS = [
 
 export function FaleConosco() {
   return (
-    <div className="flex h-full w-full max-w-7xl items-stretch gap-6">
-      <div className="flex flex-1 flex-col justify-between rounded-[24px] border border-white/[0.07] bg-[rgba(8,7,6,0.68)] p-10 backdrop-blur-xl">
+    <div className="flex w-full max-w-7xl flex-col items-stretch gap-5 lg:h-full lg:flex-row lg:gap-6">
+      <div className="flex flex-1 flex-col justify-between rounded-[24px] border border-white/[0.07] bg-[rgba(8,7,6,0.68)] p-6 backdrop-blur-xl sm:p-8 lg:p-10">
         <div>
           <span className="text-sm font-semibold tracking-[0.12em] text-brand uppercase">
             Próximo passo
           </span>
-          <h2 className="mt-3 mb-6 text-[42px] leading-[1.12] font-bold tracking-tight text-white">
+          <h2 className="mt-3 mb-6 text-[30px] leading-[1.12] font-bold sm:text-[42px] tracking-tight text-white">
             Vamos falar sobre
             <br />a sua operação.
           </h2>
@@ -87,9 +87,9 @@ export function FaleConosco() {
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col justify-between rounded-[24px] border border-brand/15 bg-[rgba(20,6,2,0.68)] p-10 backdrop-blur-xl">
+      <div className="flex flex-1 flex-col justify-between rounded-[24px] border border-brand/15 bg-[rgba(20,6,2,0.68)] p-6 backdrop-blur-xl sm:p-8 lg:p-10">
         <div>
-          <h2 className="mb-9 text-[34px] leading-[1.2] font-bold tracking-tight text-white">
+          <h2 className="mb-9 text-[26px] leading-[1.2] font-bold sm:text-[34px] tracking-tight text-white">
             Fale com nossos especialistas
           </h2>
           <div className="flex flex-col gap-5">
@@ -105,7 +105,7 @@ export function FaleConosco() {
           <img
             src="/assets/images/whatsapp-qr-comercial.png"
             alt="QR Code para falar no WhatsApp Comercial"
-            className="h-56 w-56 shrink-0 rounded-xl bg-white p-2.5"
+            className="h-44 w-44 shrink-0 rounded-xl bg-white p-2.5 sm:h-56 sm:w-56"
           />
           <div className="text-center">
             <div className="text-xl font-bold text-white">WhatsApp Comercial</div>

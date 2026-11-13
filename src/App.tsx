@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useCallback, useEffect, useState } from 'react'
 import { BrazilMap } from '@/components/BrazilMap'
+import { ConhecendoGerador } from '@/components/ConhecendoGerador'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
 import { NossaOperacao } from '@/components/NossaOperacao'
@@ -53,6 +54,9 @@ function App() {
           </ServiceLayout>
         )
 
+      case 'conhecendo-gerador':
+        return <ConhecendoGerador onBack={goToMenu} />
+
       case 'projetos':
         return <Projetos onBack={goToMenu} />
 
@@ -74,7 +78,7 @@ function App() {
   }
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-canvas">
+    <div className="relative h-dvh w-full overflow-hidden bg-canvas">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentPage}

@@ -23,7 +23,7 @@ export function MapLayout({ onBack, children }: MapLayoutProps) {
 
   return (
     <div className="relative h-full w-full overflow-hidden bg-canvas">
-      <div className="absolute top-7 left-8 z-[1100] flex items-center gap-3.5">
+      <div className="absolute top-4 left-4 z-[1100] flex items-center gap-3.5 sm:top-7 sm:left-8">
         <button
           type="button"
           onClick={onBack}

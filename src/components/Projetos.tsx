@@ -74,11 +74,11 @@ export function Projetos({ onBack }: ProjetosProps) {
   }, [])
 
   return (
-    <div className="relative flex h-full w-full flex-col overflow-hidden bg-canvas px-8 py-7">
+    <div className="relative flex h-full w-full flex-col overflow-y-auto bg-canvas px-4 py-5 sm:px-6 lg:px-8 lg:py-7">
       <AtmosphereBackground watermark="PROJETOS" />
 
       <div className="relative z-10 flex min-h-0 flex-1 flex-col">
-        <header className="mb-5 flex flex-shrink-0 items-center justify-between">
+        <header className="mb-5 flex flex-shrink-0 flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3.5">
             <button
               type="button"
@@ -123,7 +123,7 @@ export function Projetos({ onBack }: ProjetosProps) {
         {openFolder ? (
           <PhotoGrid folder={openFolder} onSelect={(index) => setViewer({ index, autoplay: false })} />
         ) : (
-          <div className="flex min-h-0 flex-1 items-center justify-center gap-6">
+          <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
             {folders?.map((folder) => (
               <FolderTile key={folder.id} folder={folder} onOpen={() => setOpenFolder(folder)} />
             ))}
@@ -159,7 +159,7 @@ function FolderTile({ folder, onOpen }: FolderTileProps) {
       whileHover={{ scale: 1.015 }}
       whileTap={{ scale: 0.98 }}
       aria-label={`Abrir pasta ${folder.title} (${folder.photos.length} fotos)`}
-      className="relative h-full max-h-[560px] w-full max-w-md flex-1 overflow-hidden rounded-[20px] border border-white/[0.08] bg-black/40"
+      className="relative h-[260px] w-full max-w-md flex-1 overflow-hidden rounded-[20px] border border-white/[0.08] bg-black/40 sm:h-full sm:max-h-[560px]"
     >
       <img src={folder.cover} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/30" />
@@ -183,19 +183,36 @@ interface PhotoGridProps {
   onSelect: (index: number) => void
 }
 
+// Telas estreitas (celular/tablet em retrato) usam grade de 2 colunas com rolagem.
+function useIsNarrow(maxWidth = 768) {
+  const [narrow, setNarrow] = useState(() => window.innerWidth < maxWidth)
+  useEffect(() => {
+    const update = () => setNarrow(window.innerWidth < maxWidth)
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [maxWidth])
+  return narrow
+}
+
 function PhotoGrid({ folder, onSelect }: PhotoGridProps) {
   // Monta uma grade de colunas/linhas fixas (em vez de rolagem) pra todas
   // as fotos caberem de uma vez na tela — o número de colunas é calculado
   // a partir da quantidade de fotos, mirando um formato próximo ao da
   // área disponível (mais larga que alta, tela de TV).
+  const narrow = useIsNarrow()
   const count = folder.photos.length
-  const cols = Math.max(1, Math.ceil(Math.sqrt(count * 2.2)))
+  const cols = narrow ? 2 : Math.max(1, Math.ceil(Math.sqrt(count * 2.2)))
   const rows = Math.max(1, Math.ceil(count / cols))
 
   return (
     <div
-      className="grid min-h-0 flex-1 gap-3"
-      style={{ gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)` }}
+      className={narrow ? 'grid min-h-0 flex-1 content-start gap-3 overflow-y-auto' : 'grid min-h-0 flex-1 gap-3'}
+      style={
+        narrow
+          ? { gridTemplateColumns: 'repeat(2, 1fr)', gridAutoRows: '170px' }
+          : { gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)` }
+      }
     >
       {folder.photos.map((photo, index) => (
         <motion.button
@@ -439,7 +456,7 @@ function CaseInfoModal({ projectCase: c, onClose }: CaseInfoModalProps) {
         <div className="flex items-start justify-between gap-6 border-b border-white/[0.08] p-8 pb-6">
           <div>
             <span className="text-xs font-semibold tracking-[0.14em] text-brand uppercase">Case</span>
-            <h2 className="mt-2 text-[26px] leading-[1.25] font-bold tracking-tight text-white">{c.title}</h2>
+            <h2 className="mt-2 text-[22px] leading-[1.25] font-bold sm:text-[26px] tracking-tight text-white">{c.title}</h2>
             <p className="mt-3 text-base font-semibold text-brand/90">{c.tagline}</p>
           </div>
           <button
@@ -486,7 +503,7 @@ function CaseInfoModal({ projectCase: c, onClose }: CaseInfoModalProps) {
 
           <CaseSection heading={c.resultsTitle}>
             <p>{c.resultsIntro}</p>
-            <div className="grid grid-cols-2 gap-3.5">
+            <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
               {c.results.map((result) => (
                 <div
                   key={result.title}

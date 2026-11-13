@@ -431,7 +431,7 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
-      className="relative flex h-full w-full touch-none items-center justify-center overflow-hidden px-8 pt-28 pb-8"
+      className="relative flex h-full w-full touch-none items-center justify-center overflow-hidden px-4 pt-24 pb-6 sm:px-8 sm:pt-28 sm:pb-8"
       style={{
         background: 'radial-gradient(ellipse at center, #1c4f73 0%, #123a56 55%, #0a2540 100%)',
       }}
