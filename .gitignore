@@ -28,3 +28,10 @@ release
 *.njsproj
 *.sln
 *.sw?
+
+# Pastas antigas de build (pertencem ao root, não podem ser apagadas sem sudo)
+dist-antigo-root/
+release-antigo-root/
+
+# Caches locais de geocodificação
+scripts/*-cache.json
