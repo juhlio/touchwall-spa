@@ -19,7 +19,7 @@ export interface UnidadeMercadoLivre {
   uf: string
   lat: number
   lng: number
-  precisao: 'endereco' | 'bairro' | 'cidade'
+  precisao: 'endereco' | 'bairro' | 'cidade' | 'manual'
   destaque: boolean
 }
 
@@ -286,7 +286,7 @@ export function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLi
         <Campo rotulo="CEP" valor={unidade.cep} />
       </dl>
 
-      {unidade.precisao !== 'endereco' && (
+      {(unidade.precisao === 'bairro' || unidade.precisao === 'cidade') && (
         <p className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3 text-xs leading-relaxed text-white/50">
           {unidade.precisao === 'bairro'
             ? 'Localização aproximada, no bairro. O endereço exato não foi encontrado no mapa.'

@@ -1,0 +1,25 @@
+codigo;cidade;uf;logradouro;bairro;cep;precisao_atual;lat;lng
+SMN1;São Luís;MA;Rodovia BR 135 (Avn. Eng. Emiliano Macieira), km 8;Maracanã;65095-602;cidade;;
+SPI1;Teresina;PI;Rua B Distrito Industrial 725;Distrito Industrial;64027-464;cidade;;
+SPA1;Benevides;PA;Rodovia BR 316 s/n;Canutama;68795-000;cidade;;
+SPA3;Belém;PA;Rodovia BR 316 km 26 s/n;Trevo de Mosqueiro;68795-000;cidade;;
+SRD1;Porto Velho;RO;Avenida Jatuarana 6529;Floresta;76806-111;cidade;;
+SRD3;Porto Velho;RO;Rodovia BR-364 7551;Lagoa;76812-401;cidade;;
+SCE4;Fortaleza;CE;Rodovia Quarto Anel Viário 900;Pedras;60874-401;cidade;;
+SJP1;João Pessoa;PB;Rua Professora Nevemar Carvalho e Silva 224;Gramame;58069-710;cidade;;
+SCE5;Juazeiro do Norte;CE;Rua Francisco Martins de Souza, 955;Jardim Gonzaga;63046-510;cidade;;
+SDF5;Distrito Federal;DF;Setor Santa Maria Norte, BR-040 km 2,5, AC 119;Santa Maria;72549-650;cidade;;
+SP50;São Paulo;SP;Avenida Card Santiago Luiz Copello 597;Vila Ribeiro de Barros;05308-000;cidade;;
+SMS2;Dourados;MS;Rua Buale Mustafa Rateib 10155;Chácara Castelo II;79835-000;bairro;;
+STO1;Palmas;TO;Quadra ASR SE 25, Rua SR 11, conj. 05, 06-A s/n;Plano Diretor Sul;77023-640;bairro;;
+SMG20;Uberlândia;MG;Rod BR 050, nº 3555, Galpão Mod 02-11;Novo Mundo;38438-899;bairro;;
+SPE2;Recife;PE;Rodovia BR 101 Sul 9415;Distrito Industrial Santo Estevão;54503-010;bairro;;
+PE01;Recife;PE;Rodovia BR 101 Sul, km 96,4, 5205;Distrito Industrial Diper;54503-900;bairro;;
+CAD BA02;Simões Filho;BA;Rodovia BA093, 7310 - KM 7 3 Galpão G50;Palmares;43700-000;endereco;;
+SRJ17;São João de Meriti;RJ;Avenida Arthur Antonio Sendas 999;Venda Velha;25581-325;endereco;;
+SMS1;Campo Grande;MS;Avenida Zila Correa Machado 9132;Rita Vieira;79062-002;endereco;;
+SMG13;Teófilo Otoni;MG;Área rural s/n;Área Rural de Teófilo Otoni;39805-899;endereco;;
+SMG21;Juiz de Fora;MG;Rua Julio Dionisio Cardoso 750;Distrito Industrial;36092-020;endereco;;
+SRJ16;Resende;RJ;Rod Presidente Dutra, Polo Ind. nº 0;Polo Industrial I;27537-000;endereco;;
+SRN1;Natal;RN;Rodovia Av Piloto Pereira Tim (BR 101) s/nº;Cajupiranga;59156-660;endereco;;
+SBA10;Feira de Santana;BA;Av. Deputado Luis Eduardo Magalhães, s/n, Cond. Celog;Limoeiro;44097-324;endereco;;
