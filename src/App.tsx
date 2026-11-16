@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useCallback, useEffect, useState } from 'react'
-import { BrazilMap } from '@/components/BrazilMap'
 import { ConhecendoGerador } from '@/components/ConhecendoGerador'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
+import { MercadoLivreMap, type UnidadeMercadoLivre } from '@/components/MercadoLivreMap'
 import { NossaOperacao } from '@/components/NossaOperacao'
 import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
@@ -12,17 +12,17 @@ import { useInactivityReset } from '@/hooks/useInactivityReset'
 import { MapLayout } from '@/layouts/MapLayout'
 import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
-import type { Client, Page } from '@/types'
+import type { Page } from '@/types'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('menu')
-  const [clients, setClients] = useState<Client[]>([])
+  const [unidades, setUnidades] = useState<UnidadeMercadoLivre[]>([])
 
   useEffect(() => {
-    fetch('/data/clients-locations.json')
+    fetch('/data/mercado-livre-unidades.json')
       .then((res) => res.json())
-      .then((data: Client[]) => setClients(data))
-      .catch(() => setClients([]))
+      .then((data: UnidadeMercadoLivre[]) => setUnidades(data))
+      .catch(() => setUnidades([]))
   }, [])
 
   const goToMenu = useCallback(() => {
@@ -34,16 +34,12 @@ function App() {
   // o que já fecha qualquer modal/lightbox aberto nela.
   useInactivityReset(goToMenu)
 
-  function handlePinClick(client: Client) {
-    console.log('Cliente selecionado no mapa:', client.name)
-  }
-
   function renderPage() {
     switch (currentPage) {
       case 'onde-estamos':
         return (
           <MapLayout onBack={goToMenu}>
-            <BrazilMap clients={clients} onPinClick={handlePinClick} />
+            <MercadoLivreMap unidades={unidades} />
           </MapLayout>
         )
 
