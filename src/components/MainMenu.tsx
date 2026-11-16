@@ -107,7 +107,7 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
         <MenuTile
           onClick={() => onNavigate('onde-estamos')}
           icon={MapPin}
-          title="Onde Estamos"
+          title="Locais da Operação"
           description="Mapa com clientes em todo o Brasil"
           accent="brand"
         />
