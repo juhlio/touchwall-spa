@@ -10,6 +10,7 @@
     "lat": -12.799266,
     "lng": -38.417414,
     "precisao": "endereco",
+    "municipio_cep": "Simões Filho",
     "destaque": false
   },
   {
@@ -23,6 +24,7 @@
     "lat": -2.529526,
     "lng": -44.296394,
     "precisao": "cidade",
+    "municipio_cep": "São Luís",
     "destaque": false
   },
   {
@@ -36,6 +38,7 @@
     "lat": -5.087461,
     "lng": -42.804957,
     "precisao": "cidade",
+    "municipio_cep": "Teresina",
     "destaque": false
   },
   {
@@ -49,6 +52,7 @@
     "lat": -1.355558,
     "lng": -48.252235,
     "precisao": "cidade",
+    "municipio_cep": "Benevides",
     "destaque": true
   },
   {
@@ -59,9 +63,10 @@
     "cep": "68795-000",
     "cidade": "Belém",
     "uf": "PA",
-    "lat": -1.45056,
-    "lng": -48.468245,
+    "lat": -1.355558,
+    "lng": -48.252235,
     "precisao": "cidade",
+    "municipio_cep": "Benevides",
     "destaque": false
   },
   {
@@ -75,6 +80,7 @@
     "lat": -8.749453,
     "lng": -63.873544,
     "precisao": "cidade",
+    "municipio_cep": "Porto Velho",
     "destaque": false
   },
   {
@@ -85,9 +91,10 @@
     "cep": "25581-325",
     "cidade": "São João de Meriti",
     "uf": "RJ",
-    "lat": -22.783976,
-    "lng": -43.345766,
-    "precisao": "bairro",
+    "lat": -22.79853,
+    "lng": -43.354892,
+    "precisao": "endereco",
+    "municipio_cep": "São João de Meriti",
     "destaque": false
   },
   {
@@ -98,9 +105,10 @@
     "cep": "79062-002",
     "cidade": "Campo Grande",
     "uf": "MS",
-    "lat": -20.515632,
-    "lng": -54.564014,
+    "lat": -20.582723,
+    "lng": -54.58176,
     "precisao": "endereco",
+    "municipio_cep": "Campo Grande",
     "destaque": false
   },
   {
@@ -114,6 +122,7 @@
     "lat": -8.749453,
     "lng": -63.873544,
     "precisao": "cidade",
+    "municipio_cep": "Porto Velho",
     "destaque": false
   },
   {
@@ -127,6 +136,7 @@
     "lat": -22.246059,
     "lng": -54.813672,
     "precisao": "bairro",
+    "municipio_cep": "Dourados",
     "destaque": true
   },
   {
@@ -140,6 +150,7 @@
     "lat": -10.188104,
     "lng": -48.338636,
     "precisao": "bairro",
+    "municipio_cep": "Palmas",
     "destaque": true
   },
   {
@@ -153,6 +164,7 @@
     "lat": -17.891601,
     "lng": -41.52652,
     "precisao": "endereco",
+    "municipio_cep": "Teófilo Otoni",
     "destaque": false
   },
   {
@@ -166,6 +178,7 @@
     "lat": -21.681541,
     "lng": -43.4415,
     "precisao": "endereco",
+    "municipio_cep": "Juiz de Fora",
     "destaque": false
   },
   {
@@ -179,6 +192,7 @@
     "lat": -3.793217,
     "lng": -38.528036,
     "precisao": "cidade",
+    "municipio_cep": "Fortaleza",
     "destaque": false
   },
   {
@@ -189,9 +203,10 @@
     "cep": "38438-899",
     "cidade": "Uberlândia",
     "uf": "MG",
-    "lat": -18.922227,
-    "lng": -48.211869,
+    "lat": -18.894141,
+    "lng": -48.262268,
     "precisao": "bairro",
+    "municipio_cep": "Uberlândia",
     "destaque": false
   },
   {
@@ -202,9 +217,10 @@
     "cep": "27537-000",
     "cidade": "Resende",
     "uf": "RJ",
-    "lat": -22.504043,
-    "lng": -44.643941,
-    "precisao": "bairro",
+    "lat": -22.50914,
+    "lng": -44.686132,
+    "precisao": "endereco",
+    "municipio_cep": "Resende",
     "destaque": false
   },
   {
@@ -215,9 +231,10 @@
     "cep": "59156-660",
     "cidade": "Natal",
     "uf": "RN",
-    "lat": -5.794443,
-    "lng": -35.24623,
-    "precisao": "bairro",
+    "lat": -5.87389,
+    "lng": -35.220918,
+    "precisao": "endereco",
+    "municipio_cep": "Parnamirim",
     "destaque": false
   },
   {
@@ -228,9 +245,10 @@
     "cep": "54503-010",
     "cidade": "Recife",
     "uf": "PE",
-    "lat": -8.058493,
-    "lng": -34.884819,
-    "precisao": "cidade",
+    "lat": -8.246361,
+    "lng": -35.000639,
+    "precisao": "bairro",
+    "municipio_cep": "Cabo de Santo Agostinho",
     "destaque": false
   },
   {
@@ -241,9 +259,10 @@
     "cep": "54503-900",
     "cidade": "Recife",
     "uf": "PE",
-    "lat": -8.058493,
-    "lng": -34.884819,
-    "precisao": "cidade",
+    "lat": -8.269847,
+    "lng": -35.032396,
+    "precisao": "bairro",
+    "municipio_cep": "Cabo de Santo Agostinho",
     "destaque": false
   },
   {
@@ -257,6 +276,7 @@
     "lat": -7.121598,
     "lng": -34.882028,
     "precisao": "cidade",
+    "municipio_cep": "João Pessoa",
     "destaque": false
   },
   {
@@ -270,6 +290,7 @@
     "lat": -7.215345,
     "lng": -39.315334,
     "precisao": "cidade",
+    "municipio_cep": "Juazeiro do Norte",
     "destaque": true
   },
   {
@@ -280,9 +301,10 @@
     "cep": "44097-324",
     "cidade": "Feira de Santana",
     "uf": "BA",
-    "lat": -12.310656,
-    "lng": -38.895752,
-    "precisao": "bairro",
+    "lat": -12.34481,
+    "lng": -38.839781,
+    "precisao": "endereco",
+    "municipio_cep": "Feira de Santana",
     "destaque": false
   },
   {
@@ -293,9 +315,10 @@
     "cep": "72549-650",
     "cidade": "Distrito Federal",
     "uf": "DF",
-    "lat": -15.750887,
-    "lng": -47.925046,
-    "precisao": "endereco",
+    "lat": -15.793987,
+    "lng": -47.8828,
+    "precisao": "cidade",
+    "municipio_cep": "Brasília",
     "destaque": false
   },
   {
@@ -309,6 +332,7 @@
     "lat": -23.550651,
     "lng": -46.633382,
     "precisao": "cidade",
+    "municipio_cep": "São Paulo",
     "destaque": false
   }
 ]

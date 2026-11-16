@@ -83,28 +83,45 @@ def valido(resultado, cidade, uf):
     return normaliza(cidade) in endereco and ESTADOS[uf] in endereco
 
 
+def consulta_viacep(cep):
+    """Dados oficiais dos Correios para o CEP (logradouro, bairro, município)."""
+    url = f"https://viacep.com.br/ws/{cep.replace('-', '')}/json/"
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            dados = json.load(resp)
+    except OSError:
+        return {}
+    time.sleep(0.3)
+    return {} if dados.get("erro") else dados
+
+
 def localizar(logradouro, bairro, cep, cidade, uf):
+    oficial = consulta_viacep(cep)
+    municipio = oficial.get("localidade") or cidade
+    rua = oficial.get("logradouro") or logradouro
+    bairro_oficial = oficial.get("bairro") or bairro
     tentativas = [
-        ("endereco", {"street": logradouro, "city": cidade, "state": ESTADOS[uf], "country": "Brasil"}),
-        ("bairro", {"q": f"{bairro}, {cidade}, {uf}, Brasil"}),
-        ("endereco", {"q": f"{cep}, {cidade}, {uf}, Brasil"}),
+        ("endereco", {"street": rua, "city": municipio, "state": ESTADOS[uf], "country": "Brasil"}),
+        ("bairro", {"q": f"{bairro_oficial}, {municipio}, {uf}, Brasil"}),
+        ("endereco", {"q": f"{cep}, {municipio}, {uf}, Brasil"}),
     ]
     for precisao, params in tentativas:
         r = consulta(params)
-        if valido(r, cidade, uf):
+        if valido(r, municipio, uf):
             if precisao == "endereco" and r.get("addresstype") in TIPOS_BAIRRO:
                 precisao = "bairro"
-            return float(r["lat"]), float(r["lon"]), precisao
-    r = consulta({"q": f"{cidade}, {uf}, Brasil"})
+            return float(r["lat"]), float(r["lon"]), precisao, municipio
+    r = consulta({"q": f"{municipio}, {uf}, Brasil"})
     if r is None:
-        raise SystemExit(f"Sem coordenadas para {cidade}-{uf}")
-    return float(r["lat"]), float(r["lon"]), "cidade"
+        raise SystemExit(f"Sem coordenadas para {municipio}-{uf}")
+    return float(r["lat"]), float(r["lon"]), "cidade", municipio
 
 
 def main():
     saida = []
     for codigo, regiao, logradouro, bairro, cep, cidade, uf, destaque in UNIDADES:
-        lat, lng, precisao = localizar(logradouro, bairro, cep, cidade, uf)
+        lat, lng, precisao, municipio_cep = localizar(logradouro, bairro, cep, cidade, uf)
         saida.append({
             "codigo": codigo,
             "regiao": regiao,
@@ -116,9 +133,10 @@ def main():
             "lat": round(lat, 6),
             "lng": round(lng, 6),
             "precisao": precisao,
+            "municipio_cep": municipio_cep,
             "destaque": destaque,
         })
-        print(f"{codigo:9} {cidade}-{uf}: {lat:.4f}, {lng:.4f} ({precisao})")
+        print(f"{codigo:9} {cidade}-{uf} (CEP: {municipio_cep}): {lat:.4f}, {lng:.4f} ({precisao})")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(saida, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"gravado em {OUT} ({len(saida)} unidades)")
