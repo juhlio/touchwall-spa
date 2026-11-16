@@ -19,7 +19,7 @@ export interface UnidadeMercadoLivre {
   uf: string
   lat: number
   lng: number
-  precisao: 'endereco' | 'cidade'
+  precisao: 'endereco' | 'bairro' | 'cidade'
   destaque: boolean
 }
 
@@ -39,17 +39,17 @@ export interface GeoFeature {
 export const CLIENTE_COR = '#ffe600'
 
 // Pinos mais próximos que isso são afastados levemente (ex.: Recife tem duas unidades).
-const MIN_DISTANCIA_PINOS = 9
+const MIN_DISTANCIA_PINOS = 5
 const AFASTAMENTOS = [
   [0, 0],
-  [12, 0],
-  [-12, 0],
-  [0, 12],
-  [0, -12],
-  [12, 12],
-  [-12, -12],
-  [12, -12],
-  [-12, 12],
+  [4, 0],
+  [-4, 0],
+  [0, 4],
+  [0, -4],
+  [4, 4],
+  [-4, -4],
+  [4, -4],
+  [-4, 4],
 ]
 
 function ringToPath(ring: Ring) {
@@ -286,9 +286,11 @@ export function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLi
         <Campo rotulo="CEP" valor={unidade.cep} />
       </dl>
 
-      {unidade.precisao === 'cidade' && (
+      {unidade.precisao !== 'endereco' && (
         <p className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3 text-xs leading-relaxed text-white/50">
-          Localização aproximada, no centro da cidade. O endereço exato não foi encontrado no mapa.
+          {unidade.precisao === 'bairro'
+            ? 'Localização aproximada, no bairro. O endereço exato não foi encontrado no mapa.'
+            : 'Localização aproximada, no centro da cidade. O endereço exato não foi encontrado no mapa.'}
         </p>
       )}
 

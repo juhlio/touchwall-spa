@@ -2,13 +2,19 @@
 """Geocodifica as unidades do Mercado Livre (lista da planilha) e gera
 public/data/mercado-livre-unidades.json.
 
-Consulta o Nominatim (OpenStreetMap) com logradouro, bairro, cidade e UF.
-Se não achar o endereço, cai para a cidade (marcado como precisao = "cidade").
+Para cada unidade tenta, nesta ordem:
+  1. rua estruturada (logradouro + cidade + UF)
+  2. bairro + cidade + UF
+  3. CEP + cidade
+Um resultado só é aceito se o nome da cidade e o estado aparecerem no endereço
+devolvido pelo Nominatim (OpenStreetMap). Sem isso, a consulta pode cair numa
+rua de mesmo nome em outro estado. Se nada passar, usa o centro da cidade.
 Respeita 1 requisição por segundo. Não grava CNPJ.
 """
 
 import json
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -17,7 +23,7 @@ NOMINATIM = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = "touchwall-map-setup/1.0"
 OUT = Path(__file__).resolve().parent.parent / "public/data/mercado-livre-unidades.json"
 
-# codigo, regiao, logradouro, bairro, cep, cidade, uf, destaque (marcação amarela)
+# codigo, regiao, logradouro, bairro, cep, cidade, uf, destaque (marcação amarela na planilha)
 UNIDADES = [
     ("CAD BA02", "Nordeste", "Rodovia BA093, 7310 - KM 7 3 Galpão G50", "Palmares", "43700-000", "Simões Filho", "BA", False),
     ("SMN1", "Nordeste", "Rodovia BR 135 (Avn. Eng. Emiliano Macieira), km 8", "Maracanã", "65095-602", "São Luís", "MA", False),
@@ -45,28 +51,60 @@ UNIDADES = [
     ("SP50", "Sudeste", "Avenida Card Santiago Luiz Copello 597", "Vila Ribeiro de Barros", "05308-000", "São Paulo", "SP", False),
 ]
 
+ESTADOS = {
+    "BA": "bahia", "MA": "maranhão", "PI": "piauí", "PA": "pará", "RO": "rondônia", "RJ": "rio de janeiro",
+    "MS": "mato grosso do sul", "TO": "tocantins", "MG": "minas gerais", "CE": "ceará", "RN": "rio grande do norte",
+    "PE": "pernambuco", "PB": "paraíba", "DF": "distrito federal", "SP": "são paulo",
+}
+# tipos que indicam o centro de uma cidade, não um endereço
+TIPOS_CIDADE = {"city", "town", "municipality", "village", "county", "state", "administrative", "country"}
+TIPOS_BAIRRO = {"suburb", "neighbourhood", "quarter", "residential", "industrial", "hamlet", "locality"}
 
-def consulta(q):
-    url = NOMINATIM + "?" + urllib.parse.urlencode({"q": q, "format": "json", "limit": 1, "countrycodes": "br"})
+
+def normaliza(texto):
+    sem_acento = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode("ascii")
+    return sem_acento.lower()
+
+
+def consulta(params):
+    url = NOMINATIM + "?" + urllib.parse.urlencode({**params, "format": "json", "limit": 1, "countrycodes": "br", "addressdetails": 1})
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=30) as resp:
         dados = json.load(resp)
     time.sleep(1.1)
-    if dados:
-        return float(dados[0]["lat"]), float(dados[0]["lon"])
-    return None
+    return dados[0] if dados else None
+
+
+def valido(resultado, cidade, uf):
+    """Aceita só se o endereço devolvido é da cidade e do estado certos."""
+    if resultado is None or resultado.get("addresstype") in TIPOS_CIDADE:
+        return False
+    endereco = normaliza(resultado.get("display_name", ""))
+    return normaliza(cidade) in endereco and ESTADOS[uf] in endereco
+
+
+def localizar(logradouro, bairro, cep, cidade, uf):
+    tentativas = [
+        ("endereco", {"street": logradouro, "city": cidade, "state": ESTADOS[uf], "country": "Brasil"}),
+        ("bairro", {"q": f"{bairro}, {cidade}, {uf}, Brasil"}),
+        ("endereco", {"q": f"{cep}, {cidade}, {uf}, Brasil"}),
+    ]
+    for precisao, params in tentativas:
+        r = consulta(params)
+        if valido(r, cidade, uf):
+            if precisao == "endereco" and r.get("addresstype") in TIPOS_BAIRRO:
+                precisao = "bairro"
+            return float(r["lat"]), float(r["lon"]), precisao
+    r = consulta({"q": f"{cidade}, {uf}, Brasil"})
+    if r is None:
+        raise SystemExit(f"Sem coordenadas para {cidade}-{uf}")
+    return float(r["lat"]), float(r["lon"]), "cidade"
 
 
 def main():
     saida = []
     for codigo, regiao, logradouro, bairro, cep, cidade, uf, destaque in UNIDADES:
-        coords = consulta(f"{logradouro}, {bairro}, {cidade}, {uf}, Brasil")
-        precisao = "endereco"
-        if coords is None:
-            coords = consulta(f"{cidade}, {uf}, Brasil")
-            precisao = "cidade"
-        if coords is None:
-            raise SystemExit(f"Sem coordenadas para {codigo} ({cidade}-{uf})")
+        lat, lng, precisao = localizar(logradouro, bairro, cep, cidade, uf)
         saida.append({
             "codigo": codigo,
             "regiao": regiao,
@@ -75,12 +113,12 @@ def main():
             "cep": cep,
             "cidade": cidade,
             "uf": uf,
-            "lat": round(coords[0], 6),
-            "lng": round(coords[1], 6),
+            "lat": round(lat, 6),
+            "lng": round(lng, 6),
             "precisao": precisao,
             "destaque": destaque,
         })
-        print(f"{codigo:9} {cidade}-{uf}: {coords[0]:.4f}, {coords[1]:.4f} ({precisao})")
+        print(f"{codigo:9} {cidade}-{uf}: {lat:.4f}, {lng:.4f} ({precisao})")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(saida, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"gravado em {OUT} ({len(saida)} unidades)")

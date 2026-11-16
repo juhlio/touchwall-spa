@@ -7,9 +7,9 @@
     "cep": "43700-000",
     "cidade": "Simões Filho",
     "uf": "BA",
-    "lat": -12.786784,
-    "lng": -38.403036,
-    "precisao": "cidade",
+    "lat": -12.799266,
+    "lng": -38.417414,
+    "precisao": "endereco",
     "destaque": false
   },
   {
@@ -33,9 +33,9 @@
     "cep": "64027-464",
     "cidade": "Teresina",
     "uf": "PI",
-    "lat": -5.144042,
-    "lng": -42.794964,
-    "precisao": "endereco",
+    "lat": -5.087461,
+    "lng": -42.804957,
+    "precisao": "cidade",
     "destaque": false
   },
   {
@@ -72,9 +72,9 @@
     "cep": "76806-111",
     "cidade": "Porto Velho",
     "uf": "RO",
-    "lat": -8.790012,
-    "lng": -63.879005,
-    "precisao": "endereco",
+    "lat": -8.749453,
+    "lng": -63.873544,
+    "precisao": "cidade",
     "destaque": false
   },
   {
@@ -85,9 +85,9 @@
     "cep": "25581-325",
     "cidade": "São João de Meriti",
     "uf": "RJ",
-    "lat": -22.785357,
-    "lng": -43.366715,
-    "precisao": "cidade",
+    "lat": -22.783976,
+    "lng": -43.345766,
+    "precisao": "bairro",
     "destaque": false
   },
   {
@@ -111,9 +111,9 @@
     "cep": "76812-401",
     "cidade": "Porto Velho",
     "uf": "RO",
-    "lat": -8.796475,
-    "lng": -63.839479,
-    "precisao": "endereco",
+    "lat": -8.749453,
+    "lng": -63.873544,
+    "precisao": "cidade",
     "destaque": false
   },
   {
@@ -124,9 +124,9 @@
     "cep": "79835-000",
     "cidade": "Dourados",
     "uf": "MS",
-    "lat": -22.220614,
-    "lng": -54.812208,
-    "precisao": "cidade",
+    "lat": -22.246059,
+    "lng": -54.813672,
+    "precisao": "bairro",
     "destaque": true
   },
   {
@@ -137,9 +137,9 @@
     "cep": "77023-640",
     "cidade": "Palmas",
     "uf": "TO",
-    "lat": -10.183785,
-    "lng": -48.333642,
-    "precisao": "cidade",
+    "lat": -10.188104,
+    "lng": -48.338636,
+    "precisao": "bairro",
     "destaque": true
   },
   {
@@ -150,9 +150,9 @@
     "cep": "39805-899",
     "cidade": "Teófilo Otoni",
     "uf": "MG",
-    "lat": -17.685941,
-    "lng": -41.384374,
-    "precisao": "cidade",
+    "lat": -17.891601,
+    "lng": -41.52652,
+    "precisao": "endereco",
     "destaque": false
   },
   {
@@ -176,9 +176,9 @@
     "cep": "60874-401",
     "cidade": "Fortaleza",
     "uf": "CE",
-    "lat": -3.869693,
-    "lng": -38.507161,
-    "precisao": "endereco",
+    "lat": -3.793217,
+    "lng": -38.528036,
+    "precisao": "cidade",
     "destaque": false
   },
   {
@@ -189,9 +189,9 @@
     "cep": "38438-899",
     "cidade": "Uberlândia",
     "uf": "MG",
-    "lat": -18.918804,
-    "lng": -48.276784,
-    "precisao": "cidade",
+    "lat": -18.922227,
+    "lng": -48.211869,
+    "precisao": "bairro",
     "destaque": false
   },
   {
@@ -202,9 +202,9 @@
     "cep": "27537-000",
     "cidade": "Resende",
     "uf": "RJ",
-    "lat": -22.44187,
-    "lng": -44.420485,
-    "precisao": "cidade",
+    "lat": -22.504043,
+    "lng": -44.643941,
+    "precisao": "bairro",
     "destaque": false
   },
   {
@@ -215,9 +215,9 @@
     "cep": "59156-660",
     "cidade": "Natal",
     "uf": "RN",
-    "lat": -5.805398,
-    "lng": -35.20809,
-    "precisao": "cidade",
+    "lat": -5.794443,
+    "lng": -35.24623,
+    "precisao": "bairro",
     "destaque": false
   },
   {
@@ -267,9 +267,9 @@
     "cep": "63046-510",
     "cidade": "Juazeiro do Norte",
     "uf": "CE",
-    "lat": -7.243595,
-    "lng": -39.336226,
-    "precisao": "endereco",
+    "lat": -7.215345,
+    "lng": -39.315334,
+    "precisao": "cidade",
     "destaque": true
   },
   {
@@ -280,9 +280,9 @@
     "cep": "44097-324",
     "cidade": "Feira de Santana",
     "uf": "BA",
-    "lat": -12.257893,
-    "lng": -38.959805,
-    "precisao": "cidade",
+    "lat": -12.310656,
+    "lng": -38.895752,
+    "precisao": "bairro",
     "destaque": false
   },
   {
@@ -295,7 +295,7 @@
     "uf": "DF",
     "lat": -15.750887,
     "lng": -47.925046,
-    "precisao": "cidade",
+    "precisao": "endereco",
     "destaque": false
   },
   {
