@@ -30,13 +30,13 @@ interface StateFeature {
 
 type Ring = [number, number][]
 
-interface GeoFeature {
+export interface GeoFeature {
   properties: { id: string }
   geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: Ring[] | Ring[][] }
 }
 
 // Cor da marca do cliente, usada só nesta tela (o resto do app segue a Essencial).
-const CLIENTE_COR = '#ffe600'
+export const CLIENTE_COR = '#ffe600'
 
 // Pinos mais próximos que isso são afastados levemente (ex.: Recife tem duas unidades).
 const MIN_DISTANCIA_PINOS = 9
@@ -63,21 +63,21 @@ function ringToPath(ring: Ring) {
   )
 }
 
-function geometryToPath(geometry: GeoFeature['geometry']) {
+export function geometryToPath(geometry: GeoFeature['geometry']) {
   if (geometry.type === 'Polygon') {
     return (geometry.coordinates as Ring[]).map(ringToPath).join(' ')
   }
   return (geometry.coordinates as Ring[][]).flat().map(ringToPath).join(' ')
 }
 
-interface PinoPosicionado {
+export interface PinoPosicionado {
   unidade: UnidadeMercadoLivre
   x: number
   y: number
 }
 
 // Calcula a posição de cada pino e afasta os que caem em cima de outro.
-function posicionarPinos(unidades: UnidadeMercadoLivre[]): PinoPosicionado[] {
+export function posicionarPinos(unidades: UnidadeMercadoLivre[]): PinoPosicionado[] {
   const colocados: { x: number; y: number }[] = []
   return unidades.map((unidade) => {
     const base = project(unidade.lat, unidade.lng)
@@ -229,7 +229,7 @@ export function MercadoLivreMap({ unidades }: { unidades: UnidadeMercadoLivre[] 
 }
 
 // Anel que se expande e some, em loop, centrado no pino (animação nativa do SVG).
-function PulsoAnel({ atraso }: { atraso: number }) {
+export function PulsoAnel({ atraso }: { atraso: number }) {
   return (
     <circle r={8} fill="none" stroke={CLIENTE_COR} strokeWidth={2} className="pointer-events-none">
       <animate attributeName="r" from="8" to="34" dur="1.6s" begin={`${atraso}s`} repeatCount="indefinite" />
@@ -238,7 +238,7 @@ function PulsoAnel({ atraso }: { atraso: number }) {
   )
 }
 
-function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLivre; onFechar: () => void }) {
+export function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLivre; onFechar: () => void }) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 48 }}

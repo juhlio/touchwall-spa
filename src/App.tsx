@@ -4,6 +4,7 @@ import { ConhecendoGerador } from '@/components/ConhecendoGerador'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
 import { MercadoLivreMap, type UnidadeMercadoLivre } from '@/components/MercadoLivreMap'
+import { MercadoLivreMapTracado } from '@/components/MercadoLivreMapTracado'
 import { NossaOperacao } from '@/components/NossaOperacao'
 import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
@@ -13,6 +14,9 @@ import { MapLayout } from '@/layouts/MapLayout'
 import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
 import type { Page } from '@/types'
+
+// Versão do mapa da página "Onde Estamos": 'atual' (pontos e pulso) ou 'tracado' (contorno traçado, território em pontos).
+const VARIANTE_MAPA: 'atual' | 'tracado' = 'tracado'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('menu')
@@ -39,7 +43,11 @@ function App() {
       case 'onde-estamos':
         return (
           <MapLayout onBack={goToMenu}>
-            <MercadoLivreMap unidades={unidades} />
+            {VARIANTE_MAPA === 'tracado' ? (
+              <MercadoLivreMapTracado unidades={unidades} />
+            ) : (
+              <MercadoLivreMap unidades={unidades} />
+            )}
           </MapLayout>
         )
 
