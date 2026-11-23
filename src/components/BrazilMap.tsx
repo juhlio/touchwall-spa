@@ -300,10 +300,49 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
       .catch(() => setStates([]))
   }, [])
 
+  // aproxima e centraliza o pino tocado, com transição suave
+  const animacaoRef = useRef<number | null>(null)
+  function focarPonto(px: number, py: number) {
+    const inicio = view
+    const escalaAlvo = 3.2
+    const largura = VIEWBOX_WIDTH / escalaAlvo
+    const altura = VIEWBOX_HEIGHT / escalaAlvo
+    const alvo: MapView = {
+      scale: escalaAlvo,
+      offsetX: clamp(px - largura / 2, -PAN_MARGIN, VIEWBOX_WIDTH - largura + PAN_MARGIN),
+      offsetY: clamp(py - altura / 2, -PAN_MARGIN, VIEWBOX_HEIGHT - altura + PAN_MARGIN),
+    }
+    if (animacaoRef.current !== null) window.clearInterval(animacaoRef.current)
+    const inicioTempo = performance.now()
+    const duracaoMs = 900
+    const id = window.setInterval(() => {
+      const t = Math.min(1, (performance.now() - inicioTempo) / duracaoMs)
+      const e = 1 - (1 - t) ** 3
+      setView({
+        scale: inicio.scale + (alvo.scale - inicio.scale) * e,
+        offsetX: inicio.offsetX + (alvo.offsetX - inicio.offsetX) * e,
+        offsetY: inicio.offsetY + (alvo.offsetY - inicio.offsetY) * e,
+      })
+      if (t >= 1) {
+        window.clearInterval(id)
+        animacaoRef.current = null
+      }
+    }, 16)
+    animacaoRef.current = id
+  }
+
+  useEffect(
+    () => () => {
+      if (animacaoRef.current !== null) window.clearInterval(animacaoRef.current)
+    },
+    [],
+  )
+
   function handlePinClick(client: Client) {
     if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
     const ponto = project(client.lat, client.lng)
     setDestaque({ uf: client.state ? client.state.toLowerCase() : null, x: ponto.x, y: ponto.y })
+    focarPonto(ponto.x, ponto.y)
     setSelected(client)
     onPinClick(client)
   }
@@ -601,6 +640,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
                   if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
                   setUnidadeSelecionadaCodigo(unidade.codigo)
                   setDestaque({ uf: unidade.uf.toLowerCase(), x, y })
+                  focarPonto(x, y)
                 }}
                 className="cursor-pointer"
                 role="button"
@@ -635,6 +675,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
             key={unidadeAberta.codigo}
             unidade={unidadeAberta}
             onFechar={() => setUnidadeSelecionadaCodigo(null)}
+            inferior="bottom-44"
           />
         )}
       </AnimatePresence>

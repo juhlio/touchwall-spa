@@ -238,7 +238,15 @@ export function PulsoAnel({ atraso }: { atraso: number }) {
   )
 }
 
-export function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLivre; onFechar: () => void }) {
+export function PainelUnidade({
+  unidade,
+  onFechar,
+  inferior = 'bottom-16',
+}: {
+  unidade: UnidadeMercadoLivre
+  onFechar: () => void
+  inferior?: string
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 48 }}
@@ -246,7 +254,7 @@ export function PainelUnidade({ unidade, onFechar }: { unidade: UnidadeMercadoLi
       exit={{ opacity: 0, x: 48 }}
       transition={{ type: 'spring', stiffness: 260, damping: 28 }}
       onClick={(event) => event.stopPropagation()}
-      className="absolute top-24 right-4 bottom-16 z-20 flex w-[min(340px,calc(100%-2rem))] flex-col gap-4 overflow-y-auto rounded-[20px] border border-white/[0.1] bg-[rgba(8,7,6,0.85)] p-6 backdrop-blur-xl sm:top-28 sm:right-8"
+      className={`absolute top-24 right-4 ${inferior} z-20 flex w-[min(340px,calc(100%-2rem))] flex-col gap-4 overflow-y-auto rounded-[20px] border border-white/[0.1] bg-[rgba(8,7,6,0.85)] p-6 backdrop-blur-xl sm:top-28 sm:right-8`}
     >
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-2.5">
