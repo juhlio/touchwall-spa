@@ -12,9 +12,10 @@
 // mesma referência de coordenadas reais.
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { Home, MapPin, Minus, Plus, X } from 'lucide-react'
+import { Home, MapPin, Minus, Plus } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ClientPin } from '@/components/ClientPin'
+import { PainelMapa } from '@/components/PainelMapa'
 import {
   CLIENTE_COR,
   PainelUnidade,
@@ -340,6 +341,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
 
   function handlePinClick(client: Client) {
     if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
+    setUnidadeSelecionadaCodigo(null)
     const ponto = project(client.lat, client.lng)
     setDestaque({ uf: client.state ? client.state.toLowerCase() : null, x: ponto.x, y: ponto.y })
     focarPonto(ponto.x, ponto.y)
@@ -639,6 +641,8 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
                 onClick={() => {
                   if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
                   setUnidadeSelecionadaCodigo(unidade.codigo)
+                  setSelected(null)
+                  setSelectedCluster(null)
                   setDestaque({ uf: unidade.uf.toLowerCase(), x, y })
                   focarPonto(x, y)
                 }}
@@ -726,129 +730,42 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
       </div>
 
       <AnimatePresence>
-        {selected ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelected(null)}
-            className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-8"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.85 }}
-              transition={{ type: 'spring', stiffness: 280, damping: 26 }}
-              onClick={(event) => event.stopPropagation()}
-              className="w-full max-w-lg overflow-hidden rounded-[20px] border border-white/[0.08] bg-[rgba(10,7,5,0.95)] shadow-2xl backdrop-blur-xl"
-            >
-              {selected.photo ? (
-                <img src={selected.photo} alt={selected.name} className="h-48 w-full object-cover" />
-              ) : (
-                <div className="relative flex h-40 w-full flex-col items-center justify-center gap-2 overflow-hidden bg-gradient-to-br from-brand/25 via-[rgba(20,10,4,0.9)] to-[rgba(10,7,5,0.95)]">
-                  <MapPin size={20} className="text-brand" strokeWidth={2} />
-                  {selected.city ? (
-                    <div className="text-center">
-                      <div className="text-3xl font-bold tracking-tight text-white">{selected.city}</div>
-                      {selected.state ? (
-                        <div className="text-sm font-semibold tracking-[0.2em] text-brand uppercase">
-                          {selected.state}
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : (
-                    <div className="text-sm font-medium tracking-wide text-white/50 uppercase">Cliente Essencial Energia</div>
-                  )}
-                </div>
-              )}
-
-              <div className="flex flex-col gap-4 p-8">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h2 className="text-2xl font-semibold text-white">{selected.name}</h2>
-                    {selected.city ? (
-                      <p className="text-sm text-neutral-400">
-                        {selected.city}
-                        {selected.state ? ` - ${selected.state}` : ''}
-                      </p>
-                    ) : null}
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setSelected(null)}
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-white active:scale-95"
-                    aria-label="Fechar"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
-
-                {selected.description ? (
-                  <p className="text-base leading-relaxed text-neutral-300">
-                    {selected.description}
-                  </p>
-                ) : null}
-              </div>
-            </motion.div>
-          </motion.div>
-        ) : null}
+        {selected && (
+          <PainelMapa
+            key={`cliente-${selected.id}`}
+            icone={<MapPin size={18} strokeWidth={2} />}
+            rotulo="Cliente"
+            subtitulo="Essencial Energia"
+            titulo={selected.city ? `${selected.city}${selected.state ? ` · ${selected.state}` : ''}` : selected.name}
+            linhas={[
+              { rotulo: 'Nome', valor: selected.name },
+              ...(selected.description ? [{ rotulo: 'Sobre', valor: selected.description }] : []),
+            ]}
+            onFechar={() => setSelected(null)}
+          />
+        )}
       </AnimatePresence>
 
       <AnimatePresence>
-        {selectedCluster ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedCluster(null)}
-            className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-8"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.85 }}
-              transition={{ type: 'spring', stiffness: 280, damping: 26 }}
-              onClick={(event) => event.stopPropagation()}
-              className="flex w-full max-w-lg flex-col overflow-hidden rounded-[20px] border border-white/[0.08] bg-[rgba(10,7,5,0.95)] shadow-2xl backdrop-blur-xl"
-            >
-              <div className="flex items-center justify-between gap-4 border-b border-white/[0.08] p-6">
-                <h2 className="text-xl font-semibold text-white">
-                  {selectedCluster.length} clientes nesta região
-                </h2>
-                <button
-                  type="button"
-                  onClick={() => setSelectedCluster(null)}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-white active:scale-95"
-                  aria-label="Fechar"
-                >
-                  <X size={20} />
-                </button>
-              </div>
-
-              <div className="flex max-h-[60vh] flex-col overflow-y-auto">
-                {selectedCluster.map((client) => (
-                  <button
-                    key={client.id}
-                    type="button"
-                    onClick={() => {
-                      setSelectedCluster(null)
-                      handlePinClick(client)
-                    }}
-                    className="flex items-center justify-between gap-4 border-b border-white/[0.06] px-6 py-4 text-left last:border-b-0 active:bg-white/5"
-                  >
-                    <span className="text-[15px] text-white">{client.name}</span>
-                    {client.city ? (
-                      <span className="shrink-0 text-sm text-neutral-400">
-                        {client.city}
-                        {client.state ? ` - ${client.state}` : ''}
-                      </span>
-                    ) : null}
-                  </button>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
-        ) : null}
+        {selectedCluster && (
+          <PainelMapa
+            key="aglomerado"
+            icone={<MapPin size={18} strokeWidth={2} />}
+            rotulo="Região"
+            subtitulo="Clientes Essencial"
+            titulo={`${selectedCluster.length} clientes`}
+            lista={selectedCluster.map((client) => ({
+              id: client.id,
+              nome: client.name,
+              detalhe: client.city ? `${client.city}${client.state ? ` - ${client.state}` : ''}` : undefined,
+              onClick: () => {
+                setSelectedCluster(null)
+                handlePinClick(client)
+              },
+            }))}
+            onFechar={() => setSelectedCluster(null)}
+          />
+        )}
       </AnimatePresence>
     </div>
   )
