@@ -6,7 +6,7 @@
 // Sem nome, local ou qualquer texto sobre as fotos, conforme diretrizes.
 
 import { animate, AnimatePresence, motion, type PanInfo, useMotionValue } from 'framer-motion'
-import { ArrowLeft, ChevronLeft, ChevronRight, FileText, Folder, Images, Pause, Play, X } from 'lucide-react'
+import { ArrowLeft, ChevronLeft, ChevronRight, FileText, Images, Pause, Play, X } from 'lucide-react'
 import { useEffect, type ReactNode, useState } from 'react'
 import { AtmosphereBackground } from '@/components/AtmosphereBackground'
 import { BrandMark } from '@/components/BrandMark'
@@ -39,7 +39,6 @@ const SWIPE_THRESHOLD = 60
 const AUTOPLAY_DELAY_MS = 4000
 
 export function Projetos({ onBack }: ProjetosProps) {
-  const [folders, setFolders] = useState<PhotoFolder[] | null>(null)
   const [openFolder, setOpenFolder] = useState<PhotoFolder | null>(null)
   const [viewer, setViewer] = useState<ViewerState | null>(null)
   const [showCaseInfo, setShowCaseInfo] = useState(false)
@@ -54,23 +53,17 @@ export function Projetos({ onBack }: ProjetosProps) {
         function toPhotos(folder: FolderData): Photo[] {
           return folder.full.map((full, i) => ({ full, thumb: folder.thumb[i] }))
         }
-        setFolders([
-          {
-            id: 'data-center',
-            title: 'Data Center',
-            cover: data.dataCenter.thumb[0],
-            photos: toPhotos(data.dataCenter),
-            about: DATA_CENTER_CASE,
-          },
-          {
-            id: 'outros',
-            title: 'Outros Projetos',
-            cover: data.outros.thumb[0],
-            photos: toPhotos(data.outros),
-          },
-        ])
+        // todas as fotos juntas, numa única grade, já aberta ao entrar na seção
+        const todas: PhotoFolder = {
+          id: 'todas',
+          title: 'Projetos',
+          cover: data.dataCenter.thumb[0],
+          photos: [...toPhotos(data.dataCenter), ...toPhotos(data.outros)],
+          about: DATA_CENTER_CASE,
+        }
+        setOpenFolder(todas)
       })
-      .catch(() => setFolders([]))
+      .catch(() => setOpenFolder(null))
   }, [])
 
   return (
@@ -82,7 +75,7 @@ export function Projetos({ onBack }: ProjetosProps) {
           <div className="flex items-center gap-3.5">
             <button
               type="button"
-              onClick={() => (openFolder ? setOpenFolder(null) : onBack())}
+              onClick={onBack}
               className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-white/[0.08] bg-white/5 text-white/50 active:scale-95"
               aria-label="Voltar"
             >
@@ -122,13 +115,7 @@ export function Projetos({ onBack }: ProjetosProps) {
 
         {openFolder ? (
           <PhotoGrid folder={openFolder} onSelect={(index) => setViewer({ index, autoplay: false })} />
-        ) : (
-          <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
-            {folders?.map((folder) => (
-              <FolderTile key={folder.id} folder={folder} onOpen={() => setOpenFolder(folder)} />
-            ))}
-          </div>
-        )}
+        ) : null}
       </div>
 
       <AnimatePresence>
@@ -143,38 +130,6 @@ export function Projetos({ onBack }: ProjetosProps) {
         ) : null}
       </AnimatePresence>
     </div>
-  )
-}
-
-interface FolderTileProps {
-  folder: PhotoFolder
-  onOpen: () => void
-}
-
-function FolderTile({ folder, onOpen }: FolderTileProps) {
-  return (
-    <motion.button
-      type="button"
-      onClick={onOpen}
-      whileHover={{ scale: 1.015 }}
-      whileTap={{ scale: 0.98 }}
-      aria-label={`Abrir pasta ${folder.title} (${folder.photos.length} fotos)`}
-      className="relative h-[260px] w-full max-w-md flex-1 overflow-hidden rounded-[20px] border border-white/[0.08] bg-black/40 sm:h-full sm:max-h-[560px]"
-    >
-      <img src={folder.cover} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/30" />
-
-      <div className="absolute top-5 left-5 flex h-11 w-11 items-center justify-center rounded-2xl border border-brand/25 bg-brand/15 backdrop-blur-md">
-        <Folder size={20} className="text-brand" strokeWidth={1.8} />
-      </div>
-
-      <div className="absolute bottom-6 left-6 flex items-center gap-2.5">
-        <h2 className="text-2xl font-bold tracking-tight text-white">{folder.title}</h2>
-        <span className="rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[11px] font-semibold text-white/70 backdrop-blur-md">
-          {folder.photos.length}
-        </span>
-      </div>
-    </motion.button>
   )
 }
 
