@@ -105,6 +105,13 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
       {/* 5 botões de navegação, todos do mesmo tamanho */}
       <div className="grid grid-cols-2 gap-3 lg:flex lg:min-h-0 lg:flex-1 lg:gap-4">
         <MenuTile
+          onClick={() => onNavigate('nossa-historia')}
+          icon={Milestone}
+          title="Nossa história"
+          description="Da fundação às novas sedes"
+          accent="copper"
+        />
+        <MenuTile
           onClick={() => onNavigate('onde-estamos')}
           icon={MapPin}
           title="Locais da Operação"
@@ -138,13 +145,6 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
           title="Fale Conosco"
           description="Desafio, contato e QR Code"
           accent="blue"
-        />
-        <MenuTile
-          onClick={() => onNavigate('nossa-historia')}
-          icon={Milestone}
-          title="Nossa história"
-          description="Da fundação às novas sedes"
-          accent="copper"
         />
       </div>
     </motion.div>
