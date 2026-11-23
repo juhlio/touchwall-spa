@@ -435,6 +435,25 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
   const touchRadius = Math.max(5, TOUCH_TARGET_PX / 2 / svgPxPerUnit)
   const pinosUnidades = useMemo(() => posicionarPinos(unidades), [unidades])
   const unidadeAberta = unidades.find((u) => u.codigo === unidadeSelecionadaCodigo) ?? null
+  const estadoAberto = unidadeAberta ? states.find((e) => e.id === unidadeAberta.uf.toLowerCase()) ?? null : null
+
+  // contorno do Brasil traçado na entrada, como na intro do globo
+  const [contorno, setContorno] = useState<string | null>(null)
+  const [tracadoPronto, setTracadoPronto] = useState(false)
+  useEffect(() => {
+    fetch('/data/brazil-boundary.json')
+      .then((r) => r.json())
+      .then((data: { features: { geometry: GeoFeature['geometry'] }[] }) =>
+        setContorno(geometryToPath(data.features[0].geometry)),
+      )
+      .catch(() => setContorno(null))
+  }, [])
+  useEffect(() => {
+    if (contorno === null) return
+    // setTimeout em vez de requestAnimationFrame: rAF pode ficar pausado em janela sem foco
+    const id = window.setTimeout(() => setTracadoPronto(true), 60)
+    return () => window.clearTimeout(id)
+  }, [contorno])
 
   return (
     <div
@@ -488,6 +507,34 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
             strokeWidth={0.7}
           />
         ))}
+
+        {contorno && (
+          <path
+            d={contorno}
+            fill="none"
+            stroke="#f4f1e8"
+            strokeOpacity={0.8}
+            strokeWidth={1.2}
+            vectorEffect="non-scaling-stroke"
+            pathLength={1}
+            strokeDasharray={1}
+            strokeDashoffset={tracadoPronto ? 0 : 1}
+            style={{ transition: 'stroke-dashoffset 2.4s ease-in-out' }}
+          />
+        )}
+
+        {/* estado da unidade selecionada fica laranja, como o Brasil no globo */}
+        {estadoAberto && (
+          <path
+            d={estadoAberto.path}
+            fill="#e05a1c"
+            fillOpacity={0.2}
+            stroke="#e05a1c"
+            strokeWidth={1.4}
+            vectorEffect="non-scaling-stroke"
+            style={{ transition: 'fill-opacity 0.5s ease' }}
+          />
+        )}
 
         {mostrarClientes && clusters.map((cluster) =>
           cluster.clients.length === 1 ? (
