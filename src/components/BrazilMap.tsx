@@ -301,21 +301,12 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
       .catch(() => setStates([]))
   }, [])
 
-  // aproxima e centraliza o pino tocado, com transição suave
+  // anima a vista até o alvo, com transição suave
   const animacaoRef = useRef<number | null>(null)
-  function focarPonto(px: number, py: number, escalaFinal = 3.2) {
+  function animarVista(alvo: MapView, duracaoMs = 900) {
     const inicio = view
-    const escalaAlvo = escalaFinal
-    const largura = VIEWBOX_WIDTH / escalaAlvo
-    const altura = VIEWBOX_HEIGHT / escalaAlvo
-    const alvo: MapView = {
-      scale: escalaAlvo,
-      offsetX: clamp(px - largura / 2, -PAN_MARGIN, VIEWBOX_WIDTH - largura + PAN_MARGIN),
-      offsetY: clamp(py - altura / 2, -PAN_MARGIN, VIEWBOX_HEIGHT - altura + PAN_MARGIN),
-    }
     if (animacaoRef.current !== null) window.clearInterval(animacaoRef.current)
     const inicioTempo = performance.now()
-    const duracaoMs = 900
     const id = window.setInterval(() => {
       const t = Math.min(1, (performance.now() - inicioTempo) / duracaoMs)
       const e = 1 - (1 - t) ** 3
@@ -330,6 +321,22 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
       }
     }, 16)
     animacaoRef.current = id
+  }
+
+  // aproxima e centraliza o pino tocado
+  function focarPonto(px: number, py: number, escalaFinal = 3.2) {
+    const largura = VIEWBOX_WIDTH / escalaFinal
+    const altura = VIEWBOX_HEIGHT / escalaFinal
+    animarVista({
+      scale: escalaFinal,
+      offsetX: clamp(px - largura / 2, -PAN_MARGIN, VIEWBOX_WIDTH - largura + PAN_MARGIN),
+      offsetY: clamp(py - altura / 2, -PAN_MARGIN, VIEWBOX_HEIGHT - altura + PAN_MARGIN),
+    })
+  }
+
+  // volta à visão inicial do Brasil ao fechar uma caixa
+  function voltarVisaoInicial() {
+    animarVista(IDENTITY_VIEW)
   }
 
   useEffect(
@@ -546,6 +553,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
           width={satelliteBottomRight.x - satelliteTopLeft.x}
           height={satelliteBottomRight.y - satelliteTopLeft.y}
           preserveAspectRatio="none"
+          style={{ opacity: tracadoPronto ? 1 : 0, transition: 'opacity 1.6s ease-out' }}
         />
 
         {states.map((state) => (
@@ -594,6 +602,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
           </g>
         )}
 
+        <g style={{ opacity: tracadoPronto ? 1 : 0, transition: 'opacity 0.6s ease 2.2s' }}>
         {mostrarClientes && clusters.map((cluster) =>
           cluster.clients.length === 1 ? (
             <ClientPin
@@ -625,6 +634,9 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
             />
           ),
         )}
+        </g>
+
+        <g style={{ opacity: tracadoPronto ? 1 : 0, transition: 'opacity 0.6s ease 2.2s' }}>
         {mostrarUnidades &&
           pinosUnidades.map(({ unidade, x, y }) => {
             const ativo = unidade.codigo === unidadeSelecionadaCodigo
@@ -649,6 +661,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
               </g>
             )
           })}
+        </g>
       </svg>
 
       {/* camadas: liga e desliga clientes da Essencial e unidades do Mercado Livre */}
@@ -672,7 +685,10 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
           <PainelUnidade
             key={unidadeAberta.codigo}
             unidade={unidadeAberta}
-            onFechar={() => setUnidadeSelecionadaCodigo(null)}
+            onFechar={() => {
+              setUnidadeSelecionadaCodigo(null)
+              voltarVisaoInicial()
+            }}
             inferior="bottom-44"
           />
         )}
@@ -735,7 +751,10 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
               { rotulo: 'Nome', valor: selected.name },
               ...(selected.description ? [{ rotulo: 'Sobre', valor: selected.description }] : []),
             ]}
-            onFechar={() => setSelected(null)}
+            onFechar={() => {
+              setSelected(null)
+              voltarVisaoInicial()
+            }}
           />
         )}
       </AnimatePresence>
@@ -758,7 +777,10 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
                 handlePinClick(client)
               },
             }))}
-            onFechar={() => setSelectedCluster(null)}
+            onFechar={() => {
+              setSelectedCluster(null)
+              voltarVisaoInicial()
+            }}
           />
         )}
       </AnimatePresence>
