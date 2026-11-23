@@ -16,6 +16,9 @@ import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
 import type { Client, Page } from '@/types'
 
+// Estados do Sul: unidades do Mercado Livre não são exibidas no mapa.
+const ESTADOS_OCULTOS = ['RS', 'SC', 'PR']
+
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('menu')
   const [unidades, setUnidades] = useState<UnidadeMercadoLivre[]>([])
@@ -31,7 +34,7 @@ function App() {
   useEffect(() => {
     fetch('/data/mercado-livre-unidades.json')
       .then((res) => res.json())
-      .then((data: UnidadeMercadoLivre[]) => setUnidades(data))
+      .then((data: UnidadeMercadoLivre[]) => setUnidades(data.filter((u) => !ESTADOS_OCULTOS.includes(u.uf))))
       .catch(() => setUnidades([]))
   }, [])
 
