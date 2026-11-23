@@ -18,6 +18,7 @@ import { ClientPin } from '@/components/ClientPin'
 import {
   CLIENTE_COR,
   PainelUnidade,
+  PulsoAnel,
   posicionarPinos,
   type UnidadeMercadoLivre,
 } from '@/components/MercadoLivreMap'
@@ -248,6 +249,8 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
   const [selected, setSelected] = useState<Client | null>(null)
   const [selectedCluster, setSelectedCluster] = useState<Client[] | null>(null)
   const [unidadeSelecionadaCodigo, setUnidadeSelecionadaCodigo] = useState<string | null>(null)
+  // destaque de qualquer pin tocado: estado laranja + anéis de pulso no ponto
+  const [destaque, setDestaque] = useState<{ uf: string | null; x: number; y: number } | null>(null)
   const [mostrarClientes, setMostrarClientes] = useState(true)
   const [mostrarUnidades, setMostrarUnidades] = useState(true)
   const [states, setStates] = useState<StateFeature[]>([])
@@ -299,6 +302,8 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
 
   function handlePinClick(client: Client) {
     if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
+    const ponto = project(client.lat, client.lng)
+    setDestaque({ uf: client.state ? client.state.toLowerCase() : null, x: ponto.x, y: ponto.y })
     setSelected(client)
     onPinClick(client)
   }
@@ -435,7 +440,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
   const touchRadius = Math.max(5, TOUCH_TARGET_PX / 2 / svgPxPerUnit)
   const pinosUnidades = useMemo(() => posicionarPinos(unidades), [unidades])
   const unidadeAberta = unidades.find((u) => u.codigo === unidadeSelecionadaCodigo) ?? null
-  const estadoAberto = unidadeAberta ? states.find((e) => e.id === unidadeAberta.uf.toLowerCase()) ?? null : null
+  const estadoAberto = destaque?.uf ? states.find((e) => e.id === destaque.uf) ?? null : null
 
   // contorno do Brasil traçado na entrada, como na intro do globo
   const [contorno, setContorno] = useState<string | null>(null)
@@ -448,6 +453,11 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
       )
       .catch(() => setContorno(null))
   }, [])
+  // o destaque some quando o cartão ou o painel é fechado
+  useEffect(() => {
+    if (!selected && !unidadeAberta) setDestaque(null)
+  }, [selected, unidadeAberta])
+
   useEffect(() => {
     if (contorno === null) return
     // setTimeout em vez de requestAnimationFrame: rAF pode ficar pausado em janela sem foco
@@ -536,6 +546,13 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
           />
         )}
 
+        {destaque && (
+          <g transform={`translate(${destaque.x}, ${destaque.y}) scale(${1 / view.scale})`} className="pointer-events-none">
+            <PulsoAnel atraso={0} />
+            <PulsoAnel atraso={0.8} />
+          </g>
+        )}
+
         {mostrarClientes && clusters.map((cluster) =>
           cluster.clients.length === 1 ? (
             <ClientPin
@@ -553,6 +570,8 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
               y={cluster.y}
               count={cluster.clients.length}
               onClick={(event) => {
+                // destaca o estado do agrupamento, como nos outros pinos
+                setDestaque({ uf: cluster.clients[0].state ? cluster.clients[0].state.toLowerCase() : null, x: cluster.x, y: cluster.y })
                 // no zoom máximo o agrupamento não separa mais (alguns
                 // clientes chegam a compartilhar o mesmo endereço) — nesse
                 // caso mostra a lista em vez de um zoom que não faz nada
@@ -581,6 +600,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
                 onClick={() => {
                   if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
                   setUnidadeSelecionadaCodigo(unidade.codigo)
+                  setDestaque({ uf: unidade.uf.toLowerCase(), x, y })
                 }}
                 className="cursor-pointer"
                 role="button"
