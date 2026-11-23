@@ -5,6 +5,7 @@ import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
 import type { UnidadeMercadoLivre } from '@/components/MercadoLivreMap'
 import { BrazilMap } from '@/components/BrazilMap'
+import { NossaHistoria } from '@/components/NossaHistoria'
 import { NossaOperacao } from '@/components/NossaOperacao'
 import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
@@ -61,6 +62,13 @@ function App() {
 
       case 'conhecendo-gerador':
         return <ConhecendoGerador onBack={goToMenu} />
+
+      case 'nossa-historia':
+        return (
+          <ServiceLayout title="Nossa História" onBack={goToMenu}>
+            <NossaHistoria />
+          </ServiceLayout>
+        )
 
       case 'projetos':
         return <Projetos onBack={goToMenu} />

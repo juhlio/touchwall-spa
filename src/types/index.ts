@@ -9,6 +9,7 @@ export type Page =
   | 'conhecendo-gerador'
   | 'projetos'
   | 'fale-conosco'
+  | 'nossa-historia'
 
 export interface Client {
   id: string

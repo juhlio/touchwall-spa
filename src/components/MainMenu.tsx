@@ -4,7 +4,7 @@
 // Nossa Operação, Projetos, Capacidade Técnica, Fale Conosco).
 
 import { motion, type Variants } from 'framer-motion'
-import { Building2, Image, MapPin, MessageCircle, Zap } from 'lucide-react'
+import { Building2, Image, MapPin, Milestone, MessageCircle, Zap } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import type { Page } from '@/types'
 
@@ -138,7 +138,13 @@ export function MainMenu({ onNavigate }: MainMenuProps) {
           title="Fale Conosco"
           description="Desafio, contato e QR Code"
           accent="blue"
-          className="col-span-2 lg:col-span-1"
+        />
+        <MenuTile
+          onClick={() => onNavigate('nossa-historia')}
+          icon={Milestone}
+          title="Nossa história"
+          description="Da fundação às novas sedes"
+          accent="copper"
         />
       </div>
     </motion.div>
