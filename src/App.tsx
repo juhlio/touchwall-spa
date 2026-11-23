@@ -3,9 +3,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { ConhecendoGerador } from '@/components/ConhecendoGerador'
 import { FaleConosco } from '@/components/FaleConosco'
 import { MainMenu } from '@/components/MainMenu'
-import { MercadoLivreMap, type UnidadeMercadoLivre } from '@/components/MercadoLivreMap'
-import { MercadoLivreMapLeaflet } from '@/components/MercadoLivreMapLeaflet'
-import { MercadoLivreMapTracado } from '@/components/MercadoLivreMapTracado'
+import type { UnidadeMercadoLivre } from '@/components/MercadoLivreMap'
+import { BrazilMap } from '@/components/BrazilMap'
 import { NossaOperacao } from '@/components/NossaOperacao'
 import { Projetos } from '@/components/Projetos'
 import { pageTransition, pageVariants } from '@/config/animations'
@@ -14,14 +13,19 @@ import { useInactivityReset } from '@/hooks/useInactivityReset'
 import { MapLayout } from '@/layouts/MapLayout'
 import { MenuLayout } from '@/layouts/MenuLayout'
 import { ServiceLayout } from '@/layouts/ServiceLayout'
-import type { Page } from '@/types'
-
-// Versão do mapa da página "Onde Estamos": 'atual' (pontos e pulso) ou 'tracado' (contorno traçado, território em pontos).
-const VARIANTE_MAPA: 'atual' | 'tracado' | 'leaflet' = 'leaflet'
+import type { Client, Page } from '@/types'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('menu')
   const [unidades, setUnidades] = useState<UnidadeMercadoLivre[]>([])
+  const [clients, setClients] = useState<Client[]>([])
+
+  useEffect(() => {
+    fetch('/data/clients-locations.json')
+      .then((res) => res.json())
+      .then((data: Client[]) => setClients(data))
+      .catch(() => setClients([]))
+  }, [])
 
   useEffect(() => {
     fetch('/data/mercado-livre-unidades.json')
@@ -44,13 +48,7 @@ function App() {
       case 'onde-estamos':
         return (
           <MapLayout onBack={goToMenu}>
-            {VARIANTE_MAPA === 'leaflet' ? (
-              <MercadoLivreMapLeaflet unidades={unidades} />
-            ) : VARIANTE_MAPA === 'tracado' ? (
-              <MercadoLivreMapTracado unidades={unidades} />
-            ) : (
-              <MercadoLivreMap unidades={unidades} />
-            )}
+            <BrazilMap clients={clients} unidades={unidades} onPinClick={() => {}} />
           </MapLayout>
         )
 

@@ -15,6 +15,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Home, MapPin, Minus, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ClientPin } from '@/components/ClientPin'
+import {
+  CLIENTE_COR,
+  PainelUnidade,
+  posicionarPinos,
+  type UnidadeMercadoLivre,
+} from '@/components/MercadoLivreMap'
 import type { Client } from '@/types'
 
 interface StateFeature {
@@ -234,12 +240,16 @@ const MIN_CLUSTER_RADIUS = 9
 
 interface BrazilMapProps {
   clients: Client[]
+  unidades?: UnidadeMercadoLivre[]
   onPinClick: (client: Client) => void
 }
 
-export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
+export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps) {
   const [selected, setSelected] = useState<Client | null>(null)
   const [selectedCluster, setSelectedCluster] = useState<Client[] | null>(null)
+  const [unidadeSelecionadaCodigo, setUnidadeSelecionadaCodigo] = useState<string | null>(null)
+  const [mostrarClientes, setMostrarClientes] = useState(true)
+  const [mostrarUnidades, setMostrarUnidades] = useState(true)
   const [states, setStates] = useState<StateFeature[]>([])
   const [view, setView] = useState<MapView>(IDENTITY_VIEW)
 
@@ -423,6 +433,8 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
 
   const TOUCH_TARGET_PX = 44
   const touchRadius = Math.max(5, TOUCH_TARGET_PX / 2 / svgPxPerUnit)
+  const pinosUnidades = useMemo(() => posicionarPinos(unidades), [unidades])
+  const unidadeAberta = unidades.find((u) => u.codigo === unidadeSelecionadaCodigo) ?? null
 
   return (
     <div
@@ -477,7 +489,7 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
           />
         ))}
 
-        {clusters.map((cluster) =>
+        {mostrarClientes && clusters.map((cluster) =>
           cluster.clients.length === 1 ? (
             <ClientPin
               key={cluster.clients[0].id}
@@ -512,7 +524,53 @@ export function BrazilMap({ clients, onPinClick }: BrazilMapProps) {
             />
           ),
         )}
+        {mostrarUnidades &&
+          pinosUnidades.map(({ unidade, x, y }) => {
+            const ativo = unidade.codigo === unidadeSelecionadaCodigo
+            return (
+              <g
+                key={`ml-${unidade.codigo}`}
+                transform={`translate(${x}, ${y})`}
+                onClick={() => {
+                  if (dragDistanceRef.current > DRAG_CLICK_THRESHOLD) return
+                  setUnidadeSelecionadaCodigo(unidade.codigo)
+                }}
+                className="cursor-pointer"
+                role="button"
+                aria-label={`Mercado Livre ${unidade.codigo}: ${unidade.cidade}, ${unidade.uf}`}
+              >
+                <circle r={ativo ? 7 : 5} fill={CLIENTE_COR} stroke="#0a2540" strokeWidth={1.5} />
+                <circle r={touchRadius} fill="transparent" />
+              </g>
+            )
+          })}
       </svg>
+
+      {/* camadas: liga e desliga clientes da Essencial e unidades do Mercado Livre */}
+      <div className="absolute top-24 left-4 z-10 flex flex-col gap-2 sm:top-28 sm:left-8">
+        <BotaoCamada
+          ativo={mostrarClientes}
+          onClick={() => setMostrarClientes((v) => !v)}
+          cor="#e05a1c"
+          rotulo="Clientes Essencial"
+        />
+        <BotaoCamada
+          ativo={mostrarUnidades}
+          onClick={() => setMostrarUnidades((v) => !v)}
+          cor={CLIENTE_COR}
+          rotulo={`Mercado Livre · ${unidades.length}`}
+        />
+      </div>
+
+      <AnimatePresence>
+        {unidadeAberta && (
+          <PainelUnidade
+            key={unidadeAberta.codigo}
+            unidade={unidadeAberta}
+            onFechar={() => setUnidadeSelecionadaCodigo(null)}
+          />
+        )}
+      </AnimatePresence>
 
       <p className="absolute bottom-4 left-4 text-xs text-white/25">
         Mapa: Natural Earth (domínio público) · Satélite: NASA Blue Marble
@@ -721,5 +779,31 @@ function ClusterPin({ x, y, count, onClick }: ClusterPinProps) {
         {count}
       </text>
     </g>
+  )
+}
+
+interface BotaoCamadaProps {
+  ativo: boolean
+  onClick: () => void
+  cor: string
+  rotulo: string
+}
+
+function BotaoCamada({ ativo, onClick, cor, rotulo }: BotaoCamadaProps) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={ativo}
+      className={`flex items-center gap-2.5 rounded-full border py-2 pr-4 pl-3 text-xs font-semibold tracking-wide uppercase backdrop-blur-md transition-opacity active:scale-95 ${
+        ativo ? 'border-white/[0.1] bg-black/40 text-white/80' : 'border-white/[0.06] bg-black/20 text-white/35'
+      }`}
+    >
+      <span
+        className="h-3 w-3 rounded-full"
+        style={{ background: cor, opacity: ativo ? 1 : 0.35 }}
+      />
+      {rotulo}
+    </button>
   )
 }
