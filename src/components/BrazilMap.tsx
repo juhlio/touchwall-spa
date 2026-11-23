@@ -303,9 +303,9 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
 
   // aproxima e centraliza o pino tocado, com transição suave
   const animacaoRef = useRef<number | null>(null)
-  function focarPonto(px: number, py: number) {
+  function focarPonto(px: number, py: number, escalaFinal = 3.2) {
     const inicio = view
-    const escalaAlvo = 3.2
+    const escalaAlvo = escalaFinal
     const largura = VIEWBOX_WIDTH / escalaAlvo
     const altura = VIEWBOX_HEIGHT / escalaAlvo
     const alvo: MapView = {
@@ -610,23 +610,17 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
               x={cluster.x}
               y={cluster.y}
               count={cluster.clients.length}
-              onClick={(event) => {
-                // destaca o estado do agrupamento, como nos outros pinos
-                setDestaque({ uf: cluster.clients[0].state ? cluster.clients[0].state.toLowerCase() : null, x: cluster.x, y: cluster.y })
-                // no zoom máximo o agrupamento não separa mais (alguns
-                // clientes chegam a compartilhar o mesmo endereço) — nesse
-                // caso mostra a lista em vez de um zoom que não faz nada
-                if (view.scale >= MAX_SCALE - 0.01) {
-                  setSelectedCluster(cluster.clients)
-                  return
-                }
-                // centraliza no meio real do cluster (não no ponto exato do
-                // toque) — deixa o próximo toque mais previsível, já que o
-                // alvo fica centralizado após o zoom
-                const rect = event.currentTarget.getBoundingClientRect()
-                const centerX = rect.left + rect.width / 2
-                const centerY = rect.top + rect.height / 2
-                zoomAt(centerX, centerY, (currentScale) => Math.min(MAX_SCALE, currentScale * 2.5))
+              onClick={() => {
+                // zoom final direto no agrupamento e lista aberta na caixa
+                setUnidadeSelecionadaCodigo(null)
+                setSelected(null)
+                setDestaque({
+                  uf: cluster.clients[0].state ? cluster.clients[0].state.toLowerCase() : null,
+                  x: cluster.x,
+                  y: cluster.y,
+                })
+                focarPonto(cluster.x, cluster.y, 4.2)
+                setSelectedCluster(cluster.clients)
               }}
             />
           ),
@@ -751,6 +745,7 @@ export function BrazilMap({ clients, unidades = [], onPinClick }: BrazilMapProps
           <PainelMapa
             key="aglomerado"
             icone={<MapPin size={18} strokeWidth={2} />}
+            cor="#e05a1c"
             rotulo="Região"
             subtitulo="Clientes Essencial"
             titulo={`${selectedCluster.length} clientes`}
