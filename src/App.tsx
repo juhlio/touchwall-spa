@@ -17,7 +17,7 @@ import { ServiceLayout } from '@/layouts/ServiceLayout'
 import type { Page } from '@/types'
 
 // Versão do mapa da página "Onde Estamos": 'atual' (pontos e pulso) ou 'tracado' (contorno traçado, território em pontos).
-const VARIANTE_MAPA: 'atual' | 'tracado' | 'leaflet' = 'leaflet'
+const VARIANTE_MAPA: 'atual' | 'tracado' | 'leaflet' = 'tracado'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('menu')
