@@ -19,8 +19,12 @@ export interface UnidadeMercadoLivre {
   uf: string
   lat: number
   lng: number
-  precisao: 'endereco' | 'bairro' | 'cidade' | 'manual'
+  precisao: 'link' | 'endereco' | 'bairro' | 'cidade' | 'manual'
   destaque: boolean
+  regional?: string
+  potencia?: string
+  tipo?: string
+  geradores?: number
 }
 
 interface StateFeature {
@@ -283,15 +287,19 @@ export function PainelUnidade({
 
       <div>
         <h2 className="text-2xl font-bold tracking-tight text-white">
-          {unidade.cidade} · {unidade.uf}
+          {unidade.cidade}
+          {unidade.uf ? ` · ${unidade.uf}` : ''}
         </h2>
         <p className="mt-1 text-sm text-white/50">Região {unidade.regiao}</p>
       </div>
 
       <dl className="flex flex-col gap-3 text-sm">
-        <Campo rotulo="Endereço" valor={unidade.logradouro} />
-        <Campo rotulo="Bairro" valor={unidade.bairro} />
-        <Campo rotulo="CEP" valor={unidade.cep} />
+        {unidade.regional && <Campo rotulo="Regional" valor={unidade.regional} />}
+        {unidade.potencia && <Campo rotulo="Potência" valor={unidade.potencia} />}
+        {unidade.tipo && <Campo rotulo="Tipo" valor={unidade.tipo} />}
+        {unidade.logradouro && <Campo rotulo="Endereço" valor={unidade.logradouro} />}
+        {unidade.bairro && <Campo rotulo="Bairro" valor={unidade.bairro} />}
+        {unidade.cep && <Campo rotulo="CEP" valor={unidade.cep} />}
       </dl>
 
       {(unidade.precisao === 'bairro' || unidade.precisao === 'cidade') && (
